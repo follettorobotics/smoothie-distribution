@@ -1,0 +1,9 @@
+{
+  "versionCode": 100,
+  "versionName": "0.1.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.1.0/app-release.apk",
+  "sha256": "0985fdd499cff5a9bc2e3299b85ef3b92e3a95ac9b863224945867dd02b05afc",
+  "minVersionCode": 1,
+  "releaseNotes": "testing",
+  "releasedAt": "2026-04-30T04:18:27Z"
+}
