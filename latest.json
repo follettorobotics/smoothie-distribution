@@ -4,6 +4,6 @@
   "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.0/app-release.apk",
   "sha256": "8d76da4e7bd901399e011b5151914f0ff2d9137e12f225508371ed6ab51ada1c",
   "minVersionCode": 1,
-  "releaseNotes": "Ignore backups/ — local-only DB snapshots, not for the repo",
+  "releaseNotes": "v0.2.0 — Protocol resilience & diagnostics\n\nProtocol & runtime\n- Newline-split framer (replaces JSON-balance), retries reduced to 1\n- Bump control-board ACK timeout to 2s; harden MotorBusyTracker\n- Pause sensor polling while motor/BLDC commands are in flight\n- Stop motor commands from racing after a lost ACK\n- Pre-check water module ACK before waiting on dispense progress\n- Recover dispense early if the final status frame is lost\n- Route led.all replies in inferCtrl\n\nDiagnostics\n- LAN dev dashboard server with byte-exact Raw tab\n- Surface water-module dispense in the dashboard\n- Technician-facing error history with timestamp-anchored dedup\n\nBehavior fixes\n- Recover from cup-film retry when door is re-closed\n- Honor RELAY_CLEANING_SPRAY default_ms during the cleaning cycle\n- Route mix-step blade moves to the Y motor via hardware mapping\n- Vary settings row icon color\n- Stop BoundedNumericField from prepending its default after a clear",
   "releasedAt": "2026-05-15T05:25:37Z"
 }
