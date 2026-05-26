@@ -1,9 +1,9 @@
 {
-  "versionCode": 200,
-  "versionName": "0.2.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.0/app-release.apk",
-  "sha256": "8d76da4e7bd901399e011b5151914f0ff2d9137e12f225508371ed6ab51ada1c",
+  "versionCode": 201,
+  "versionName": "0.2.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.1/app-release.apk",
+  "sha256": "b4ae0724f676cf9fc5b72552c33ca8dae20015a1970031c3d11e6cf6efb98c58",
   "minVersionCode": 1,
-  "releaseNotes": "v0.2.0 — Protocol resilience & diagnostics\n\nProtocol & runtime\n- Newline-split framer (replaces JSON-balance), retries reduced to 1\n- Bump control-board ACK timeout to 2s; harden MotorBusyTracker\n- Pause sensor polling while motor/BLDC commands are in flight\n- Stop motor commands from racing after a lost ACK\n- Pre-check water module ACK before waiting on dispense progress\n- Recover dispense early if the final status frame is lost\n- Route led.all replies in inferCtrl\n\nDiagnostics\n- LAN dev dashboard server with byte-exact Raw tab\n- Surface water-module dispense in the dashboard\n- Technician-facing error history with timestamp-anchored dedup\n\nBehavior fixes\n- Recover from cup-film retry when door is re-closed\n- Honor RELAY_CLEANING_SPRAY default_ms during the cleaning cycle\n- Route mix-step blade moves to the Y motor via hardware mapping\n- Vary settings row icon color\n- Stop BoundedNumericField from prepending its default after a clear",
-  "releasedAt": "2026-05-15T05:25:37Z"
+  "releaseNotes": "Surface async install failures instead of hanging on \"Installing\"\n\nPackageInstaller reports its terminal status asynchronously to\nUpdateInstallReceiver, which had no handle to the controller and only\nlogged the result. A late failure (e.g. signature mismatch ->\nINSTALL_FAILED_UPDATE_INCOMPATIBLE) left the update dialog stuck on\n\"Installing\" forever.\n\nAdd UpdateInstallEvents, a process-wide bus the receiver republishes\nsuccess/failure to. UpdateController collects it (init-time, guarded to\nthe Installing/ReadyToInstall window) and maps a failure to\nUpdateState.Error(INSTALL) so the dialog shows the real message.\n\nMake UpdateChecker/UpdateDownloader/UpdateInstaller open (no behavior\nchange) so the new UpdateInstallWiringTest can substitute fakes and\ndrive check -> download -> install -> async-outcome.",
+  "releasedAt": "2026-05-26T00:55:17Z"
 }
