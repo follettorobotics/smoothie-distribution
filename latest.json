@@ -1,9 +1,9 @@
 {
-  "versionCode": 202,
-  "versionName": "0.2.2",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.2/app-release.apk",
-  "sha256": "3d63e5c627e96b95178ab185a6feb487bdf30115db7ff8a58c9395a64e20a5f8",
+  "versionCode": 203,
+  "versionName": "0.2.3",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.3/app-release.apk",
+  "sha256": "7f39929633f536a7a2f31e7cda8d083043df3de9abaf37ba9f17dd5a4d6a7c6c",
   "minVersionCode": 1,
-  "releaseNotes": "Default motor mapping to production wiring (X=id0, Y=id1)\n\nThe rev0 rebind (9ba851c) moved the X/Y steppers to id=2/id=3, but the\nactual field device drives X on id=0 and Y on id=1 (confirmed from the\ncaptured device DB). Realign the seed to production:\n\n- hardware_features: MOTOR_X_* portNum 2->0, MOTOR_Y_* portNum 3->1\n- hardware_ports: motor-0/1 = X/Y axis, motor-2/3 = spare (keeps the\n  feature table and the role registry consistent, since the runtime\n  reads portNum from features but HardwareRoleResolver reads num from\n  ports — both must agree)\n- defaultPortFor (admin add-feature UI) X->0, Y->1\n- restore the device's tuned values: MOTOR_X_HOME rpm 80, Y mixing\n  pos 40, Y clean pos 65\n\nSeeding is back-fill only, so this affects freshly provisioned tablets;\ndeployed devices keep their existing rows.",
-  "releasedAt": "2026-05-26T03:35:03Z"
+  "releaseNotes": "Set MOTOR_X_HOME default rpm to 150",
+  "releasedAt": "2026-05-26T04:30:24Z"
 }
