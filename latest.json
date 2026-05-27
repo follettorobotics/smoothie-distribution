@@ -1,9 +1,9 @@
 {
-  "versionCode": 203,
-  "versionName": "0.2.3",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.3/app-release.apk",
-  "sha256": "7f39929633f536a7a2f31e7cda8d083043df3de9abaf37ba9f17dd5a4d6a7c6c",
+  "versionCode": 204,
+  "versionName": "0.2.4",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.4/app-release.apk",
+  "sha256": "7ddde5f9030a0bee0e653288acdb30d620d94adddf6b665c7b8251f12e3f4339",
   "minVersionCode": 1,
-  "releaseNotes": "Set MOTOR_X_HOME default rpm to 150",
-  "releasedAt": "2026-05-26T04:30:24Z"
+  "releaseNotes": "Fix release workflow breaking on special chars in commit message\n\nRender latest.json interpolated github.event.head_commit.message\ndirectly into a shell string, so a commit message containing double\nquotes (or parens/newlines) broke the shell and failed the step with\nexit 127 -- which is what aborted the v0.2.4 release. Pass the message\nand event name via env vars instead, per GitHub's safe pattern; also\ncloses a script-injection vector.",
+  "releasedAt": "2026-05-27T01:28:38Z"
 }
