@@ -1,9 +1,9 @@
 {
-  "versionCode": 207,
-  "versionName": "0.2.7",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.7/app-release.apk",
-  "sha256": "44622aaafc077b361e01e050e024b771011a57d61e84e580006920565d96849a",
+  "versionCode": 208,
+  "versionName": "0.2.8",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.8/app-release.apk",
+  "sha256": "a8ed465a65ff49d8ff65a4ec7511e417771ef9783378af2f42131a7dc5139b48",
   "minVersionCode": 1,
-  "releaseNotes": "Re-home X after mixing before serving the drink\n\nThe mixing phase shakes the cabinet hard enough to knock the X\ncarriage off its home reference. RETURNING_TO_IDLE previously moved\nX straight to idle on the assumption it was still at product/home\nposition. Now, after Y homes, we read SENSOR_X_HOME and re-home X if\nit no longer reads active, then re-confirm before the serve move.\n\nRe-home is conditional (skipped when X is still home) and proceeds to\nserve regardless of the confirm result, matching awaitYHomeBeforeXMove:\nstranding the customer behind a closed door is worse than a soft\ncollision the firmware recovers from.",
-  "releasedAt": "2026-05-27T05:31:54Z"
+  "releaseNotes": "Add debug-only \"Ignore errors\" toggle to suppress health-gate overlay\n\nLets the kiosk UI (including the idle slideshow) be exercised on an\nemulator without real hardware by hiding the IdleUnavailableScreen\nhealth-gate overlay (control board / water module offline, water low).\n\nDouble-gated for safety: the toggle only appears in the debug-only\nDeveloper settings section, and its effect is additionally\nBuildConfig.DEBUG-gated at the render site, so a release build can never\nhide a real fault from a customer.\n\nStrings added to AdminStringsCore (ko/en); flag persisted in DataStore.",
+  "releasedAt": "2026-05-27T07:50:49Z"
 }
