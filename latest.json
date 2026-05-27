@@ -1,9 +1,9 @@
 {
-  "versionCode": 206,
-  "versionName": "0.2.6",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.6/app-release.apk",
-  "sha256": "64bb27c86d48c163a0c53eabea3d047d0602cb4a028f6ecf2375a28cf9bf793b",
+  "versionCode": 207,
+  "versionName": "0.2.7",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.7/app-release.apk",
+  "sha256": "44622aaafc077b361e01e050e024b771011a57d61e84e580006920565d96849a",
   "minVersionCode": 1,
-  "releaseNotes": "Fit default mixing descent under the 125 Y ceiling\n\nRaising 제조 위치 to 60 pushed the default recipe peak (seat + the old\n80-step descent) to 140, over the 120 limit -- blocking recipe save and\nforcing the runtime clamp to truncate the last descent.\n\n- HW_Y_MAX_DOWN default + allowed-max 120 -> 125 (the real safe max).\n  Both editors and the runtime clamp read this same bound.\n- Default mixing program descent re-tuned to 10/15/15/10/10 (sum 60),\n  waits 2000/2000/3000/3000/4000. With the 60 seat, peak = 120 (5-step\n  margin under 125), so seeded recipes save cleanly and never clamp.\n\nSeed-only (back-fill): applies to freshly provisioned tablets.",
-  "releasedAt": "2026-05-27T02:01:54Z"
+  "releaseNotes": "Re-home X after mixing before serving the drink\n\nThe mixing phase shakes the cabinet hard enough to knock the X\ncarriage off its home reference. RETURNING_TO_IDLE previously moved\nX straight to idle on the assumption it was still at product/home\nposition. Now, after Y homes, we read SENSOR_X_HOME and re-home X if\nit no longer reads active, then re-confirm before the serve move.\n\nRe-home is conditional (skipped when X is still home) and proceeds to\nserve regardless of the confirm result, matching awaitYHomeBeforeXMove:\nstranding the customer behind a closed door is worse than a soft\ncollision the firmware recovers from.",
+  "releasedAt": "2026-05-27T05:31:54Z"
 }
