@@ -1,9 +1,9 @@
 {
-  "versionCode": 205,
-  "versionName": "0.2.5",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.5/app-release.apk",
-  "sha256": "723bcdf31e4a73f6ab8b6f50fe6490e33eec658227ed774a15459668cbce82c2",
+  "versionCode": 206,
+  "versionName": "0.2.6",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.6/app-release.apk",
+  "sha256": "64bb27c86d48c163a0c53eabea3d047d0602cb4a028f6ecf2375a28cf9bf793b",
   "minVersionCode": 1,
-  "releaseNotes": "Add 딸기 망고 블루베리 스무디 product; tune default Y positions\n\n- New default product 딸기 망고 블루베리 스무디 (ID 8800341260024) with the\n  shared default recipe profile + auto-seeded default mixing step.\n- Default Y mixing position (Y축 제조 위치) pos 40 -> 60.\n- Default Y clean position (Y축 세척 위치) pos 65 -> 80.\n\nSeed-only (back-fill), so these reach freshly provisioned tablets;\ndeployed devices keep their existing recipe list and Y configs.",
-  "releasedAt": "2026-05-27T01:45:33Z"
+  "releaseNotes": "Fit default mixing descent under the 125 Y ceiling\n\nRaising 제조 위치 to 60 pushed the default recipe peak (seat + the old\n80-step descent) to 140, over the 120 limit -- blocking recipe save and\nforcing the runtime clamp to truncate the last descent.\n\n- HW_Y_MAX_DOWN default + allowed-max 120 -> 125 (the real safe max).\n  Both editors and the runtime clamp read this same bound.\n- Default mixing program descent re-tuned to 10/15/15/10/10 (sum 60),\n  waits 2000/2000/3000/3000/4000. With the 60 seat, peak = 120 (5-step\n  margin under 125), so seeded recipes save cleanly and never clamp.\n\nSeed-only (back-fill): applies to freshly provisioned tablets.",
+  "releasedAt": "2026-05-27T02:01:54Z"
 }
