@@ -1,9 +1,9 @@
 {
-  "versionCode": 204,
-  "versionName": "0.2.4",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.4/app-release.apk",
-  "sha256": "7ddde5f9030a0bee0e653288acdb30d620d94adddf6b665c7b8251f12e3f4339",
+  "versionCode": 205,
+  "versionName": "0.2.5",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.5/app-release.apk",
+  "sha256": "723bcdf31e4a73f6ab8b6f50fe6490e33eec658227ed774a15459668cbce82c2",
   "minVersionCode": 1,
-  "releaseNotes": "Fix release workflow breaking on special chars in commit message\n\nRender latest.json interpolated github.event.head_commit.message\ndirectly into a shell string, so a commit message containing double\nquotes (or parens/newlines) broke the shell and failed the step with\nexit 127 -- which is what aborted the v0.2.4 release. Pass the message\nand event name via env vars instead, per GitHub's safe pattern; also\ncloses a script-injection vector.",
-  "releasedAt": "2026-05-27T01:28:38Z"
+  "releaseNotes": "Add 딸기 망고 블루베리 스무디 product; tune default Y positions\n\n- New default product 딸기 망고 블루베리 스무디 (ID 8800341260024) with the\n  shared default recipe profile + auto-seeded default mixing step.\n- Default Y mixing position (Y축 제조 위치) pos 40 -> 60.\n- Default Y clean position (Y축 세척 위치) pos 65 -> 80.\n\nSeed-only (back-fill), so these reach freshly provisioned tablets;\ndeployed devices keep their existing recipe list and Y configs.",
+  "releasedAt": "2026-05-27T01:45:33Z"
 }
