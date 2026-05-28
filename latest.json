@@ -1,9 +1,9 @@
 {
-  "versionCode": 211,
-  "versionName": "0.2.11",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.11/app-release.apk",
-  "sha256": "abb163862a76c5a647ffce145865f73e483612f49358f37292025aab03a82693",
+  "versionCode": 212,
+  "versionName": "0.2.12",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.12/app-release.apk",
+  "sha256": "44d1aaf4900be0c3777b9d43ba09ec57412e3f4050b078e833b7551e1cbce72b",
   "minVersionCode": 1,
-  "releaseNotes": "v0.2.11\n\n- Settings → About now shows the real build version (BuildConfig.VERSION_NAME\n  + VERSION_CODE), matching the format already used in the update dialog.\n  Was hardcoded as \"버전 1.0\" / \"Version 1.0\" regardless of build.\n\nThis bump also gives a device on 0.2.10 an available update to download, so\nyou can verify the v0.2.10 update-UX fixes (instant feedback on 지금 설치 +\nno idle-close mid-download) in the wild.",
-  "releasedAt": "2026-05-28T03:06:25Z"
+  "releaseNotes": "v0.2.12\n\n- Fix transferred slideshow videos rendering as a black screen. Files picked\n  from a content:// URI (SAF / MediaStore) were copied without their .mp4\n  extension, so the slideshow misclassified the video as an image. Now the\n  real filename + extension is preserved (DISPLAY_NAME, with a MIME-type\n  fallback).\n\nNote: a slideshow video added before this build was saved without an\nextension — remove and re-pick it after updating. No re-transfer needed.",
+  "releasedAt": "2026-05-28T04:02:26Z"
 }
