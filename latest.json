@@ -1,9 +1,9 @@
 {
-  "versionCode": 214,
-  "versionName": "0.2.14",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.14/app-release.apk",
-  "sha256": "4956bf9e903af4d8e8fa97c6cb9e4a32a56c7e7f4b7f36a5d70226c275fc9518",
+  "versionCode": 215,
+  "versionName": "0.2.15",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.15/app-release.apk",
+  "sha256": "ac363389ee312fd216b61893a13c2916644d0b2f4349d03b9c9d1387ce98d819",
   "minVersionCode": 1,
-  "releaseNotes": "Dev dashboard Save now exports a combined control-board + water-module log.\n\nThe dispense (AA-55) frames live on a separate transport from the control\nboard, so the previous Save (protocol only) never captured them. Save now\nwrites one timestamp-ordered, bus-tagged log (smoothe-log-<ts>.txt).",
-  "releasedAt": "2026-05-28T06:25:41Z"
+  "releaseNotes": "v0.2.15 — Fix PIN carry-over in password-change flow\n\n- Password-change modal (admin and technician) now clears the PIN input the\n  moment a 4-digit entry is accepted, so the dots reset cleanly before the\n  next step. Previously, entering the current password left the dots filled\n  when the \"enter new password\" prompt appeared, blocking further input and\n  requiring the modal to be dismissed and reopened.",
+  "releasedAt": "2026-05-28T09:08:26Z"
 }
