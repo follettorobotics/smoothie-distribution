@@ -1,9 +1,9 @@
 {
-  "versionCode": 212,
-  "versionName": "0.2.12",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.12/app-release.apk",
-  "sha256": "44d1aaf4900be0c3777b9d43ba09ec57412e3f4050b078e833b7551e1cbce72b",
+  "versionCode": 213,
+  "versionName": "0.2.13",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.13/app-release.apk",
+  "sha256": "e28706c092cb70dabbcab0bb84e369e8edb8cc5826cb08ac05833800d0ef2b9b",
   "minVersionCode": 1,
-  "releaseNotes": "v0.2.12\n\n- Fix transferred slideshow videos rendering as a black screen. Files picked\n  from a content:// URI (SAF / MediaStore) were copied without their .mp4\n  extension, so the slideshow misclassified the video as an image. Now the\n  real filename + extension is preserved (DISPLAY_NAME, with a MIME-type\n  fallback).\n\nNote: a slideshow video added before this build was saved without an\nextension — remove and re-pick it after updating. No re-transfer needed.",
-  "releasedAt": "2026-05-28T04:02:26Z"
+  "releaseNotes": "Manual cleaning moved to the owner-facing Maintenance section\n\n- 수동 세척(manual cleaning) is now in the Maintenance section that\n  store owners can reach directly, instead of being hidden behind the\n  version-tap hardware unlock with the developer/technician tools.\n- Auto Setup, Manual Cleaning, and Reset Sequence are grouped under one\n  Maintenance (정비) header.",
+  "releasedAt": "2026-05-28T05:00:39Z"
 }
