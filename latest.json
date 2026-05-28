@@ -1,9 +1,9 @@
 {
-  "versionCode": 210,
-  "versionName": "0.2.10",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.10/app-release.apk",
-  "sha256": "5c7c77b2f95c6f30aa5b3fb7e9e8f60ded8f5b52c9420c1e19dd02fc97625450",
+  "versionCode": 211,
+  "versionName": "0.2.11",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.11/app-release.apk",
+  "sha256": "abb163862a76c5a647ffce145865f73e483612f49358f37292025aab03a82693",
   "minVersionCode": 1,
-  "releaseNotes": "v0.2.10\n\n- OTA update: instant feedback when 지금 설치 is tapped — the dialog switches to\n  an indeterminate progress bar immediately, then the %/MB bar once the\n  download size is known. No more dead gap after pressing install.\n- OTA update: the admin idle timer no longer closes Settings (and cancels the\n  download) while an update is downloading or installing.\n\nNo water-dispense change.",
-  "releasedAt": "2026-05-28T02:40:08Z"
+  "releaseNotes": "v0.2.11\n\n- Settings → About now shows the real build version (BuildConfig.VERSION_NAME\n  + VERSION_CODE), matching the format already used in the update dialog.\n  Was hardcoded as \"버전 1.0\" / \"Version 1.0\" regardless of build.\n\nThis bump also gives a device on 0.2.10 an available update to download, so\nyou can verify the v0.2.10 update-UX fixes (instant feedback on 지금 설치 +\nno idle-close mid-download) in the wild.",
+  "releasedAt": "2026-05-28T03:06:25Z"
 }
