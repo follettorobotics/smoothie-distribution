@@ -1,9 +1,9 @@
 {
-  "versionCode": 208,
-  "versionName": "0.2.8",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.8/app-release.apk",
-  "sha256": "a8ed465a65ff49d8ff65a4ec7511e417771ef9783378af2f42131a7dc5139b48",
+  "versionCode": 209,
+  "versionName": "0.2.9",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.9/app-release.apk",
+  "sha256": "e773fad3a0cf64d7babec379e3dd3af3eb6c8c23e506ef812e93c23860af50ee",
   "minVersionCode": 1,
-  "releaseNotes": "Add debug-only \"Ignore errors\" toggle to suppress health-gate overlay\n\nLets the kiosk UI (including the idle slideshow) be exercised on an\nemulator without real hardware by hiding the IdleUnavailableScreen\nhealth-gate overlay (control board / water module offline, water low).\n\nDouble-gated for safety: the toggle only appears in the debug-only\nDeveloper settings section, and its effect is additionally\nBuildConfig.DEBUG-gated at the render site, so a release build can never\nhide a real fault from a customer.\n\nStrings added to AdminStringsCore (ko/en); flag persisted in DataStore.",
-  "releasedAt": "2026-05-27T07:50:49Z"
+  "releaseNotes": "v0.2.9\n\n- Confirm Y reaches the clean position before cleaning; ACK cleaning spray on/off; add manual cleaning page\n- Fix release notes falling back to commit message instead of tag annotation\n- Remove superseded Korean water-module protocol doc; ignore scratch dirs\n\nNo water-dispense change — this build is for field observation of the\nrecipe-ml dispense behavior (delay scales but volume looks fixed).",
+  "releasedAt": "2026-05-28T02:01:55Z"
 }
