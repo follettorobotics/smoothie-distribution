@@ -1,9 +1,9 @@
 {
-  "versionCode": 209,
-  "versionName": "0.2.9",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.9/app-release.apk",
-  "sha256": "e773fad3a0cf64d7babec379e3dd3af3eb6c8c23e506ef812e93c23860af50ee",
+  "versionCode": 210,
+  "versionName": "0.2.10",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.10/app-release.apk",
+  "sha256": "5c7c77b2f95c6f30aa5b3fb7e9e8f60ded8f5b52c9420c1e19dd02fc97625450",
   "minVersionCode": 1,
-  "releaseNotes": "v0.2.9\n\n- Confirm Y reaches the clean position before cleaning; ACK cleaning spray on/off; add manual cleaning page\n- Fix release notes falling back to commit message instead of tag annotation\n- Remove superseded Korean water-module protocol doc; ignore scratch dirs\n\nNo water-dispense change — this build is for field observation of the\nrecipe-ml dispense behavior (delay scales but volume looks fixed).",
-  "releasedAt": "2026-05-28T02:01:55Z"
+  "releaseNotes": "v0.2.10\n\n- OTA update: instant feedback when 지금 설치 is tapped — the dialog switches to\n  an indeterminate progress bar immediately, then the %/MB bar once the\n  download size is known. No more dead gap after pressing install.\n- OTA update: the admin idle timer no longer closes Settings (and cancels the\n  download) while an update is downloading or installing.\n\nNo water-dispense change.",
+  "releasedAt": "2026-05-28T02:40:08Z"
 }
