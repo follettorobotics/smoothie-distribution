@@ -4,15 +4,24 @@
       "versionName": "0.2.17",
       "versionCode": 217,
       "releasedAt": "2026-05-29T05:57:40Z",
-      "summary": "Refined the idle screen for better readability.",
+      "summary": {
+        "en": "Refined the idle screen for better readability.",
+        "ko": "대기 화면의 가독성을 개선했습니다."
+      },
       "changes": [
         {
           "type": "improvement",
-          "text": "Enlarged the bottom guidance text and icons."
+          "text": {
+            "en": "Enlarged the bottom guidance text and icons.",
+            "ko": "하단 안내 문구와 아이콘 크기를 키웠습니다."
+          }
         },
         {
           "type": "improvement",
-          "text": "Strengthened the background gradient so guidance stays legible over bright photos and videos."
+          "text": {
+            "en": "Strengthened the background gradient so guidance stays legible over bright photos and videos.",
+            "ko": "배경 그라데이션을 강화해 밝은 사진·영상 위에서도 안내가 잘 보입니다."
+          }
         }
       ]
     },
@@ -20,11 +29,17 @@
       "versionName": "0.2.16",
       "versionCode": 216,
       "releasedAt": "2026-05-29T01:42:27Z",
-      "summary": "Internal cleanup with no visible change on screen.",
+      "summary": {
+        "en": "Internal cleanup with no visible change on screen.",
+        "ko": "내부 정리 작업으로, 사용 화면에 보이는 변화는 없습니다."
+      },
       "changes": [
         {
           "type": "chore",
-          "text": "Internal maintenance only; nothing changes for daily use."
+          "text": {
+            "en": "Internal maintenance only; nothing changes for daily use.",
+            "ko": "내부 유지보수 작업으로, 일상 사용에는 변화가 없습니다."
+          }
         }
       ]
     },
@@ -32,11 +47,17 @@
       "versionName": "0.2.15",
       "versionCode": 215,
       "releasedAt": "2026-05-28T08:54:19Z",
-      "summary": "Fixed a password-change error.",
+      "summary": {
+        "en": "Fixed a password-change error.",
+        "ko": "비밀번호 변경 오류를 수정했습니다."
+      },
       "changes": [
         {
           "type": "fix",
-          "text": "Input from a previous step no longer carries over during the multi-step password change (verify current, enter new, confirm new). Applies to both admin and technician passwords."
+          "text": {
+            "en": "Input from a previous step no longer carries over during the multi-step password change (verify current, enter new, confirm new). Applies to both admin and technician passwords.",
+            "ko": "여러 단계로 진행되는 비밀번호 변경(현재 확인 → 새 비밀번호 → 재확인)에서 이전 단계 입력이 남아 있던 문제를 수정했습니다. 관리자·기술자 비밀번호 모두 해당합니다."
+          }
         }
       ]
     },
@@ -44,11 +65,17 @@
       "versionName": "0.2.14",
       "versionCode": 214,
       "releasedAt": "2026-05-28T06:12:14Z",
-      "summary": "Improved internal diagnostics tooling.",
+      "summary": {
+        "en": "Improved internal diagnostics tooling.",
+        "ko": "내부 진단 도구를 개선했습니다."
+      },
       "changes": [
         {
           "type": "chore",
-          "text": "Developer diagnostics improvement; no user-facing change."
+          "text": {
+            "en": "Developer diagnostics improvement; no user-facing change.",
+            "ko": "개발자용 진단 기능 개선으로, 사용 화면에 보이는 변화는 없습니다."
+          }
         }
       ]
     },
@@ -56,15 +83,24 @@
       "versionName": "0.2.13",
       "versionCode": 213,
       "releasedAt": "2026-05-28T04:47:09Z",
-      "summary": "Reorganized the maintenance menu.",
+      "summary": {
+        "en": "Reorganized the maintenance menu.",
+        "ko": "정비 메뉴를 정리했습니다."
+      },
       "changes": [
         {
           "type": "improvement",
-          "text": "Grouped Auto Setup, Manual Cleaning, and Reset Sequence under a single Maintenance menu."
+          "text": {
+            "en": "Grouped Auto Setup, Manual Cleaning, and Reset Sequence under a single Maintenance menu.",
+            "ko": "자동 설정, 수동 세척, 제조 초기화를 하나의 ‘정비’ 메뉴로 모았습니다."
+          }
         },
         {
           "type": "improvement",
-          "text": "Moved Manual Cleaning where store operators can reach it directly."
+          "text": {
+            "en": "Moved Manual Cleaning where store operators can reach it directly.",
+            "ko": "수동 세척을 매장 관리자가 바로 사용할 수 있는 위치로 옮겼습니다."
+          }
         }
       ]
     },
@@ -72,11 +108,17 @@
       "versionName": "0.2.12",
       "versionCode": 212,
       "releasedAt": "2026-05-28T03:49:40Z",
-      "summary": "Fixed slideshow media handling.",
+      "summary": {
+        "en": "Fixed slideshow media handling.",
+        "ko": "슬라이드쇼 미디어 처리 오류를 수정했습니다."
+      },
       "changes": [
         {
           "type": "fix",
-          "text": "The original file name and format are now preserved for slideshow media."
+          "text": {
+            "en": "The original file name and format are now preserved for slideshow media.",
+            "ko": "슬라이드쇼 미디어의 원래 파일 이름과 형식이 그대로 유지됩니다."
+          }
         }
       ]
     },
@@ -84,11 +126,17 @@
       "versionName": "0.2.11",
       "versionCode": 211,
       "releasedAt": "2026-05-28T02:53:28Z",
-      "summary": "Fixed the version display.",
+      "summary": {
+        "en": "Fixed the version display.",
+        "ko": "버전 표시 오류를 수정했습니다."
+      },
       "changes": [
         {
           "type": "fix",
-          "text": "Settings > About now shows the actual installed app version."
+          "text": {
+            "en": "Settings > About now shows the actual installed app version.",
+            "ko": "설정 > 정보 화면에 실제 설치된 앱 버전이 정확히 표시됩니다."
+          }
         }
       ]
     },
@@ -96,15 +144,24 @@
       "versionName": "0.2.10",
       "versionCode": 210,
       "releasedAt": "2026-05-28T02:22:46Z",
-      "summary": "Improved the automatic update experience.",
+      "summary": {
+        "en": "Improved the automatic update experience.",
+        "ko": "자동 업데이트 사용 경험을 개선했습니다."
+      },
       "changes": [
         {
           "type": "improvement",
-          "text": "The download screen appears instantly when you tap Install now."
+          "text": {
+            "en": "The download screen appears instantly when you tap Install now.",
+            "ko": "‘지금 설치’를 누르면 다운로드 화면이 즉시 나타납니다."
+          }
         },
         {
           "type": "fix",
-          "text": "The screen no longer closes on its own while an update is in progress."
+          "text": {
+            "en": "The screen no longer closes on its own while an update is in progress.",
+            "ko": "업데이트가 진행되는 동안 화면이 저절로 닫히지 않습니다."
+          }
         }
       ]
     },
@@ -112,19 +169,31 @@
       "versionName": "0.2.9",
       "versionCode": 209,
       "releasedAt": "2026-05-28T01:25:59Z",
-      "summary": "Added manual cleaning and made the cleaning cycle more reliable.",
+      "summary": {
+        "en": "Added manual cleaning and made the cleaning cycle more reliable.",
+        "ko": "수동 세척 기능을 추가하고 세척 동작을 더 안정적으로 개선했습니다."
+      },
       "changes": [
         {
           "type": "feature",
-          "text": "Run a cleaning cycle directly from Settings > Maintenance (after closing the door)."
+          "text": {
+            "en": "Run a cleaning cycle directly from Settings > Maintenance (after closing the door).",
+            "ko": "설정 > 정비에서 직접 세척을 실행할 수 있습니다(문을 닫은 뒤 진행)."
+          }
         },
         {
           "type": "improvement",
-          "text": "Confirms the nozzle has lowered to the cleaning position before starting."
+          "text": {
+            "en": "Confirms the nozzle has lowered to the cleaning position before starting.",
+            "ko": "세척을 시작하기 전에 노즐이 세척 위치까지 내려갔는지 확인합니다."
+          }
         },
         {
           "type": "fix",
-          "text": "Fixed an issue where the cleaning spray did not stop."
+          "text": {
+            "en": "Fixed an issue where the cleaning spray did not stop.",
+            "ko": "세척수 분사가 멈추지 않던 문제를 수정했습니다."
+          }
         }
       ]
     },
@@ -132,15 +201,24 @@
       "versionName": "0.2.8",
       "versionCode": 208,
       "releasedAt": "2026-05-27T07:33:55Z",
-      "summary": "Added remote media for the slideshows.",
+      "summary": {
+        "en": "Added remote media for the slideshows.",
+        "ko": "슬라이드쇼에 원격 미디어 기능을 추가했습니다."
+      },
       "changes": [
         {
           "type": "feature",
-          "text": "Add image, video, or zip URLs and the app downloads and displays them automatically."
+          "text": {
+            "en": "Add image, video, or zip URLs and the app downloads and displays them automatically.",
+            "ko": "이미지·영상·압축(zip) 파일 주소(URL)를 입력하면 앱이 자동으로 내려받아 표시합니다."
+          }
         },
         {
           "type": "improvement",
-          "text": "Works alongside manually uploaded media, with a Sync now button."
+          "text": {
+            "en": "Works alongside manually uploaded media, with a Sync now button.",
+            "ko": "직접 올린 자료와 함께 사용할 수 있으며, ‘지금 동기화’ 버튼을 제공합니다."
+          }
         }
       ]
     },
@@ -148,11 +226,17 @@
       "versionName": "0.2.7",
       "versionCode": 207,
       "releasedAt": "2026-05-27T05:18:59Z",
-      "summary": "Stability improvement for serving.",
+      "summary": {
+        "en": "Stability improvement for serving.",
+        "ko": "음료 제공 동작의 안정성을 개선했습니다."
+      },
       "changes": [
         {
           "type": "improvement",
-          "text": "The machine returns to its home position after mixing, before serving the drink."
+          "text": {
+            "en": "The machine returns to its home position after mixing, before serving the drink.",
+            "ko": "믹싱이 끝난 뒤 음료를 내보내기 전에 기기가 제자리로 돌아옵니다."
+          }
         }
       ]
     },
@@ -160,11 +244,17 @@
       "versionName": "0.2.6",
       "versionCode": 206,
       "releasedAt": "2026-05-27T01:48:30Z",
-      "summary": "Safety adjustment for mixing.",
+      "summary": {
+        "en": "Safety adjustment for mixing.",
+        "ko": "믹싱 동작의 안전성을 조정했습니다."
+      },
       "changes": [
         {
           "type": "improvement",
-          "text": "The mixing descent now always stays within the safe height range."
+          "text": {
+            "en": "The mixing descent now always stays within the safe height range.",
+            "ko": "믹싱 시 하강 동작이 항상 안전 높이 범위 안에서 이루어집니다."
+          }
         }
       ]
     },
@@ -172,15 +262,24 @@
       "versionName": "0.2.5",
       "versionCode": 205,
       "releasedAt": "2026-05-27T01:24:17Z",
-      "summary": "Added a new menu item.",
+      "summary": {
+        "en": "Added a new menu item.",
+        "ko": "새 메뉴를 추가했습니다."
+      },
       "changes": [
         {
           "type": "feature",
-          "text": "Added the Strawberry Mango Blueberry Smoothie."
+          "text": {
+            "en": "Added the Strawberry Mango Blueberry Smoothie.",
+            "ko": "‘딸기 망고 블루베리 스무디’를 추가했습니다."
+          }
         },
         {
           "type": "improvement",
-          "text": "Fine-tuned the brewing positions."
+          "text": {
+            "en": "Fine-tuned the brewing positions.",
+            "ko": "제조 동작 위치를 미세 조정했습니다."
+          }
         }
       ]
     },
@@ -188,15 +287,24 @@
       "versionName": "0.2.4",
       "versionCode": 204,
       "releasedAt": "2026-05-27T01:14:20Z",
-      "summary": "Added a reset (abort) function for in-progress drinks.",
+      "summary": {
+        "en": "Added a reset (abort) function for in-progress drinks.",
+        "ko": "제조 중인 음료를 중단(초기화)하는 기능을 추가했습니다."
+      },
       "changes": [
         {
           "type": "feature",
-          "text": "Safely stop a drink in progress and return to idle: reset only, or reset and return to the home position."
+          "text": {
+            "en": "Safely stop a drink in progress and return to idle: reset only, or reset and return to the home position.",
+            "ko": "진행 중인 제조를 안전하게 멈추고 대기 상태로 되돌릴 수 있습니다(중단만, 또는 중단 후 제자리 복귀 중 선택)."
+          }
         },
         {
           "type": "improvement",
-          "text": "Water, motors, and other outputs shut off safely when a drink is aborted."
+          "text": {
+            "en": "Water, motors, and other outputs shut off safely when a drink is aborted.",
+            "ko": "제조를 중단하면 물과 모터 등 모든 출력이 안전하게 꺼집니다."
+          }
         }
       ]
     },
@@ -204,11 +312,17 @@
       "versionName": "0.2.3",
       "versionCode": 203,
       "releasedAt": "2026-05-26T04:17:52Z",
-      "summary": "Stability tuning.",
+      "summary": {
+        "en": "Stability tuning.",
+        "ko": "안정성 개선을 위한 조정입니다."
+      },
       "changes": [
         {
           "type": "improvement",
-          "text": "Tuned the machine's default motion speed for better stability."
+          "text": {
+            "en": "Tuned the machine's default motion speed for better stability.",
+            "ko": "기기 기본 동작 속도를 조정해 안정성을 높였습니다."
+          }
         }
       ]
     },
@@ -216,11 +330,17 @@
       "versionName": "0.2.2",
       "versionCode": 202,
       "releasedAt": "2026-05-26T03:19:39Z",
-      "summary": "Stability release.",
+      "summary": {
+        "en": "Stability release.",
+        "ko": "안정화 릴리스입니다."
+      },
       "changes": [
         {
           "type": "chore",
-          "text": "Applied internal settings for the production hardware configuration."
+          "text": {
+            "en": "Applied internal settings for the production hardware configuration.",
+            "ko": "생산 하드웨어 사양에 맞춘 내부 설정을 적용했습니다."
+          }
         }
       ]
     }

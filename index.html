@@ -5,12 +5,15 @@
   This file is the source-of-truth template; release.yml copies it into the
   distribution repo on every release. Edit the design HERE, not in that repo.
 
-  A product-style changelog app: version sidebar with scroll-spy, sticky
-  category filter tabs + live search, typed change badges. Backfilled entries
-  carry typed `changes`; releases written by release.yml carry only free-text
-  `notes`, which the page parses into typed changes so tabs keep working.
+  A product-style changelog app with i18n: language toggle, version sidebar
+  with scroll-spy, sticky category filter tabs + live search, typed badges.
+
+  Adding a language later: add it to LANGS + I18N below, and provide that key
+  in changelog.json's summary/text objects (or fenced ---xx--- tag sections).
+  Content fields may be a plain string (shown for every language) or an object
+  like {"en": "...", "ko": "..."}; missing translations fall back gracefully.
 -->
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,7 +36,7 @@
       --accent:  #d6336c;
       --accent-weak: color-mix(in srgb, var(--accent) 12%, transparent);
       --ring:    color-mix(in srgb, var(--accent) 35%, transparent);
-      --shadow:  0 1px 2px rgba(14, 16, 20, 0.04), 0 12px 32px -16px rgba(14, 16, 20, 0.18);
+      --shadow:  0 1px 2px rgba(14,16,20,0.04), 0 12px 32px -16px rgba(14,16,20,0.18);
 
       --c-feature-fg: #0c7a43; --c-feature-bg: #d9f3e4;
       --c-improvement-fg: #3340c0; --c-improvement-bg: #e2e6fb;
@@ -42,7 +45,7 @@
 
       --font: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
-      --kr: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      --kr: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
       --header-h: 60px;
     }
     @media (prefers-color-scheme: dark) {
@@ -72,7 +75,8 @@
       font-family: var(--font); font-size: 15px; line-height: 1.6;
       -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
     }
-    :lang(ko), .kr { font-family: var(--kr); }
+    html[lang="ko"] body { font-family: var(--kr); }
+    button, input { font: inherit; color: inherit; }
     a { color: inherit; }
 
     /* ---------- header ---------- */
@@ -100,31 +104,35 @@
       width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.9);
     }
     .brand small { display: block; font-weight: 450; color: var(--muted); font-size: 11px; letter-spacing: 0.04em; }
-    .header .tag-latest {
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    .tag-latest {
       font-family: var(--mono); font-size: 12px; color: var(--muted);
       padding: 5px 10px; border: 1px solid var(--line-2); border-radius: 999px;
     }
-    .header .tag-latest b { color: var(--ink); font-weight: 600; }
+    .tag-latest b { color: var(--ink); font-weight: 600; }
+
+    /* language toggle */
+    .langs { display: inline-flex; gap: 2px; padding: 2px; border: 1px solid var(--line-2); border-radius: 999px; background: var(--bg-soft); }
+    .langs button {
+      padding: 4px 11px; border: none; border-radius: 999px; cursor: pointer;
+      font-size: 12.5px; font-weight: 500; color: var(--muted); background: transparent;
+      transition: color 0.15s, background 0.15s;
+    }
+    .langs button:hover { color: var(--ink-2); }
+    .langs button[aria-pressed="true"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,0.10); }
 
     /* ---------- shell ---------- */
     .shell {
       max-width: 1200px; margin: 0 auto; padding: 0 24px;
-      display: grid; grid-template-columns: 232px 1fr; gap: 56px;
-      align-items: start;
+      display: grid; grid-template-columns: 232px 1fr; gap: 56px; align-items: start;
     }
-
-    /* ---------- sidebar ---------- */
     .sidebar { position: sticky; top: calc(var(--header-h) + 24px); padding: 32px 0; }
-    .sidebar h3 {
-      margin: 0 0 12px; padding: 0 10px; font-size: 11px; font-weight: 600;
-      letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
-    }
+    .sidebar h3 { margin: 0 0 12px; padding: 0 10px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
     .nav { list-style: none; margin: 0; padding: 0; max-height: calc(100vh - var(--header-h) - 110px); overflow: auto; }
     .nav li a {
       display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
-      padding: 7px 10px; border-radius: 8px; text-decoration: none;
-      color: var(--muted); font-size: 13px; transition: background 0.15s, color 0.15s;
-      border-left: 2px solid transparent;
+      padding: 7px 10px; border-radius: 8px; text-decoration: none; color: var(--muted);
+      font-size: 13px; border-left: 2px solid transparent; transition: background 0.15s, color 0.15s;
     }
     .nav li a .nv { font-family: var(--mono); font-weight: 500; color: var(--ink-2); font-size: 13px; }
     .nav li a .nd { font-size: 11.5px; color: var(--muted); font-family: var(--mono); }
@@ -138,7 +146,6 @@
     .intro h1 { margin: 0 0 8px; font-size: 30px; font-weight: 700; letter-spacing: -0.025em; color: var(--ink); }
     .intro p { margin: 0; color: var(--muted); font-size: 15px; }
 
-    /* ---------- filter bar ---------- */
     .filters {
       position: sticky; top: var(--header-h); z-index: 20;
       display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
@@ -151,24 +158,19 @@
     .tabs { display: flex; gap: 7px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
     .tabs::-webkit-scrollbar { display: none; }
     .tab {
-      font-family: var(--font); font-size: 13px; font-weight: 500; white-space: nowrap;
+      font-size: 13px; font-weight: 500; white-space: nowrap;
       display: inline-flex; align-items: center; gap: 7px;
       padding: 7px 13px; border-radius: 999px; cursor: pointer;
-      color: var(--ink-2); background: transparent;
-      border: 1px solid var(--line-2); transition: all 0.15s;
+      color: var(--ink-2); background: transparent; border: 1px solid var(--line-2);
+      transition: all 0.15s;
     }
     .tab:hover { border-color: var(--ink-2); }
-    .tab .count {
-      font-family: var(--mono); font-size: 11px; color: var(--muted);
-      background: var(--bg-soft); padding: 1px 6px; border-radius: 999px;
-    }
+    .tab .count { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg-soft); padding: 1px 6px; border-radius: 999px; }
     .tab[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
     .tab[aria-selected="true"] .count { background: rgba(255,255,255,0.22); color: #fff; }
-    .search {
-      margin-left: auto; position: relative; flex: 0 1 230px; min-width: 150px;
-    }
+    .search { margin-left: auto; position: relative; flex: 0 1 230px; min-width: 150px; }
     .search input {
-      width: 100%; font-family: var(--font); font-size: 13.5px; color: var(--ink);
+      width: 100%; font-size: 13.5px; color: var(--ink);
       padding: 8px 12px 8px 32px; border-radius: 9px;
       background: var(--bg-soft); border: 1px solid var(--line-2);
       outline: none; transition: border-color 0.15s, box-shadow 0.15s;
@@ -177,7 +179,6 @@
     .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring); }
     .search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); }
 
-    /* ---------- releases ---------- */
     .release { padding: 34px 0; border-top: 1px solid var(--line); scroll-margin-top: calc(var(--header-h) + 64px); }
     .release.first { border-top: none; }
     .release-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -203,18 +204,10 @@
     .badge.fix { color: var(--c-fix-fg); background: var(--c-fix-bg); }
     .badge.chore { color: var(--c-chore-fg); background: var(--c-chore-bg); }
     .change[hidden], .release[hidden] { display: none; }
-
     .state { padding: 80px 0; text-align: center; color: var(--muted); }
 
-    /* ---------- responsive ---------- */
-    @media (max-width: 880px) {
-      .shell { grid-template-columns: 1fr; gap: 0; }
-      .sidebar { display: none; }
-    }
-    @media (max-width: 560px) {
-      .change { grid-template-columns: 1fr; gap: 6px; }
-      .header .tag-latest { display: none; }
-    }
+    @media (max-width: 880px) { .shell { grid-template-columns: 1fr; gap: 0; } .sidebar { display: none; } }
+    @media (max-width: 560px) { .change { grid-template-columns: 1fr; gap: 6px; } .tag-latest { display: none; } }
     @media (prefers-reduced-motion: no-preference) {
       .release { animation: fade 0.5s ease both; }
       @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
@@ -228,93 +221,135 @@
         <span class="logo" aria-hidden="true"></span>
         <span>스무디 키오스크<small>Smoothie Kiosk</small></span>
       </span>
-      <span class="tag-latest" id="latest-tag" hidden></span>
+      <span class="header-right">
+        <span class="langs" id="langs" role="group" aria-label="Language"></span>
+        <span class="tag-latest" id="latest-tag" hidden></span>
+      </span>
     </div>
   </header>
 
   <div class="shell">
     <aside class="sidebar">
-      <h3>Versions</h3>
+      <h3 id="nav-heading">Versions</h3>
       <ul class="nav" id="nav"></ul>
     </aside>
 
     <main>
       <div class="intro">
-        <h1>Changelog</h1>
-        <p class="kr">스무디 키오스크 앱의 새로운 기능과 개선 사항입니다.</p>
+        <h1 id="title">Changelog</h1>
+        <p id="intro-text"></p>
       </div>
 
       <div class="filters">
         <div class="tabs" id="tabs" role="tablist" aria-label="Filter by type"></div>
         <div class="search">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-          <input id="search" type="search" placeholder="Search updates…" autocomplete="off" aria-label="Search updates" />
+          <input id="search" type="search" autocomplete="off" aria-label="Search updates" />
         </div>
       </div>
 
-      <div id="releases"><p class="state" id="state">불러오는 중…</p></div>
+      <div id="releases"><p class="state" id="state">…</p></div>
     </main>
   </div>
 
   <script>
+    /* ---- config: add a language here + provide its key in changelog.json ---- */
+    const LANGS = [
+      { code: "ko", label: "한국어" },
+      { code: "en", label: "EN" },
+    ];
+    const DEFAULT_LANG = "en";
+    const I18N = {
+      en: {
+        changelog: "Changelog",
+        intro: "New features and improvements in the Smoothie Kiosk app.",
+        search: "Search updates…",
+        versions: "Versions",
+        latest: "Latest",
+        tabs: { all: "All", feature: "Features", improvement: "Improvements", fix: "Fixes" },
+        badge: { feature: "New", improvement: "Improved", fix: "Fixed", chore: "Maintenance" },
+        loading: "Loading…",
+        empty: "No matching updates.",
+        none: "No updates yet.",
+        error: "Couldn't load the update history. Please try again later.",
+      },
+      ko: {
+        changelog: "업데이트 노트",
+        intro: "스무디 키오스크 앱의 새로운 기능과 개선 사항입니다.",
+        search: "업데이트 검색…",
+        versions: "버전",
+        latest: "최신",
+        tabs: { all: "전체", feature: "새 기능", improvement: "개선", fix: "수정" },
+        badge: { feature: "신규", improvement: "개선", fix: "수정", chore: "기타" },
+        loading: "불러오는 중…",
+        empty: "일치하는 업데이트가 없습니다.",
+        none: "아직 등록된 업데이트 내역이 없습니다.",
+        error: "업데이트 내역을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.",
+      },
+    };
+    const TAB_ORDER = ["all", "feature", "improvement", "fix"];
+
+    let RELEASES = [];
+    let lang = DEFAULT_LANG;
+    let activeTab = "all";
+    let query = "";
+
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
     }[c]));
     const fmtDate = (iso) =>
       typeof iso === "string" && iso.length >= 10 ? iso.slice(0, 10).replace(/-/g, ".") : "";
+    const t = () => I18N[lang] || I18N[DEFAULT_LANG];
 
-    const TABS = [
-      { key: "all", label: "All" },
-      { key: "feature", label: "Features" },
-      { key: "improvement", label: "Improvements" },
-      { key: "fix", label: "Fixes" },
-    ];
-    const BADGE = { feature: "New", improvement: "Improved", fix: "Fixed", chore: "Maintenance" };
+    // Resolve an i18n field: a plain string applies to every language; an object
+    // {en,ko,...} picks the active language, then DEFAULT_LANG, then anything set.
+    function pick(field) {
+      if (field == null) return "";
+      if (typeof field === "string") return field;
+      return field[lang] || field[DEFAULT_LANG] || Object.values(field).find(Boolean) || "";
+    }
 
-    // Heuristic type for free-text bullets (future releases from release.yml).
     function inferType(text) {
-      const t = text.toLowerCase();
-      if (/(^|\b)(fix|fixed|resolve|resolved|bug|오류|버그|수정|문제)/.test(t)) return "fix";
-      if (/(add|added|new|introduc|support|추가|지원|신규|새 )/.test(t)) return "feature";
-      if (/(internal|diagnostic|no visible|no user-facing|내부|진단)/.test(t)) return "chore";
+      const x = text.toLowerCase();
+      if (/(^|\b)(fix|fixed|resolve|resolved|bug|오류|버그|수정|문제)/.test(x)) return "fix";
+      if (/(add|added|new|introduc|support|추가|지원|신규|새 )/.test(x)) return "feature";
+      if (/(internal|diagnostic|no visible|no user-facing|내부|진단)/.test(x)) return "chore";
       return "improvement";
     }
 
-    // Normalize a release into { versionName, releasedAt, summary, changes:[{type,text}] }.
-    // Accepts either typed `changes` (backfill) or free-text `notes` (workflow).
-    function normalize(r) {
-      let summary = r.summary || "";
-      let changes = [];
+    // Resolve a raw release into the active language: { versionName, releasedAt, summary, changes }.
+    function buildRelease(r) {
+      let summary = "", changes = [];
       if (Array.isArray(r.changes) && r.changes.length) {
-        changes = r.changes.map((c) => ({ type: c.type || inferType(c.text || ""), text: c.text || "" }));
+        summary = pick(r.summary);
+        changes = r.changes.map((c) => {
+          const text = pick(c.text);
+          return { type: c.type || inferType(text), text };
+        });
       } else {
-        const text = String(r.notes || "").replace(/\r\n/g, "\n").trim();
+        const text = String(pick(r.notes)).replace(/\r\n/g, "\n").trim();
         const intro = [];
         for (const line of text.split("\n")) {
           const m = line.match(/^\s*[-*•]\s+(.*)$/);
           if (m) changes.push({ type: inferType(m[1]), text: m[1].trim() });
           else if (line.trim()) intro.push(line.trim());
         }
-        if (!summary && intro.length) summary = intro.join(" ");
-        // A release with prose but no bullets: treat the summary as one change.
+        summary = pick(r.summary) || intro.join(" ");
         if (!changes.length && summary) changes.push({ type: inferType(summary), text: summary });
       }
       return { versionName: r.versionName || "?", releasedAt: r.releasedAt || "", summary, changes };
     }
 
-    let RELEASES = [];
-    let activeTab = "all";
-    let query = "";
-
-    function renderTabs() {
+    function renderTabs(built) {
+      const tr = t();
       const counts = { all: 0, feature: 0, improvement: 0, fix: 0 };
-      RELEASES.forEach((r) => r.changes.forEach((c) => {
+      built.forEach((r) => r.changes.forEach((c) => {
         counts.all++;
         if (counts[c.type] !== undefined) counts[c.type]++;
       }));
-      document.getElementById("tabs").innerHTML = TABS.map((t) =>
-        '<button class="tab" role="tab" data-tab="' + t.key + '" aria-selected="' + (t.key === activeTab) + '">' +
-          t.label + '<span class="count">' + counts[t.key] + "</span>" +
+      document.getElementById("tabs").innerHTML = TAB_ORDER.map((key) =>
+        '<button class="tab" role="tab" data-tab="' + key + '" aria-selected="' + (key === activeTab) + '">' +
+          esc(tr.tabs[key]) + '<span class="count">' + counts[key] + "</span>" +
         "</button>"
       ).join("");
     }
@@ -328,12 +363,13 @@
       ).join("");
     }
 
-    function renderReleases() {
-      document.getElementById("releases").innerHTML = RELEASES.map((r, i) => {
+    function renderReleases(built) {
+      const tr = t();
+      document.getElementById("releases").innerHTML = built.map((r, i) => {
         const id = "v" + esc(r.versionName);
         const changes = r.changes.map((c) =>
           '<li class="change" data-type="' + esc(c.type) + '" data-text="' + esc(c.text.toLowerCase()) + '">' +
-            '<span class="badge ' + esc(c.type) + '">' + (BADGE[c.type] || c.type) + "</span>" +
+            '<span class="badge ' + esc(c.type) + '">' + esc(tr.badge[c.type] || c.type) + "</span>" +
             "<p>" + esc(c.text) + "</p>" +
           "</li>"
         ).join("");
@@ -342,7 +378,7 @@
             '" data-ver="' + esc(r.versionName.toLowerCase()) + '" style="animation-delay:' + Math.min(i * 0.03, 0.3) + 's">' +
             '<div class="release-head">' +
               '<span class="release-ver"><a href="#' + id + '">v' + esc(r.versionName) + "</a></span>" +
-              (i === 0 ? '<span class="latest">Latest</span>' : "") +
+              (i === 0 ? '<span class="latest">' + esc(tr.latest) + "</span>" : "") +
               '<span class="release-date">' + esc(fmtDate(r.releasedAt)) + "</span>" +
             "</div>" +
             (r.summary ? '<p class="release-summary">' + esc(r.summary) + "</p>" : "") +
@@ -354,7 +390,7 @@
     }
 
     function applyFilter() {
-      let anyRelease = false;
+      let any = false;
       document.querySelectorAll(".release").forEach((rel) => {
         let visible = 0;
         const verMatch = !query || rel.dataset.ver.includes(query);
@@ -366,28 +402,25 @@
           if (show) visible++;
         });
         rel.hidden = visible === 0;
-        if (visible) anyRelease = true;
+        if (visible) any = true;
       });
       let empty = document.getElementById("empty-state");
-      if (!anyRelease) {
+      if (!any) {
         if (!empty) {
           empty = document.createElement("p");
           empty.id = "empty-state"; empty.className = "state";
-          empty.textContent = "No matching updates.";
           document.getElementById("releases").appendChild(empty);
         }
-        empty.hidden = false;
+        empty.textContent = t().empty; empty.hidden = false;
       } else if (empty) empty.hidden = true;
     }
 
-    // Scroll-spy: highlight the version in view.
     const spy = (() => {
       let obs = null, active = null;
       const set = (id) => {
         if (id === active) return;
         active = id;
-        document.querySelectorAll("#nav li").forEach((li) =>
-          li.classList.toggle("active", li.dataset.nav === id));
+        document.querySelectorAll("#nav li").forEach((li) => li.classList.toggle("active", li.dataset.nav === id));
       };
       return {
         observeAll() {
@@ -402,13 +435,56 @@
       };
     })();
 
+    function renderLangToggle() {
+      document.getElementById("langs").innerHTML = LANGS.map((l) =>
+        '<button type="button" data-lang="' + l.code + '" aria-pressed="' + (l.code === lang) + '">' + esc(l.label) + "</button>"
+      ).join("");
+    }
+
+    function updateUI() {
+      const tr = t();
+      document.documentElement.lang = lang;
+      document.getElementById("title").textContent = tr.changelog;
+      document.getElementById("intro-text").textContent = tr.intro;
+      document.getElementById("search").placeholder = tr.search;
+      document.getElementById("nav-heading").textContent = tr.versions;
+      const tag = document.getElementById("latest-tag");
+      if (RELEASES.length) { tag.innerHTML = esc(tr.latest) + ' <b>v' + esc(RELEASES[0].versionName) + "</b>"; tag.hidden = false; }
+      document.querySelectorAll("#langs button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+
+      const built = RELEASES.map(buildRelease);
+      renderTabs(built);
+      renderNav();
+      renderReleases(built);
+      applyFilter();
+    }
+
+    function setLang(code) {
+      if (!LANGS.some((l) => l.code === code) || code === lang) return;
+      lang = code;
+      try { localStorage.setItem("cl-lang", code); } catch (e) {}
+      updateUI();
+    }
+
+    function detectLang() {
+      try {
+        const stored = localStorage.getItem("cl-lang");
+        if (stored && LANGS.some((l) => l.code === stored)) return stored;
+      } catch (e) {}
+      const nav = (navigator.language || "").slice(0, 2).toLowerCase();
+      return LANGS.some((l) => l.code === nav) ? nav : DEFAULT_LANG;
+    }
+
     function wire() {
+      document.getElementById("langs").addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-lang]");
+        if (b) setLang(b.dataset.lang);
+      });
       document.getElementById("tabs").addEventListener("click", (e) => {
         const btn = e.target.closest(".tab");
         if (!btn) return;
         activeTab = btn.dataset.tab;
-        document.querySelectorAll(".tab").forEach((t) =>
-          t.setAttribute("aria-selected", t.dataset.tab === activeTab));
+        document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === activeTab));
         applyFilter();
       });
       document.getElementById("search").addEventListener("input", (e) => {
@@ -420,19 +496,19 @@
     fetch("./changelog.json", { cache: "no-cache" })
       .then((res) => { if (!res.ok) throw new Error("HTTP " + res.status); return res.json(); })
       .then((data) => {
-        RELEASES = (data.releases || []).map(normalize);
+        RELEASES = data.releases || [];
+        lang = detectLang();
         if (!RELEASES.length) {
-          document.getElementById("releases").innerHTML = '<p class="state">아직 등록된 업데이트 내역이 없습니다.</p>';
-          return;
+          document.documentElement.lang = lang;
+          document.getElementById("releases").innerHTML = '<p class="state">' + esc(t().none) + "</p>";
+          renderLangToggle(); return;
         }
-        renderTabs(); renderNav(); renderReleases(); wire();
-        const tag = document.getElementById("latest-tag");
-        tag.innerHTML = "Latest <b>v" + esc(RELEASES[0].versionName) + "</b>";
-        tag.hidden = false;
+        renderLangToggle();
+        wire();
+        updateUI();
       })
       .catch(() => {
-        document.getElementById("state").textContent =
-          "업데이트 내역을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.";
+        document.getElementById("state").textContent = t().error;
       });
   </script>
 </body>
