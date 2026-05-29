@@ -1,0 +1,228 @@
+{
+  "releases": [
+    {
+      "versionName": "0.2.17",
+      "versionCode": 217,
+      "releasedAt": "2026-05-29T05:57:40Z",
+      "summary": "Refined the idle screen for better readability.",
+      "changes": [
+        {
+          "type": "improvement",
+          "text": "Enlarged the bottom guidance text and icons."
+        },
+        {
+          "type": "improvement",
+          "text": "Strengthened the background gradient so guidance stays legible over bright photos and videos."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.16",
+      "versionCode": 216,
+      "releasedAt": "2026-05-29T01:42:27Z",
+      "summary": "Internal cleanup with no visible change on screen.",
+      "changes": [
+        {
+          "type": "chore",
+          "text": "Internal maintenance only; nothing changes for daily use."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.15",
+      "versionCode": 215,
+      "releasedAt": "2026-05-28T08:54:19Z",
+      "summary": "Fixed a password-change error.",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Input from a previous step no longer carries over during the multi-step password change (verify current, enter new, confirm new). Applies to both admin and technician passwords."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.14",
+      "versionCode": 214,
+      "releasedAt": "2026-05-28T06:12:14Z",
+      "summary": "Improved internal diagnostics tooling.",
+      "changes": [
+        {
+          "type": "chore",
+          "text": "Developer diagnostics improvement; no user-facing change."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.13",
+      "versionCode": 213,
+      "releasedAt": "2026-05-28T04:47:09Z",
+      "summary": "Reorganized the maintenance menu.",
+      "changes": [
+        {
+          "type": "improvement",
+          "text": "Grouped Auto Setup, Manual Cleaning, and Reset Sequence under a single Maintenance menu."
+        },
+        {
+          "type": "improvement",
+          "text": "Moved Manual Cleaning where store operators can reach it directly."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.12",
+      "versionCode": 212,
+      "releasedAt": "2026-05-28T03:49:40Z",
+      "summary": "Fixed slideshow media handling.",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "The original file name and format are now preserved for slideshow media."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.11",
+      "versionCode": 211,
+      "releasedAt": "2026-05-28T02:53:28Z",
+      "summary": "Fixed the version display.",
+      "changes": [
+        {
+          "type": "fix",
+          "text": "Settings > About now shows the actual installed app version."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.10",
+      "versionCode": 210,
+      "releasedAt": "2026-05-28T02:22:46Z",
+      "summary": "Improved the automatic update experience.",
+      "changes": [
+        {
+          "type": "improvement",
+          "text": "The download screen appears instantly when you tap Install now."
+        },
+        {
+          "type": "fix",
+          "text": "The screen no longer closes on its own while an update is in progress."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.9",
+      "versionCode": 209,
+      "releasedAt": "2026-05-28T01:25:59Z",
+      "summary": "Added manual cleaning and made the cleaning cycle more reliable.",
+      "changes": [
+        {
+          "type": "feature",
+          "text": "Run a cleaning cycle directly from Settings > Maintenance (after closing the door)."
+        },
+        {
+          "type": "improvement",
+          "text": "Confirms the nozzle has lowered to the cleaning position before starting."
+        },
+        {
+          "type": "fix",
+          "text": "Fixed an issue where the cleaning spray did not stop."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.8",
+      "versionCode": 208,
+      "releasedAt": "2026-05-27T07:33:55Z",
+      "summary": "Added remote media for the slideshows.",
+      "changes": [
+        {
+          "type": "feature",
+          "text": "Add image, video, or zip URLs and the app downloads and displays them automatically."
+        },
+        {
+          "type": "improvement",
+          "text": "Works alongside manually uploaded media, with a Sync now button."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.7",
+      "versionCode": 207,
+      "releasedAt": "2026-05-27T05:18:59Z",
+      "summary": "Stability improvement for serving.",
+      "changes": [
+        {
+          "type": "improvement",
+          "text": "The machine returns to its home position after mixing, before serving the drink."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.6",
+      "versionCode": 206,
+      "releasedAt": "2026-05-27T01:48:30Z",
+      "summary": "Safety adjustment for mixing.",
+      "changes": [
+        {
+          "type": "improvement",
+          "text": "The mixing descent now always stays within the safe height range."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.5",
+      "versionCode": 205,
+      "releasedAt": "2026-05-27T01:24:17Z",
+      "summary": "Added a new menu item.",
+      "changes": [
+        {
+          "type": "feature",
+          "text": "Added the Strawberry Mango Blueberry Smoothie."
+        },
+        {
+          "type": "improvement",
+          "text": "Fine-tuned the brewing positions."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.4",
+      "versionCode": 204,
+      "releasedAt": "2026-05-27T01:14:20Z",
+      "summary": "Added a reset (abort) function for in-progress drinks.",
+      "changes": [
+        {
+          "type": "feature",
+          "text": "Safely stop a drink in progress and return to idle: reset only, or reset and return to the home position."
+        },
+        {
+          "type": "improvement",
+          "text": "Water, motors, and other outputs shut off safely when a drink is aborted."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.3",
+      "versionCode": 203,
+      "releasedAt": "2026-05-26T04:17:52Z",
+      "summary": "Stability tuning.",
+      "changes": [
+        {
+          "type": "improvement",
+          "text": "Tuned the machine's default motion speed for better stability."
+        }
+      ]
+    },
+    {
+      "versionName": "0.2.2",
+      "versionCode": 202,
+      "releasedAt": "2026-05-26T03:19:39Z",
+      "summary": "Stability release.",
+      "changes": [
+        {
+          "type": "chore",
+          "text": "Applied internal settings for the production hardware configuration."
+        }
+      ]
+    }
+  ]
+}
