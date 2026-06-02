@@ -1,9 +1,9 @@
 {
-  "versionCode": 303,
-  "versionName": "0.3.3",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.3/app-release.apk",
-  "sha256": "339b1d040b933458623fa26aebcbabe6551604c358810a2a93ca94310a3a93d9",
+  "versionCode": 304,
+  "versionName": "0.3.4",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.4/app-release.apk",
+  "sha256": "e073380d9ba7eb581dd54dc5922ff4dda9e06d4f168f4a9fec928865328e9f18",
   "minVersionCode": 1,
-  "releaseNotes": "- 하드웨어 설정의 '유지(hold)' 릴레이 테스트 버튼이 이제 실제 운영 명령(relay.hold)을 사용합니다. 3초간 유지한 뒤 자동으로 끕니다 — 기존 500ms 펄스는 배선만 확인할 뿐 hold 동작은 검증하지 못했습니다.\n- 하드웨어 테스트 콘솔이 이제 정규 키 순서와 XOR 체크섬(chk)이 포함된 프레임을 전송합니다 — 최신 펌웨어에서 명령을 신뢰성 있게 테스트할 수 있습니다.",
-  "releasedAt": "2026-06-02T05:51:25Z"
+  "releaseNotes": "전체 세척 / Full Cleaning 기능을 추가하고, 24시간 식품 안전 게이트를 도입했습니다.\n\n- 설정 → 정비 화면에 \"전체 세척\" 사이클이 추가되었습니다. 세정액을 컵에 담아 기기에 올려놓으면 세척이 진행되고, 이후 자동으로 헹굼 단계(물)까지 완료됩니다.\n- 전체 세척은 레시피처럼 Y 위치, 믹싱 단계, 물 사용량을 설정할 수 있습니다.\n- 식품 안전 게이트: 마지막 전체 세척으로부터 설정된 시간(기본 24시간, 12~48시간 설정 가능)이 지나면 주문이 차단됩니다. 세척을 완료해야 다시 음료를 제조할 수 있습니다.\n- 기존 간단 세척은 \"간단 세척 / Short rinse\"로 이름이 변경되었습니다. 동작은 동일합니다.\n- 레시피 편집기에서 사용하지 않는 \"액체 종류\" 필드를 제거했습니다. 기존 데이터에는 영향이 없습니다.",
+  "releasedAt": "2026-06-02T07:14:25Z"
 }
