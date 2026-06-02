@@ -1,9 +1,9 @@
 {
-  "versionCode": 301,
-  "versionName": "0.3.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.1/app-release.apk",
-  "sha256": "424b1fc7447098d2a327e9d264d6f3ae89b7198e5fab0188ab84eef77a9deb1d",
+  "versionCode": 302,
+  "versionName": "0.3.2",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.2/app-release.apk",
+  "sha256": "ee6c2072835678a22f52f1dfee706bb2696261dcf277de11bd454b04d17f455d",
   "minVersionCode": 1,
-  "releaseNotes": "- 하드웨어 설정에서 세척 RPM 입력란을 BLDC 제어 항목 아래 별도 칸으로 옮겼습니다. 기능 변경은 없습니다.",
-  "releasedAt": "2026-06-02T04:30:53Z"
+  "releaseNotes": "- 세척 칼날 속도(RPM)를 하드웨어 설정의 BLDC 항목에 독립된 기능 행으로 만들었습니다 (라벨·포트·테스트 버튼 포함). 다른 BLDC 제어와 동일한 방식으로 설정·테스트할 수 있습니다.",
+  "releasedAt": "2026-06-02T05:04:01Z"
 }
