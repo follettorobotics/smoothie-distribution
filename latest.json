@@ -1,9 +1,9 @@
 {
-  "versionCode": 217,
-  "versionName": "0.2.17",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.2.17/app-release.apk",
-  "sha256": "0f724f4a0a65e1ddbc06941ebfe7b0db1925c863acc0ee64e39ddd4b39f0b423",
+  "versionCode": 300,
+  "versionName": "0.3.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.0/app-release.apk",
+  "sha256": "0601a361adc95db0bd0b53f253bcaa866276b4447d59d27f033d42d0c7e530c5",
   "minVersionCode": 1,
-  "releaseNotes": "v0.2.17 — Minimal idle theme readability improvements\n\n- Enlarged bottom prompt/instruction text in the Minimal (미니멀) idle theme for better legibility at kiosk viewing distance\n- Increased size and weight of step icons and labels in the Minimal theme bottom bar\n- Deepened the bottom gradient overlay so text and icons remain readable against varied background content",
-  "releasedAt": "2026-05-29T06:12:50Z"
+  "releaseNotes": "- 칼날 모터(BLDC) 구동 모드(조그 / RPM)를 기기별로 선택하는 설정을 추가했습니다. RPM 모드에서는 세척 속도(RPM)를 조정할 수 있습니다. 모드 전환은 하드웨어 개조가 필요합니다.\n- BLDC PWM 속도(RPM) 제어를 추가했습니다.\n- 안전성 개선: 제품 시퀀스를 중단하거나 정비/테스트 화면을 벗어날 때 칼날이 항상 정지하도록 보장합니다.",
+  "releasedAt": "2026-06-02T03:51:42Z"
 }
