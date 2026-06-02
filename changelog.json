@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.3.5",
+      "versionCode": 305,
+      "releasedAt": "2026-06-02T07:52:39Z",
+      "notes": {
+        "ko": "전체 세척 화면이 미사용 시간으로 자동으로 닫히지 않도록 수정했습니다.\n\n- 전체 세척 설정 화면과 진행 화면은 관리자 미사용 자동 종료(약 70초) 대상에서 제외됩니다. 입력이 없어도 대기 화면으로 닫히지 않으며, 세척 진행 중 화면이 닫혀 기기가 멈춰 보이던 문제도 방지합니다.",
+        "en": "Full Cleaning screens no longer auto-close after inactivity.\n\n- The Full Cleaning settings and run screens are now exempt from the admin idle timeout (~70s), so they won't drop back to the idle screen mid-task — and a long detergent cycle can't be hidden behind an auto-close."
+      }
+    },
+    {
       "versionName": "0.3.4",
       "versionCode": 304,
       "releasedAt": "2026-06-02T07:14:25Z",
