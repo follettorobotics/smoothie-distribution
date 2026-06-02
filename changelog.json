@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.3.1",
+      "versionCode": 301,
+      "releasedAt": "2026-06-02T04:30:53Z",
+      "notes": {
+        "ko": "- 하드웨어 설정에서 세척 RPM 입력란을 BLDC 제어 항목 아래 별도 칸으로 옮겼습니다. 기능 변경은 없습니다.",
+        "en": "- Moved the cleaning RPM field into its own card under the BLDC controls in hardware settings. No functional change."
+      }
+    },
+    {
       "versionName": "0.3.0",
       "versionCode": 300,
       "releasedAt": "2026-06-02T03:51:42Z",
