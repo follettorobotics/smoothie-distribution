@@ -1,9 +1,9 @@
 {
-  "versionCode": 302,
-  "versionName": "0.3.2",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.2/app-release.apk",
-  "sha256": "ee6c2072835678a22f52f1dfee706bb2696261dcf277de11bd454b04d17f455d",
+  "versionCode": 303,
+  "versionName": "0.3.3",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.3/app-release.apk",
+  "sha256": "339b1d040b933458623fa26aebcbabe6551604c358810a2a93ca94310a3a93d9",
   "minVersionCode": 1,
-  "releaseNotes": "- 세척 칼날 속도(RPM)를 하드웨어 설정의 BLDC 항목에 독립된 기능 행으로 만들었습니다 (라벨·포트·테스트 버튼 포함). 다른 BLDC 제어와 동일한 방식으로 설정·테스트할 수 있습니다.",
-  "releasedAt": "2026-06-02T05:04:01Z"
+  "releaseNotes": "- 하드웨어 설정의 '유지(hold)' 릴레이 테스트 버튼이 이제 실제 운영 명령(relay.hold)을 사용합니다. 3초간 유지한 뒤 자동으로 끕니다 — 기존 500ms 펄스는 배선만 확인할 뿐 hold 동작은 검증하지 못했습니다.\n- 하드웨어 테스트 콘솔이 이제 정규 키 순서와 XOR 체크섬(chk)이 포함된 프레임을 전송합니다 — 최신 펌웨어에서 명령을 신뢰성 있게 테스트할 수 있습니다.",
+  "releasedAt": "2026-06-02T05:51:25Z"
 }
