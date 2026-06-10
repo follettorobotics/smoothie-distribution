@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.4.5",
+      "versionCode": 405,
+      "releasedAt": "2026-06-10T09:52:24Z",
+      "notes": {
+        "ko": "제품 제조 후 세척 단계가 더 안정적으로 동작합니다. 컨트롤보드 릴레이를 세척 분사 소스로 사용하는 키오스크에서, 릴레이 신호와 블레이드 모터 신호가 동시에 전송될 때 발생하던 펌웨어 UART 유실 문제를 해결했습니다. 이로 인해 일부 현장에서 세척 중 분사가 되지 않거나 블레이드가 돌지 않는 현상이 간헐적으로 나타났으나, 두 신호를 순차 전송하도록 수정하여 해당 문제가 해소되었습니다.",
+        "en": "More reliable cleaning at the end of each drink. On kiosks where the cleaning spray is driven by a control-board relay, simultaneous relay and blade-motor commands could cause the firmware to drop a UART byte, silently skipping the spray or blade spin. The fix serializes the two sends so the firmware receives each command cleanly; the spray and blade still overlap physically because the firmware holds the relay on its own timer."
+      }
+    },
+    {
       "versionName": "0.4.4",
       "versionCode": 404,
       "releasedAt": "2026-06-10T08:24:19Z",
