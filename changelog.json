@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.3.6",
+      "versionCode": 306,
+      "releasedAt": "2026-06-10T01:20:54Z",
+      "notes": {
+        "ko": "전체 세척 설정에 '도어 닫힘 확인' 토글을 추가했습니다.\n\n이 옵션을 끄면 세척 중 도어가 열려 있어도 세척이 진행됩니다. 토글을 끄려면 점주가 명시적으로 동의해야 하며(장비가 도어 열린 상태에서 동작/분사될 수 있음), 동의 내역은 감사 로그에 영구 보존됩니다. 옵션을 끈 상태에서는 도어 센서 대신 점주가 직접 버튼을 눌러 각 단계를 진행하며, 화면에 경고 배너가 상시 표시됩니다. 도어 센서가 고장난 경우에도 24시간 주기 의무 세척을 빠짐없이 실행할 수 있습니다. 단, 독립 수동 헹굼은 기존과 동일하게 도어가 닫혀 있어야만 실행됩니다.",
+        "en": "Added a \"door close check\" toggle to Full Cleaning settings.\n\nWhen this toggle is turned off, cleaning proceeds even if the door remains open. Disabling it requires explicit owner consent (the machine may move and spray with the door open); the agreement is recorded permanently in the audit log and is exempt from log pruning. With the check disabled, the owner advances each cleaning stage via explicit on-screen buttons instead of the door sensor, and a standing warning banner is displayed throughout. This allows the mandatory 24-hour food-safety clean to run even when the door sensor is broken. The standalone manual rinse retains its hard door gate and is unaffected by this setting."
+      }
+    },
+    {
       "versionName": "0.3.5",
       "versionCode": 305,
       "releasedAt": "2026-06-02T07:52:39Z",
