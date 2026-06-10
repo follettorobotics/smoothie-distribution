@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.4.0",
+      "versionCode": 400,
+      "releasedAt": "2026-06-10T03:44:30Z",
+      "notes": {
+        "ko": "웹 레시피 편집기: 매장 WiFi에 연결된 스마트폰이나 PC에서 QR코드로 접속해 레시피와 믹싱 프로그램을 편집할 수 있습니다. 관리자 비밀번호로 세션 로그인하며, 태블릿과 동일한 안전 검증(범위 확인, 날 하강 게이트)과 전체 변경 이력을 제공합니다.\n\n신규 메뉴 — Eiden Tall / Eiden Grande: 두 가지 Eiden 사이즈(Tall 정수 120ml, Grande 정수 150ml)가 추가되었습니다. 앱 업그레이드 시 자동으로 등록되며, 기존에 편집한 레시피는 영향받지 않습니다.\n\n기술 설정 서버(기술자 전용): WiFi를 통해 연결 설정, 포트 매핑, 하드웨어 진단을 원격으로 조회·조작할 수 있는 웹 서버를 추가했습니다. 기술자 비밀번호 필요, 앱 재시작 시 자동으로 꺼집니다.",
+        "en": "Web recipe editor: a QR code / URL on the recipe screen lets any phone or PC on the store WiFi open a styled editor (session login with the admin password) to edit recipes and mixing programs, with the same safety validation as the tablet (bounds checking, Y-descent gate) and full change history.\n\nNew menus — Eiden Tall / Eiden Grande: two Eiden size options (Tall 120 ml purified, Grande 150 ml purified) with the 21-step blade-height profile and 5-stage RPM ramp. Both are seeded automatically on upgrade without touching operator-edited recipes.\n\nTechnician web settings (hardware tier): an on-demand web server (technician password, auto-off on restart) for remote inspection and adjustment of connection settings, port/feature mappings, and relay/motor/BLDC/water test consoles."
+      }
+    },
+    {
       "versionName": "0.3.6",
       "versionCode": 306,
       "releasedAt": "2026-06-10T01:20:54Z",

@@ -1,9 +1,9 @@
 {
-  "versionCode": 306,
-  "versionName": "0.3.6",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.3.6/app-release.apk",
-  "sha256": "3cd7e8fcd0df9184c987a1092511c79ac5077a7135e8b58afb603f9dc2326eb2",
+  "versionCode": 400,
+  "versionName": "0.4.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.4.0/app-release.apk",
+  "sha256": "0debe6f8a15b9ffd105c0ff3aae477253cf98a21dabc12595e9175c292a44414",
   "minVersionCode": 1,
-  "releaseNotes": "전체 세척 설정에 '도어 닫힘 확인' 토글을 추가했습니다.\n\n이 옵션을 끄면 세척 중 도어가 열려 있어도 세척이 진행됩니다. 토글을 끄려면 점주가 명시적으로 동의해야 하며(장비가 도어 열린 상태에서 동작/분사될 수 있음), 동의 내역은 감사 로그에 영구 보존됩니다. 옵션을 끈 상태에서는 도어 센서 대신 점주가 직접 버튼을 눌러 각 단계를 진행하며, 화면에 경고 배너가 상시 표시됩니다. 도어 센서가 고장난 경우에도 24시간 주기 의무 세척을 빠짐없이 실행할 수 있습니다. 단, 독립 수동 헹굼은 기존과 동일하게 도어가 닫혀 있어야만 실행됩니다.",
-  "releasedAt": "2026-06-10T01:20:54Z"
+  "releaseNotes": "웹 레시피 편집기: 매장 WiFi에 연결된 스마트폰이나 PC에서 QR코드로 접속해 레시피와 믹싱 프로그램을 편집할 수 있습니다. 관리자 비밀번호로 세션 로그인하며, 태블릿과 동일한 안전 검증(범위 확인, 날 하강 게이트)과 전체 변경 이력을 제공합니다.\n\n신규 메뉴 — Eiden Tall / Eiden Grande: 두 가지 Eiden 사이즈(Tall 정수 120ml, Grande 정수 150ml)가 추가되었습니다. 앱 업그레이드 시 자동으로 등록되며, 기존에 편집한 레시피는 영향받지 않습니다.\n\n기술 설정 서버(기술자 전용): WiFi를 통해 연결 설정, 포트 매핑, 하드웨어 진단을 원격으로 조회·조작할 수 있는 웹 서버를 추가했습니다. 기술자 비밀번호 필요, 앱 재시작 시 자동으로 꺼집니다.",
+  "releasedAt": "2026-06-10T03:44:30Z"
 }

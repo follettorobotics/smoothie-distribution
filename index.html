@@ -335,7 +335,13 @@
           else if (line.trim()) intro.push(line.trim());
         }
         summary = pick(r.summary) || intro.join(" ");
-        if (!changes.length && summary) changes.push({ type: inferType(summary), text: summary });
+        if (!changes.length && summary) {
+          // Notes with no bullet lines: show the text once, as the lone
+          // badged change (keeps it under the filter tabs) — not ALSO as
+          // the summary paragraph, which would render it twice.
+          changes.push({ type: inferType(summary), text: summary });
+          summary = "";
+        }
       }
       return { versionName: r.versionName || "?", releasedAt: r.releasedAt || "", summary, changes };
     }
