@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.4.4",
+      "versionCode": 404,
+      "releasedAt": "2026-06-10T08:24:19Z",
+      "notes": {
+        "ko": "자동 설정 및 홈 복귀 마법사에 대기 LED 점등 단계를 추가했습니다.\n\nIdleX 홈 복귀 완료 후 LED_IDLE 설정값(r/g/b)으로 대기 LED를 켜고,\n처리 중 램프 릴레이를 끄는 단계가 자동으로 실행됩니다.\n이는 앱 부팅 시 진입 상태와 동일한 조명 환경으로 세팅되는 것입니다.\nLED_IDLE 행이 없거나 led.all 명령이 실패하면 해당 단계가 실패로 처리됩니다.",
+        "en": "Added an idle-LED step to the Auto-Setup & Home Machine wizard.\n\nAfter the IdleX homing step completes, the wizard now fires led.all\nwith the LED_IDLE feature row's r/g/b values and best-effort turns off\nthe processing lamp relay — matching the lighting state the app enters\non boot. The step fails if the LED_IDLE row is missing or the led.all\ncommand is rejected."
+      }
+    },
+    {
       "versionName": "0.4.3",
       "versionCode": 403,
       "releasedAt": "2026-06-10T07:37:44Z",
