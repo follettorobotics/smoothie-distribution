@@ -1,9 +1,9 @@
 {
-  "versionCode": 401,
-  "versionName": "0.4.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.4.1/app-release.apk",
-  "sha256": "6e0083039d462ce2e48b733aab2eec0fc69afa36658f3c5793c8847a5db1697c",
+  "versionCode": 402,
+  "versionName": "0.4.2",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.4.2/app-release.apk",
+  "sha256": "7fbbeef9bbc1631c1ef7248eb918b4416fd275ebf701f5465af56f49ea4f8777",
   "minVersionCode": 1,
-  "releaseNotes": "세척 분사 기본 출력을 온수 모듈 출력에서 컨트롤 보드 릴레이로 변경했습니다. 기존 온수 모듈 배선을 사용하는 매장은 하드웨어 설정에서 다시 전환할 수 있습니다.",
-  "releasedAt": "2026-06-10T05:25:10Z"
+  "releaseNotes": "- 전체 세척(수동) 믹싱 단계가 조그 대신 RPM 모드(6000rpm, 60초)로 칼날을 회전하도록 변경했습니다.\n- 세척 분사 기본 시간을 20초로 변경했습니다. (제품 세척 사이클의 칼날 회전 시간도 분사 시간을 따라 20초로 복원됩니다.)",
+  "releasedAt": "2026-06-10T05:45:20Z"
 }

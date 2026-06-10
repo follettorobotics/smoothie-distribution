@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.4.2",
+      "versionCode": 402,
+      "releasedAt": "2026-06-10T05:45:20Z",
+      "notes": {
+        "ko": "- 전체 세척(수동) 믹싱 단계가 조그 대신 RPM 모드(6000rpm, 60초)로 칼날을 회전하도록 변경했습니다.\n- 세척 분사 기본 시간을 20초로 변경했습니다. (제품 세척 사이클의 칼날 회전 시간도 분사 시간을 따라 20초로 복원됩니다.)",
+        "en": "- The manual full-cleaning blend now spins the blade in RPM mode (6000 rpm, 60 s) instead of jog.\n- Cleaning-spray default duration raised to 20 s. (This also restores the product cleaning cycle's blade-spin window to 20 s, since it follows the spray duration.)"
+      }
+    },
+    {
       "versionName": "0.4.1",
       "versionCode": 401,
       "releasedAt": "2026-06-10T05:25:10Z",
