@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.4.1",
+      "versionCode": 401,
+      "releasedAt": "2026-06-10T05:25:10Z",
+      "notes": {
+        "ko": "세척 분사 기본 출력을 온수 모듈 출력에서 컨트롤 보드 릴레이로 변경했습니다. 기존 온수 모듈 배선을 사용하는 매장은 하드웨어 설정에서 다시 전환할 수 있습니다.",
+        "en": "Cleaning spray now uses the control-board relay by default instead of the hot-water-module output. Stores wired to the water-module output can switch back from the Hardware settings."
+      }
+    },
+    {
       "versionName": "0.4.0",
       "versionCode": 400,
       "releasedAt": "2026-06-10T03:44:30Z",
