@@ -1,9 +1,9 @@
 {
-  "versionCode": 500,
-  "versionName": "0.5.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.0/app-release.apk",
-  "sha256": "b9cf8c97509e7aa0eb9cc9a694bc9b7016b8f017a43dcfe393155ee32136af11",
+  "versionCode": 501,
+  "versionName": "0.5.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.1/app-release.apk",
+  "sha256": "a627f976665f1ab6d362221f92ee6e1e066e77d0ecd5aa33ea515b1af402b193",
   "minVersionCode": 1,
-  "releaseNotes": "바코드 없이 운영하는 매장(호텔 뷔페, 행사장 등)을 위한 '바코드 스캔 건너뛰기' 모드를 추가했습니다.\n\n- 관리자 설정 → 기본 제품(Default Product)에서 토글 하나로 활성화\n- 활성화하면 대기 화면에 Start 버튼이 나타나고, 설정된 기본 제품으로 즉시 제조를 시작합니다\n- 제조 사이클(도어 열기 → 컵 장착 → 확인 → 제조 → 세척)은 바코드 스캔과 동일하며, 모든 안전 게이트가 그대로 적용됩니다",
-  "releasedAt": "2026-06-15T03:47:22Z"
+  "releaseNotes": "- 테스트 환경에서의 OperatorTest 불안정 현상을 수정했습니다. EventBus 구독 경쟁 조건으로 인해 이벤트가 누락되어 CI에서 간헐적으로 타임아웃이 발생하던 문제를 해결했습니다.\n- CI 릴리스 워크플로우에서 불필요한 APK 아티팩트 업로드 단계를 제거했습니다. 서명된 APK는 배포 레포지터리 릴리스에 이미 게시되며, 중복 업로드가 v0.5.0 배포 시 Actions 스토리지 쿼터를 초과해 배포를 중단시켰습니다.\n- BLDC 하드웨어 기능 테스트 버튼의 회전 시간을 설정 가능하도록 변경했습니다. 기존 3초 고정에서 `test_ms` 필드로 자유롭게 조정할 수 있습니다.",
+  "releasedAt": "2026-06-15T07:32:26Z"
 }

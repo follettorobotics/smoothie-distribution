@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.1",
+      "versionCode": 501,
+      "releasedAt": "2026-06-15T07:32:26Z",
+      "notes": {
+        "ko": "- 테스트 환경에서의 OperatorTest 불안정 현상을 수정했습니다. EventBus 구독 경쟁 조건으로 인해 이벤트가 누락되어 CI에서 간헐적으로 타임아웃이 발생하던 문제를 해결했습니다.\n- CI 릴리스 워크플로우에서 불필요한 APK 아티팩트 업로드 단계를 제거했습니다. 서명된 APK는 배포 레포지터리 릴리스에 이미 게시되며, 중복 업로드가 v0.5.0 배포 시 Actions 스토리지 쿼터를 초과해 배포를 중단시켰습니다.\n- BLDC 하드웨어 기능 테스트 버튼의 회전 시간을 설정 가능하도록 변경했습니다. 기존 3초 고정에서 `test_ms` 필드로 자유롭게 조정할 수 있습니다.",
+        "en": "- Fixed OperatorTest flakiness in CI: an EventBus subscription race (replay=0 SharedFlow + launchIn scheduling lag) could drop events and cause intermittent TimeoutCancellationException failures. The collector now suspends until its subscription is registered before any events can be emitted.\n- Removed redundant APK workflow-artifact upload from the release CI. The signed APK is already published as a Release asset on the distribution repo (what OTA serves); the duplicate upload exhausted Actions storage quota and aborted the v0.5.0 release.\n- BLDC hardware-feature test-button spin duration is now configurable via a `test_ms` field (default 3 000 ms) instead of the previous hard-coded 3 s."
+      }
+    },
+    {
       "versionName": "0.5.0",
       "versionCode": 500,
       "releasedAt": "2026-06-15T03:47:22Z",
