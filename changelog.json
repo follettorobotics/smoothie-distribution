@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.0",
+      "versionCode": 500,
+      "releasedAt": "2026-06-15T03:47:22Z",
+      "notes": {
+        "ko": "바코드 없이 운영하는 매장(호텔 뷔페, 행사장 등)을 위한 '바코드 스캔 건너뛰기' 모드를 추가했습니다.\n\n- 관리자 설정 → 기본 제품(Default Product)에서 토글 하나로 활성화\n- 활성화하면 대기 화면에 Start 버튼이 나타나고, 설정된 기본 제품으로 즉시 제조를 시작합니다\n- 제조 사이클(도어 열기 → 컵 장착 → 확인 → 제조 → 세척)은 바코드 스캔과 동일하며, 모든 안전 게이트가 그대로 적용됩니다",
+        "en": "Added a \"skip barcode scan\" mode for venues that operate without per-cup barcodes (hotel buffets, events, etc.).\n\n- Enable with a single toggle in admin → owner settings → Default Product\n- When enabled, the idle screen shows a Start button that immediately begins brewing the configured default product\n- The full make-product cycle (door open → cup load → confirm → brew → clean) is identical to a barcode-triggered brew; all safety gates are enforced"
+      }
+    },
+    {
       "versionName": "0.4.6",
       "versionCode": 406,
       "releasedAt": "2026-06-12T07:33:58Z",
