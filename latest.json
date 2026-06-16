@@ -1,9 +1,9 @@
 {
-  "versionCode": 501,
-  "versionName": "0.5.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.1/app-release.apk",
-  "sha256": "a627f976665f1ab6d362221f92ee6e1e066e77d0ecd5aa33ea515b1af402b193",
+  "versionCode": 502,
+  "versionName": "0.5.2",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.2/app-release.apk",
+  "sha256": "8659380471526d7e3f9b9f6ce12d97f989e60a93cad146ba3978ec75afeba78b",
   "minVersionCode": 1,
-  "releaseNotes": "- 테스트 환경에서의 OperatorTest 불안정 현상을 수정했습니다. EventBus 구독 경쟁 조건으로 인해 이벤트가 누락되어 CI에서 간헐적으로 타임아웃이 발생하던 문제를 해결했습니다.\n- CI 릴리스 워크플로우에서 불필요한 APK 아티팩트 업로드 단계를 제거했습니다. 서명된 APK는 배포 레포지터리 릴리스에 이미 게시되며, 중복 업로드가 v0.5.0 배포 시 Actions 스토리지 쿼터를 초과해 배포를 중단시켰습니다.\n- BLDC 하드웨어 기능 테스트 버튼의 회전 시간을 설정 가능하도록 변경했습니다. 기존 3초 고정에서 `test_ms` 필드로 자유롭게 조정할 수 있습니다.",
-  "releasedAt": "2026-06-15T07:32:26Z"
+  "releaseNotes": "장시간 대기 후 광고 슬라이드쇼가 멈추고 앱이 응답하지 않게 만들던 메모리 누수를 수정했습니다. 이제 영상 재생이 디코더 오류에서 멈추지 않고 자동으로 복구됩니다.",
+  "releasedAt": "2026-06-16T06:22:42Z"
 }

@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.2",
+      "versionCode": 502,
+      "releasedAt": "2026-06-16T06:22:42Z",
+      "notes": {
+        "ko": "장시간 대기 후 광고 슬라이드쇼가 멈추고 앱이 응답하지 않게 만들던 메모리 누수를 수정했습니다. 이제 영상 재생이 디코더 오류에서 멈추지 않고 자동으로 복구됩니다.",
+        "en": "Fixed a memory leak in the idle advert slideshow that could freeze the screen and make the app unresponsive after long idle periods. Video playback now automatically recovers from decoder stalls instead of freezing."
+      }
+    },
+    {
       "versionName": "0.5.1",
       "versionCode": 501,
       "releasedAt": "2026-06-15T07:32:26Z",
