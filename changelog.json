@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.7",
+      "versionCode": 507,
+      "releasedAt": "2026-06-17T09:52:33Z",
+      "notes": {
+        "ko": "믹서 정지 신뢰성 개선: 믹싱 중 칼날 정지 명령이 모터 이동과 통신 충돌하지 않도록 분리 전송하여 정지 명령 유실 가능성을 줄였습니다(안전 게이트 v0.5.6의 후속 보강).",
+        "en": "Reliability: the mixer stop is now sent on its own (after each step's motor moves) so it can't collide with motor traffic on the control-board wire — reduces lost-stop risk. Follow-up hardening to the v0.5.6 safety gate."
+      }
+    },
+    {
       "versionName": "0.5.6",
       "versionCode": 506,
       "releasedAt": "2026-06-17T09:19:53Z",
