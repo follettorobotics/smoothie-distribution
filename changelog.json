@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.6",
+      "versionCode": 506,
+      "releasedAt": "2026-06-17T09:19:53Z",
+      "notes": {
+        "ko": "[안전 수정] 믹서가 멈추지 않는 안전 결함 수정: 이제 칼날 정지를 확인한 뒤에만 도어가 열리며, 정지 실패 시 점검 오류로 도어를 잠급니다.",
+        "en": "Safety fix: the mixer stop is now confirmed before the door opens; if the blade can't be confirmed stopped the cycle faults (HARDWARE_FAULT, door stays closed) instead of advancing."
+      }
+    },
+    {
       "versionName": "0.5.5",
       "versionCode": 505,
       "releasedAt": "2026-06-17T07:52:46Z",
