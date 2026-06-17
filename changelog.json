@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.4",
+      "versionCode": 504,
+      "releasedAt": "2026-06-17T04:30:00Z",
+      "notes": {
+        "ko": "- 키오스크 화면에서 내비게이션 바가 다시 숨겨지지 않고 화면에 남아 있던 문제를 수정했습니다.",
+        "en": "- Fixed the navigation bar sometimes staying visible instead of re-hiding in kiosk (immersive) mode."
+      }
+    },
+    {
       "versionName": "0.5.3",
       "versionCode": 503,
       "releasedAt": "2026-06-17T04:07:26Z",

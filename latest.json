@@ -1,9 +1,9 @@
 {
-  "versionCode": 503,
-  "versionName": "0.5.3",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.3/app-release.apk",
-  "sha256": "2d37bb62832bdbcbbe305ba7e923f830871c4bed8650e61e75accadd1decaa7f",
+  "versionCode": 504,
+  "versionName": "0.5.4",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.4/app-release.apk",
+  "sha256": "317c3f877e2f79a37d9be95e2af0653fafcf15a0eef24b49892dcae1df70c8a2",
   "minVersionCode": 1,
-  "releaseNotes": "- 점주용 설정 메뉴와 점주 비밀번호를 추가했습니다 (제한된 설정만 표시).\n- 메뉴 글씨 크기를 키우고 설정에서 조절할 수 있게 했습니다.\n- 간단/전체 세척 화면을 가운데 정렬하고 키웠으며, 세척 컵 준비 안내 문구를 다듬었습니다.\n- '자동 설정 및 홈 복귀' 메뉴 이름을 '자가 진단'으로 변경했습니다.\n- Eiden Tall/Grande의 마지막 블렌딩 속도를 15000에서 11000 RPM으로 조정했습니다 (신규 설치 기준).",
-  "releasedAt": "2026-06-17T04:07:26Z"
+  "releaseNotes": "- 키오스크 화면에서 내비게이션 바가 다시 숨겨지지 않고 화면에 남아 있던 문제를 수정했습니다.",
+  "releasedAt": "2026-06-17T04:30:00Z"
 }
