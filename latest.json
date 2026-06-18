@@ -1,9 +1,9 @@
 {
-  "versionCode": 510,
-  "versionName": "0.5.10",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.10/app-release.apk",
-  "sha256": "2ba7afde2156e17f5dd967da27b4f9a309a010bfdf1325fa9d69df9d5aef0452",
+  "versionCode": 511,
+  "versionName": "0.5.11",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.11/app-release.apk",
+  "sha256": "6a6265c19846610d9168fa503a1f2b6f0c008723ccae8e073b943ab07e63df30",
   "minVersionCode": 1,
-  "releaseNotes": "키오스크가 준비 상태임에도 전원을 켠 후 간헐적으로 대기 조명이 켜지지 않던 문제를 수정했습니다.",
-  "releasedAt": "2026-06-18T03:10:30Z"
+  "releaseNotes": "테스트 코드를 추가했습니다.",
+  "releasedAt": "2026-06-18T05:54:44Z"
 }

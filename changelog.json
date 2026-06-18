@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.11",
+      "versionCode": 511,
+      "releasedAt": "2026-06-18T05:54:44Z",
+      "notes": {
+        "ko": "테스트 코드를 추가했습니다.",
+        "en": "Added test coverage."
+      }
+    },
+    {
       "versionName": "0.5.10",
       "versionCode": 510,
       "releasedAt": "2026-06-18T03:10:30Z",
