@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.9",
+      "versionCode": 509,
+      "releasedAt": "2026-06-18T02:42:16Z",
+      "notes": {
+        "ko": "설정 화면 자동 닫힘 시간을 점주 설정에서 직접 조정할 수 있습니다. 기본값은 60초이며, \"안 닫힘\" 옵션을 선택하면 비활성 시 자동으로 닫히지 않습니다.",
+        "en": "Settings page can now auto-close after a configurable idle time (or never) — set it under owner settings. Default is 60 seconds; choose \"Never\" to disable auto-close entirely."
+      }
+    },
+    {
       "versionName": "0.5.8",
       "versionCode": 508,
       "releasedAt": "2026-06-18T01:31:05Z",
