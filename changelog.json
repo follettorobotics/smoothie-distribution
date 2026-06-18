@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.8",
+      "versionCode": 508,
+      "releasedAt": "2026-06-18T01:31:05Z",
+      "notes": {
+        "ko": "v0.5.8 — 전원 차단 내구성 및 자동 복구 개선\n\n- 갑작스러운 전원 차단(하드 파워오프) 후에도 키오스크 설정(테마, USB 장치 키, 보드레이트)이 보존됩니다. DataStore 값을 Room DB 백업으로 미러링하여 부팅 시 자동 복원합니다.\n- DataStore가 손상되거나 비어 있을 경우 앱이 잠기지 않으며, Room 미러에서 설정을 복원한 후 정상 동작합니다.\n- 온수 모듈이 빈 키로 기동될 경우 부팅 시 자동으로 자가 복구합니다. 더 이상 수동 자가 진단 실행이 필요하지 않습니다.",
+        "en": "v0.5.8 — Power-loss durability and auto-recovery\n\n- Kiosk settings (theme, USB device keys, baud rate) now survive a hard power-off. DataStore values are mirrored to a Room DB backing store and restored automatically on boot.\n- DataStore corruption or blank-key startup no longer bricks the settings screen; Room mirror restores the config and the app continues normally.\n- The hot-water module self-heals on boot when its DataStore key is blank, eliminating the need for a manual 자가 진단 (self-diagnosis) run after an unclean shutdown."
+      }
+    },
+    {
       "versionName": "0.5.7",
       "versionCode": 507,
       "releasedAt": "2026-06-17T09:52:33Z",

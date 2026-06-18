@@ -1,9 +1,9 @@
 {
-  "versionCode": 507,
-  "versionName": "0.5.7",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.7/app-release.apk",
-  "sha256": "ee7193f6bd8696248dd2a18a7b1181776fe8c8f1aa04a00a4cea85344b98c7c3",
+  "versionCode": 508,
+  "versionName": "0.5.8",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.8/app-release.apk",
+  "sha256": "fec6bee69cc5dbeb714983ca578713b3e05aa35bb74842fd5b6a61d034047b10",
   "minVersionCode": 1,
-  "releaseNotes": "믹서 정지 신뢰성 개선: 믹싱 중 칼날 정지 명령이 모터 이동과 통신 충돌하지 않도록 분리 전송하여 정지 명령 유실 가능성을 줄였습니다(안전 게이트 v0.5.6의 후속 보강).",
-  "releasedAt": "2026-06-17T09:52:33Z"
+  "releaseNotes": "v0.5.8 — 전원 차단 내구성 및 자동 복구 개선\n\n- 갑작스러운 전원 차단(하드 파워오프) 후에도 키오스크 설정(테마, USB 장치 키, 보드레이트)이 보존됩니다. DataStore 값을 Room DB 백업으로 미러링하여 부팅 시 자동 복원합니다.\n- DataStore가 손상되거나 비어 있을 경우 앱이 잠기지 않으며, Room 미러에서 설정을 복원한 후 정상 동작합니다.\n- 온수 모듈이 빈 키로 기동될 경우 부팅 시 자동으로 자가 복구합니다. 더 이상 수동 자가 진단 실행이 필요하지 않습니다.",
+  "releasedAt": "2026-06-18T01:31:05Z"
 }
