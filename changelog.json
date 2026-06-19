@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.12",
+      "versionCode": 512,
+      "releasedAt": "2026-06-19T08:11:28Z",
+      "notes": {
+        "ko": "• 고객 화면(도어 열림, 주문 확인, 대기, 완료, 세척 중) 전반의 글꼴 크기 확대\n• 도어 열림 화면을 전체 너비 안내 행 레이아웃으로 개편\n• 세척 중 화면 리디자인: 이중 회전 아크, 맥동 글로우, 버블 애니메이션, 진행 점 표시기\n• 도어 열기 재시도 버튼 통합(DoorOpen / Complete / CupFilmRetry에 공통 적용)\n• 점주 설정에 글꼴 크기 선택 옵션 추가\n• 관리자/점주 설정 한국어 문구 개선: 도어 열림→문 열기, 자가 진단→자가 진단 테스트, 전체 세척 실행→청소 모드, 전체 세척 설정→청소 설정, 제품 시퀀스 초기화→제조 취소, X축 홈→하부레일 뒤로가기, X축 대기 위치→하부레일 정위치",
+        "en": "• Enlarged customer-facing fonts across DoorOpen, Confirm, Idle, Complete, and Cleaning screens\n• DoorOpen screen restructured into full-width stacked instruction rows\n• Cleaning (\"세척 중\") screen redesigned: dual rotating arcs, pulsing glow, rising bubble animation, progress dot indicator\n• Shared door-retry button (DoorRetryButton) now used consistently on DoorOpen, Complete, and CupFilmRetry\n• Font-size selector added to the manager (점주) settings tier\n• Korean copy improvements in admin/manager settings: 도어 열림→문 열기, 자가 진단→자가 진단 테스트, 전체 세척 실행→청소 모드, 전체 세척 설정→청소 설정, 제품 시퀀스 초기화→제조 취소, X축 홈→하부레일 뒤로가기, X축 대기 위치→하부레일 정위치"
+      }
+    },
+    {
       "versionName": "0.5.11",
       "versionCode": 511,
       "releasedAt": "2026-06-18T05:54:44Z",
