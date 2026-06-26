@@ -1,9 +1,9 @@
 {
-  "versionCode": 512,
-  "versionName": "0.5.12",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.12/app-release.apk",
-  "sha256": "2c1abb42425ad0958c39958770fbe5df812dcdc6d76aa50e7a3add0046ed2be9",
+  "versionCode": 513,
+  "versionName": "0.5.13",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.13/app-release.apk",
+  "sha256": "84067452db601639b3a640d79c2bf644c2e4a028c8d7ef8600770e78d8c21715",
   "minVersionCode": 1,
-  "releaseNotes": "• 고객 화면(도어 열림, 주문 확인, 대기, 완료, 세척 중) 전반의 글꼴 크기 확대\n• 도어 열림 화면을 전체 너비 안내 행 레이아웃으로 개편\n• 세척 중 화면 리디자인: 이중 회전 아크, 맥동 글로우, 버블 애니메이션, 진행 점 표시기\n• 도어 열기 재시도 버튼 통합(DoorOpen / Complete / CupFilmRetry에 공통 적용)\n• 점주 설정에 글꼴 크기 선택 옵션 추가\n• 관리자/점주 설정 한국어 문구 개선: 도어 열림→문 열기, 자가 진단→자가 진단 테스트, 전체 세척 실행→청소 모드, 전체 세척 설정→청소 설정, 제품 시퀀스 초기화→제조 취소, X축 홈→하부레일 뒤로가기, X축 대기 위치→하부레일 정위치",
-  "releasedAt": "2026-06-19T08:11:28Z"
+  "releaseNotes": "세척 설정 초기화 기능 추가\n\n세척 설정(Full Cleaning Settings) 화면에 \"기본값으로 초기화\" 버튼이 추가되었습니다.\n버튼을 누르면 확인 다이얼로그가 표시되며, 확인 시 아래 항목들이 모두 공장 기본값으로 초기화됩니다.\n\n- 온수 / 냉수 사용량\n- 세척액 사용량\n- 돔 Y 위치\n- 세척 주기\n- 문 닫힘 확인 여부\n- 세척용 믹싱 프로그램 전체 (이동 + 믹싱 단계, __full_cleaning__ 레시피)\n\n초기화 작업은 감사 로그에 FULL_CLEAN_SETTINGS_RESET으로 기록됩니다.",
+  "releasedAt": "2026-06-26T02:17:14Z"
 }

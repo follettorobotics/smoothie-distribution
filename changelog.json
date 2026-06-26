@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.13",
+      "versionCode": 513,
+      "releasedAt": "2026-06-26T02:17:14Z",
+      "notes": {
+        "ko": "세척 설정 초기화 기능 추가\n\n세척 설정(Full Cleaning Settings) 화면에 \"기본값으로 초기화\" 버튼이 추가되었습니다.\n버튼을 누르면 확인 다이얼로그가 표시되며, 확인 시 아래 항목들이 모두 공장 기본값으로 초기화됩니다.\n\n- 온수 / 냉수 사용량\n- 세척액 사용량\n- 돔 Y 위치\n- 세척 주기\n- 문 닫힘 확인 여부\n- 세척용 믹싱 프로그램 전체 (이동 + 믹싱 단계, __full_cleaning__ 레시피)\n\n초기화 작업은 감사 로그에 FULL_CLEAN_SETTINGS_RESET으로 기록됩니다.",
+        "en": "Full Cleaning Settings — Restore Defaults button\n\nA \"Restore defaults\" button has been added to the Full Cleaning Settings screen.\nTapping it shows a confirmation dialog; on confirm, the following are all\nreset to factory values:\n\n- Hot and cold water amounts\n- Cleaning liquid amount\n- Dome Y position\n- Cleaning interval\n- Door-close check\n- Full mixing program (move + mix steps under the __full_cleaning__ recipe)\n\nThe action is audit-logged as FULL_CLEAN_SETTINGS_RESET."
+      }
+    },
+    {
       "versionName": "0.5.12",
       "versionCode": 512,
       "releasedAt": "2026-06-19T08:11:28Z",
