@@ -1,9 +1,9 @@
 {
-  "versionCode": 514,
-  "versionName": "0.5.14",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.14/app-release.apk",
-  "sha256": "d81d1a54bf9d542dbf7d28f6e7247904a9712c0b5690512386699e7dba6d266b",
+  "versionCode": 515,
+  "versionName": "0.5.15",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.15/app-release.apk",
+  "sha256": "b1e94392f1a8e58d53caf48bf026ac4100cfaaa2866277d3d356c4b71098347a",
   "minVersionCode": 1,
-  "releaseNotes": "- Y축 최대 하강 기본값 130 → 135 스텝으로 상향 조정\n  레시피 에디터 및 런타임 Y 하강 클램프의 컴파일 내장 기본값이 변경됩니다.\n  hw.yMaxDown 수동 오버라이드가 저장된 키오스크는 영향을 받지 않습니다.",
-  "releasedAt": "2026-06-26T02:40:36Z"
+  "releaseNotes": "하드웨어 사양 변경(믹서 축 방식)에 따른 Eiden 메뉴 및 세척 위치 씨드 기본값 업데이트.\n\n- Eiden Tall 시트 위치(domeY) 기본값: 65 → 70 스텝 (혼합 하강 피크: 129 → 134)\n- Eiden Grande 시트 위치(domeY) 기본값: 55 → 60 스텝 (혼합 하강 피크: 119 → 124)\n- Y축 세척 위치(MOTOR_Y_CLEAN_POSITION) 기본값: 80 → 125 스텝\n\n위 값들은 insert-if-missing 씨드 기본값입니다. 신규 설치 또는 초기화(공장 리셋)된 기기에만 적용되며, 기존 키오스크는 현재 DB 값을 그대로 유지합니다.",
+  "releasedAt": "2026-06-26T03:00:08Z"
 }
