@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.14",
+      "versionCode": 514,
+      "releasedAt": "2026-06-26T02:40:36Z",
+      "notes": {
+        "ko": "- Y축 최대 하강 기본값 130 → 135 스텝으로 상향 조정\n  레시피 에디터 및 런타임 Y 하강 클램프의 컴파일 내장 기본값이 변경됩니다.\n  hw.yMaxDown 수동 오버라이드가 저장된 키오스크는 영향을 받지 않습니다.",
+        "en": "- Raised HW_Y_MAX_DOWN compiled-in default from 130 to 135 steps\n  The runtime Y-descent clamp and recipe/mixing editors now allow up to\n  135 steps by default.  Kiosks with a saved hw.yMaxDown override keep\n  their override unchanged."
+      }
+    },
+    {
       "versionName": "0.5.13",
       "versionCode": 513,
       "releasedAt": "2026-06-26T02:17:14Z",
