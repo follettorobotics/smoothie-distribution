@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.16",
+      "versionCode": 516,
+      "releasedAt": "2026-06-29T00:56:58Z",
+      "notes": {
+        "ko": "이번 업데이트는 기술자용 진단/보정 기능 두 가지를 추가합니다.\n\n사운드 진단 (신규)\n제품을 내리지 않고도 음성 안내·효과음 출력을 즉시 점검할 수 있는 화면을\n기술자 설정에 추가했습니다.\n- 음성 안내(TTS): 한국어/영어 샘플 재생, TTS 엔진 준비 상태 표시\n- 효과음: 버튼음 · 완료 알림음 · 오류 경고음 (실제 주문 흐름과 동일한 출력 경로)\n- 운영용 음성 안내 ON/OFF와 무관하게 항상 재생되어, 무음 원인이 앱인지\n  태블릿 음량·스피커인지 빠르게 구분할 수 있습니다.\n- 설정 → 하드웨어 → 사운드 진단\n\n출수량 보정 (신규)\n온수·정수별 펌프 편차를 비율(%)로 보정하는 기술자 설정을 추가했습니다.\n- 온수/정수 각각 비율(%) 설정, 0%로 재설정 가능\n- ml 단위 추출에만 적용 (초 단위 출수, 예: 세척 프라임은 영향 없음)\n- 설정 → 하드웨어 → 출수량 보정",
+        "en": "This update adds two technician-facing tools.\n\nSound Diagnosis (new)\nA screen in technician settings to check voice-prompt and sound-effect\noutput instantly, without running a product cycle.\n- Voice prompts (TTS): play a Korean/English sample, with a TTS-engine ready indicator\n- Sound effects: button / completion chime / error beep — the same output path the live order flow uses\n- Always plays regardless of the operational voice-prompt on/off setting, so silence\n  can be quickly traced to either the app or the tablet volume / speaker\n- Settings → Hardware → Sound Diagnosis\n\nDispense Calibration (new)\nA technician setting to correct per-water-type pump deviation with a percentage.\n- Independent % for hot and purified water, resettable to 0%\n- Applies to ml-based dispenses only (time-based dispenses such as the cleaning prime are unaffected)\n- Settings → Hardware → Dispense Calibration"
+      }
+    },
+    {
       "versionName": "0.5.15",
       "versionCode": 515,
       "releasedAt": "2026-06-26T03:00:08Z",
