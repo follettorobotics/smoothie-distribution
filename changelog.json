@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.17",
+      "versionCode": 517,
+      "releasedAt": "2026-06-30T09:03:07Z",
+      "notes": {
+        "ko": "이번 업데이트는 '아직 이용 중이신가요?' 안내 팝업을 점주가 직접 조절할 수 있도록 개선합니다.\n\n이용 확인 팝업 시간 설정 (신규)\n주문을 시작한 손님이 일정 시간 동안 동작이 없을 때 뜨는 '아직 이용 중이신가요?' 팝업의 시간을 점주 설정에서 조절할 수 있습니다.\n- 팝업 표시까지 대기 시간: 30 / 60 / 90 / 120 / 180초 (기본 90초)\n- 팝업 표시 시간(자동 종료까지): 10 / 15 / 20 / 30초 (기본 15초)\n- 팝업은 항상 표시되며, 시간만 조절됩니다\n- 설정 → (점주) → 이용 확인 팝업\n\n팝업 여백 개선\n세로형 화면에서 팝업이 좌우 화면 끝에 붙던 현상을 수정하여, 좌우 여백을 두고 표시됩니다.",
+        "en": "This update lets the owner tune the \"Are you still there?\" inactivity prompt.\n\nInactivity prompt timing (new)\nWhen a customer starts an order and then goes idle, the kiosk shows the \"Are you still there?\" prompt — its timing is now configurable in owner settings.\n- Wait before the prompt appears: 30 / 60 / 90 / 120 / 180s (default 90s)\n- Prompt countdown before reset: 10 / 15 / 20 / 30s (default 15s)\n- The prompt is always shown; only its timing changes\n- Settings → (Owner) → \"Still there?\" prompt\n\nPrompt margin fix\nFixed the prompt card hugging the left/right screen edges on a portrait kiosk; it now sits inset with a margin on both sides."
+      }
+    },
+    {
       "versionName": "0.5.16",
       "versionCode": 516,
       "releasedAt": "2026-06-29T00:56:58Z",
