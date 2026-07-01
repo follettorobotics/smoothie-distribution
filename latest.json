@@ -1,9 +1,9 @@
 {
-  "versionCode": 517,
-  "versionName": "0.5.17",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.17/app-release.apk",
-  "sha256": "562f76173a25d7ba8ca4380f93c45be4a0aabd4732e427cf15a8300a9409f8c4",
+  "versionCode": 518,
+  "versionName": "0.5.18",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.18/app-release.apk",
+  "sha256": "c3cb92e2b2f66edd02a8a55c32f525750903dbb0534c5ab0ca386245996445a3",
   "minVersionCode": 1,
-  "releaseNotes": "이번 업데이트는 '아직 이용 중이신가요?' 안내 팝업을 점주가 직접 조절할 수 있도록 개선합니다.\n\n이용 확인 팝업 시간 설정 (신규)\n주문을 시작한 손님이 일정 시간 동안 동작이 없을 때 뜨는 '아직 이용 중이신가요?' 팝업의 시간을 점주 설정에서 조절할 수 있습니다.\n- 팝업 표시까지 대기 시간: 30 / 60 / 90 / 120 / 180초 (기본 90초)\n- 팝업 표시 시간(자동 종료까지): 10 / 15 / 20 / 30초 (기본 15초)\n- 팝업은 항상 표시되며, 시간만 조절됩니다\n- 설정 → (점주) → 이용 확인 팝업\n\n팝업 여백 개선\n세로형 화면에서 팝업이 좌우 화면 끝에 붙던 현상을 수정하여, 좌우 여백을 두고 표시됩니다.",
-  "releasedAt": "2026-06-30T09:03:07Z"
+  "releaseNotes": "이번 업데이트는 내부 안정성 개선을 위한 유지보수 업데이트입니다.\n\n- 전반적인 안정성 및 신뢰성 개선",
+  "releasedAt": "2026-07-01T03:35:13Z"
 }

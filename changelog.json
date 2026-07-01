@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.18",
+      "versionCode": 518,
+      "releasedAt": "2026-07-01T03:35:13Z",
+      "notes": {
+        "ko": "이번 업데이트는 내부 안정성 개선을 위한 유지보수 업데이트입니다.\n\n- 전반적인 안정성 및 신뢰성 개선",
+        "en": "This is a maintenance release with internal stability improvements.\n\n- General stability and reliability improvements"
+      }
+    },
+    {
       "versionName": "0.5.17",
       "versionCode": 517,
       "releasedAt": "2026-06-30T09:03:07Z",
