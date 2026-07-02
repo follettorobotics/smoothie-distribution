@@ -1,9 +1,9 @@
 {
-  "versionCode": 518,
-  "versionName": "0.5.18",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.18/app-release.apk",
-  "sha256": "c3cb92e2b2f66edd02a8a55c32f525750903dbb0534c5ab0ca386245996445a3",
+  "versionCode": 519,
+  "versionName": "0.5.19",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.19/app-release.apk",
+  "sha256": "df220904c313ce672948f7c94e1cdef67e732abff44f9c0b34bdc3a70fc31466",
   "minVersionCode": 1,
   "releaseNotes": "이번 업데이트는 내부 안정성 개선을 위한 유지보수 업데이트입니다.\n\n- 전반적인 안정성 및 신뢰성 개선",
-  "releasedAt": "2026-07-01T03:35:13Z"
+  "releasedAt": "2026-07-02T02:12:52Z"
 }
