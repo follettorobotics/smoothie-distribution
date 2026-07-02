@@ -1,9 +1,9 @@
 {
-  "versionCode": 519,
-  "versionName": "0.5.19",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.19/app-release.apk",
-  "sha256": "df220904c313ce672948f7c94e1cdef67e732abff44f9c0b34bdc3a70fc31466",
+  "versionCode": 520,
+  "versionName": "0.5.20",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.20/app-release.apk",
+  "sha256": "61ffc285fdc75985d9076230b0f2d75d79b203fe3d38dd1612189cdb55843d01",
   "minVersionCode": 1,
-  "releaseNotes": "이번 업데이트는 내부 안정성 개선을 위한 유지보수 업데이트입니다.\n\n- 전반적인 안정성 및 신뢰성 개선",
-  "releasedAt": "2026-07-02T02:12:52Z"
+  "releaseNotes": "온수기 모듈 에러 핸들링 추가",
+  "releasedAt": "2026-07-02T05:57:45Z"
 }
