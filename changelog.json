@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.26",
+      "versionCode": 526,
+      "releasedAt": "2026-07-07T06:15:54Z",
+      "notes": {
+        "ko": "세척 사이클 응답 체크 추가",
+        "en": "Add cleaning-cycle response check"
+      }
+    },
+    {
       "versionName": "0.5.25",
       "versionCode": 525,
       "releasedAt": "2026-07-07T04:43:10Z",
