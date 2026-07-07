@@ -1,9 +1,9 @@
 {
-  "versionCode": 524,
-  "versionName": "0.5.24",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.24/app-release.apk",
-  "sha256": "6803f167fd433f654590c5801772e7faef3f4ba3ea74453a91402cf3ff183a46",
+  "versionCode": 525,
+  "versionName": "0.5.25",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.25/app-release.apk",
+  "sha256": "284120e7d3c0a50d529d462241b29862b3bd1d8c44d30f46bbe63c27c5adb1d8",
   "minVersionCode": 1,
-  "releaseNotes": "안정성 개선 및 진단 로그 추가",
-  "releasedAt": "2026-07-07T04:13:15Z"
+  "releaseNotes": "진단 로그 보강",
+  "releasedAt": "2026-07-07T04:43:10Z"
 }
