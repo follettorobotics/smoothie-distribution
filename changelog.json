@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.29",
+      "versionCode": 529,
+      "releasedAt": "2026-07-07T11:20:23Z",
+      "notes": {
+        "ko": "안정성 개선",
+        "en": "Stability improvements"
+      }
+    },
+    {
       "versionName": "0.5.28",
       "versionCode": 528,
       "releasedAt": "2026-07-07T08:31:57Z",
