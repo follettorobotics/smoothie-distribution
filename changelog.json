@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.28",
+      "versionCode": 528,
+      "releasedAt": "2026-07-07T08:31:57Z",
+      "notes": {
+        "ko": "모터 정지 신호 재시도 시간 조정",
+        "en": "Adjust motor-stop signal retry timing"
+      }
+    },
+    {
       "versionName": "0.5.27",
       "versionCode": 527,
       "releasedAt": "2026-07-07T07:50:19Z",

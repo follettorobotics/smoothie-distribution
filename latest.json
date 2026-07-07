@@ -1,9 +1,9 @@
 {
-  "versionCode": 527,
-  "versionName": "0.5.27",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.27/app-release.apk",
-  "sha256": "c42b7d4925e920bc49e4e39e35dd86626300b9b76efc00b6beb60cc543e8a3f9",
+  "versionCode": 528,
+  "versionName": "0.5.28",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.28/app-release.apk",
+  "sha256": "7fe50d80f53e17a7ef822ce9b1283772633efe2669ed278ce9a64a480ff46c70",
   "minVersionCode": 1,
-  "releaseNotes": "진단 로그 24시간 보관 · 오래된 로그 자동 정리",
-  "releasedAt": "2026-07-07T07:50:19Z"
+  "releaseNotes": "모터 정지 신호 재시도 시간 조정",
+  "releasedAt": "2026-07-07T08:31:57Z"
 }
