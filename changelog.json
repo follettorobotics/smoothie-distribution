@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.27",
+      "versionCode": 527,
+      "releasedAt": "2026-07-07T07:50:19Z",
+      "notes": {
+        "ko": "진단 로그 24시간 보관 · 오래된 로그 자동 정리",
+        "en": "Diagnostic logs now auto-prune to a rolling 24-hour window (bounded storage)"
+      }
+    },
+    {
       "versionName": "0.5.26",
       "versionCode": 526,
       "releasedAt": "2026-07-07T06:15:54Z",
