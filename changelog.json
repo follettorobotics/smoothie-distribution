@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.23",
+      "versionCode": 523,
+      "releasedAt": "2026-07-07T02:52:09Z",
+      "notes": {
+        "ko": "로그 추가",
+        "en": "Add diagnostic logging"
+      }
+    },
+    {
       "versionName": "0.5.22",
       "versionCode": 522,
       "releasedAt": "2026-07-06T08:31:40Z",
