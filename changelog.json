@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.5.30",
+      "versionCode": 530,
+      "releasedAt": "2026-07-08T04:04:02Z",
+      "notes": {
+        "ko": "이번 업데이트는 기술자용 로그 내보내기 기능을 추가합니다.\n\n로그 내보내기 (신규)\n기술자 설정 화면에서 기기의 진단 로그를 폴더 또는 USB로 내보낼 수 있습니다.\n- 저장 위치는 시스템 \"저장 위치 선택\" 대화상자로 직접 지정\n- 내보내는 동안 진행률 표시\n- 설정 → 하드웨어 → 로그 내보내기",
+        "en": "This update adds a technician-facing log export tool.\n\nLog Export (new)\nHardware technicians can now export the device's diagnostic logs to a folder or USB drive from technician settings.\n- Choose the save location via the system \"Save to…\" picker\n- Progress is shown while exporting\n- Settings → Hardware → Log Export"
+      }
+    },
+    {
       "versionName": "0.5.29",
       "versionCode": 529,
       "releasedAt": "2026-07-07T11:20:23Z",
