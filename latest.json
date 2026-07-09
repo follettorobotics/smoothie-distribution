@@ -1,9 +1,9 @@
 {
-  "versionCode": 530,
-  "versionName": "0.5.30",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.5.30/app-release.apk",
-  "sha256": "4c07697543963022b7b2e82c6cdf1f254da1c7c03fe6bea3cd2ef87ae25f6355",
+  "versionCode": 600,
+  "versionName": "0.6.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.6.0/app-release.apk",
+  "sha256": "9b216088d89aac45e333ad33f38ac76e92f689ff614ec167aae9edf82dd67e11",
   "minVersionCode": 1,
-  "releaseNotes": "이번 업데이트는 기술자용 로그 내보내기 기능을 추가합니다.\n\n로그 내보내기 (신규)\n기술자 설정 화면에서 기기의 진단 로그를 폴더 또는 USB로 내보낼 수 있습니다.\n- 저장 위치는 시스템 \"저장 위치 선택\" 대화상자로 직접 지정\n- 내보내는 동안 진행률 표시\n- 설정 → 하드웨어 → 로그 내보내기",
-  "releasedAt": "2026-07-08T04:04:02Z"
+  "releaseNotes": "설정 화면 개편\n\n■ 키보드 없는 숫자 입력 (신규)\n레시피·믹싱·하드웨어 설정의 숫자 값을 화면 키보드 없이 스테퍼와\n전용 키패드로 입력합니다. (기존 입력 오류 개선)\n\n■ 관리자 설정 개편\n제품 관리, 믹싱 미세조정, 포트 매핑 화면을 정리했습니다.\n\n■ 온수 모듈 없는 기기 지원 (신규)\n온수 모듈이 없는 기기에서 정수(릴레이 5)만 사용하도록 설정할 수 있습니다. (기술자 설정)",
+  "releasedAt": "2026-07-09T08:53:29Z"
 }

@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.6.0",
+      "versionCode": 600,
+      "releasedAt": "2026-07-09T08:53:29Z",
+      "notes": {
+        "ko": "설정 화면 개편\n\n■ 키보드 없는 숫자 입력 (신규)\n레시피·믹싱·하드웨어 설정의 숫자 값을 화면 키보드 없이 스테퍼와\n전용 키패드로 입력합니다. (기존 입력 오류 개선)\n\n■ 관리자 설정 개편\n제품 관리, 믹싱 미세조정, 포트 매핑 화면을 정리했습니다.\n\n■ 온수 모듈 없는 기기 지원 (신규)\n온수 모듈이 없는 기기에서 정수(릴레이 5)만 사용하도록 설정할 수 있습니다. (기술자 설정)",
+        "en": "Settings overhaul\n\n■ Keyboard-free number inputs (new)\nEnter numbers in recipe, mixing, and hardware settings with a stepper and\ndedicated keypad instead of the on-screen keyboard (fixes prior input issues).\n\n■ Admin settings overhaul\nReorganized the Product Management, Mixing fine-tuning, and Port Mapping screens.\n\n■ Support for machines without a hot-water module (new)\nMachines with no hot-water module can dispense purified water only (relay 5). (Technician setting)"
+      }
+    },
+    {
       "versionName": "0.5.30",
       "versionCode": 530,
       "releasedAt": "2026-07-08T04:04:02Z",
