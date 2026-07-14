@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.8.0",
+      "versionCode": 800,
+      "releasedAt": "2026-07-14T04:20:58Z",
+      "notes": {
+        "ko": "제조 화면 테마와 세척 바로가기가 추가되고, 무인 운영 안정성이 개선되었습니다.\n- 제조(믹싱) 화면에 새 테마(오로라·스튜디오)와 정돈된 레이아웃, 새로워진 세척 화면을 적용했습니다. (신규)\n- '세척이 필요' 안내 화면에 '세척하기' 버튼을 추가했습니다. 점주·관리자 비밀번호 입력 후 전체 세척 화면으로 바로 이동하며, 세척이 끝나면 자동으로 대기 화면으로 돌아갑니다. (신규)\n- 무인 운영 중 발생할 수 있는 여러 오류를 방지하고 안정성을 개선했습니다.",
+        "en": "Adds processing-screen themes and a cleaning shortcut, and improves unattended-operation stability.\n- New processing (mixing) screen themes (Aurora & Studio), tidied layouts, and a refreshed cleaning screen. (new)\n- Added a \"Run cleaning\" button to the \"cleaning required\" screen; enter the owner or manager PIN to go straight to the full-cleaning flow, and it returns to idle automatically when finished. (new)\n- Prevents several unattended-operation edge cases and improves overall stability."
+      }
+    },
+    {
       "versionName": "0.7.0",
       "versionCode": 700,
       "releasedAt": "2026-07-13T08:29:39Z",
