@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.8.1",
+      "versionCode": 801,
+      "releasedAt": "2026-07-15T06:24:40Z",
+      "notes": {
+        "ko": "- 신규 설치 기본값 조정 (Y축 하강 범위/프라임·세척 위치, Eiden 블렌드 동작, 온수 장치 기본값)",
+        "en": "- Adjusted fresh-install defaults (Y descent range / prime & clean positions, Eiden blend motion, water-module default)"
+      }
+    },
+    {
       "versionName": "0.8.0",
       "versionCode": 800,
       "releasedAt": "2026-07-14T04:20:58Z",

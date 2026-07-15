@@ -1,9 +1,9 @@
 {
-  "versionCode": 800,
-  "versionName": "0.8.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.8.0/app-release.apk",
-  "sha256": "957a285e477e19bf9ed0ea7351ce41f4b48db24ee05f2046ff951e873754c822",
+  "versionCode": 801,
+  "versionName": "0.8.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.8.1/app-release.apk",
+  "sha256": "2cf4e7614cfe6f3bdc654832028dbfa4a60afe3a8fa2943e2b24d32441153fcf",
   "minVersionCode": 1,
-  "releaseNotes": "제조 화면 테마와 세척 바로가기가 추가되고, 무인 운영 안정성이 개선되었습니다.\n- 제조(믹싱) 화면에 새 테마(오로라·스튜디오)와 정돈된 레이아웃, 새로워진 세척 화면을 적용했습니다. (신규)\n- '세척이 필요' 안내 화면에 '세척하기' 버튼을 추가했습니다. 점주·관리자 비밀번호 입력 후 전체 세척 화면으로 바로 이동하며, 세척이 끝나면 자동으로 대기 화면으로 돌아갑니다. (신규)\n- 무인 운영 중 발생할 수 있는 여러 오류를 방지하고 안정성을 개선했습니다.",
-  "releasedAt": "2026-07-14T04:20:58Z"
+  "releaseNotes": "- 신규 설치 기본값 조정 (Y축 하강 범위/프라임·세척 위치, Eiden 블렌드 동작, 온수 장치 기본값)",
+  "releasedAt": "2026-07-15T06:24:40Z"
 }
