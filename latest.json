@@ -1,9 +1,9 @@
 {
-  "versionCode": 1000,
-  "versionName": "0.10.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.0/app-release.apk",
-  "sha256": "065d52a2a509122f2e2d2747d50b7eb887a02cd319cd1d5e4af9b55bc5aea94e",
+  "versionCode": 1001,
+  "versionName": "0.10.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.1/app-release.apk",
+  "sha256": "1b831a614b5cdec9bab3d6a805efc790781e7f57160086943a5dac09346f0a5c",
   "minVersionCode": 1,
-  "releaseNotes": "- 앱 시작 시 스플래시 화면 추가 (로고 + 로딩 표시)\n- 앱 아이콘을 폴레토 로보틱스 마크로 변경",
-  "releasedAt": "2026-07-20T07:24:36Z"
+  "releaseNotes": "- 다크 테마에서 부팅 화면과 시작 화면이 밝은 색으로 표시될 수 있던 문제 수정",
+  "releasedAt": "2026-07-20T09:10:45Z"
 }
