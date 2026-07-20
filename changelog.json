@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.0",
+      "versionCode": 1000,
+      "releasedAt": "2026-07-20T07:24:36Z",
+      "notes": {
+        "ko": "- 앱 시작 시 스플래시 화면 추가 (로고 + 로딩 표시)\n- 앱 아이콘을 폴레토 로보틱스 마크로 변경",
+        "en": "- Added a boot splash screen with the company logo and a loading indicator\n- Replaced the app icon with the Folletto Robotics mark"
+      }
+    },
+    {
       "versionName": "0.9.0",
       "versionCode": 900,
       "releasedAt": "2026-07-20T04:04:45Z",

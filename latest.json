@@ -1,9 +1,9 @@
 {
-  "versionCode": 900,
-  "versionName": "0.9.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.9.0/app-release.apk",
-  "sha256": "326510ca486b077ec37c2ab98c7a3f897f9433b2bb51884ea884e61867c293f0",
+  "versionCode": 1000,
+  "versionName": "0.10.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.0/app-release.apk",
+  "sha256": "065d52a2a509122f2e2d2747d50b7eb887a02cd319cd1d5e4af9b55bc5aea94e",
   "minVersionCode": 1,
-  "releaseNotes": "새로운 브랜드 색상과 제조 화면 기능이 적용되었습니다.\n- 앱 전체에 새로운 브랜드 색상(코랄/베리)을 적용했습니다\n- 자가 진단 통과, 바코드 인식, 세척 완료, 장치 연결 등 정상 상태가 붉은색으로 보이던 오류를 수정했습니다\n- 제어보드 장치 선택 화면에서 선택한 장치와 미선택 장치의 색상이 반대로 표시되던 오류를 수정했습니다\n- 글자와 배경의 명암비를 개선해 가독성을 높였습니다\n- 어두운 테마에서 선택 항목의 글자가 보이지 않던 문제를 개선했습니다\n- 고객 화면에 반투명 유리 효과를 추가했습니다\n- 제조 화면 레이아웃 미리보기 기능을 추가했습니다",
-  "releasedAt": "2026-07-20T04:04:45Z"
+  "releaseNotes": "- 앱 시작 시 스플래시 화면 추가 (로고 + 로딩 표시)\n- 앱 아이콘을 폴레토 로보틱스 마크로 변경",
+  "releasedAt": "2026-07-20T07:24:36Z"
 }
