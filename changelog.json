@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.9.0",
+      "versionCode": 900,
+      "releasedAt": "2026-07-20T04:04:45Z",
+      "notes": {
+        "ko": "새로운 브랜드 색상과 제조 화면 기능이 적용되었습니다.\n- 앱 전체에 새로운 브랜드 색상(코랄/베리)을 적용했습니다\n- 자가 진단 통과, 바코드 인식, 세척 완료, 장치 연결 등 정상 상태가 붉은색으로 보이던 오류를 수정했습니다\n- 제어보드 장치 선택 화면에서 선택한 장치와 미선택 장치의 색상이 반대로 표시되던 오류를 수정했습니다\n- 글자와 배경의 명암비를 개선해 가독성을 높였습니다\n- 어두운 테마에서 선택 항목의 글자가 보이지 않던 문제를 개선했습니다\n- 고객 화면에 반투명 유리 효과를 추가했습니다\n- 제조 화면 레이아웃 미리보기 기능을 추가했습니다",
+        "en": "A new brand palette and processing-screen features.\n- Applied the new coral/berry brand palette across the app\n- Fixed healthy states — self-diagnosis pass, barcode match, cleaning complete, device connected — rendering in red\n- Fixed the control-board device picker showing selected and unselected devices in swapped colours\n- Improved text and background contrast for readability\n- Improved selected-item labels that were invisible in the dark theme\n- Added a frosted-glass treatment to the customer screens\n- Added a preview for the processing-screen layout"
+      }
+    },
+    {
       "versionName": "0.8.1",
       "versionCode": 801,
       "releasedAt": "2026-07-15T06:24:40Z",
