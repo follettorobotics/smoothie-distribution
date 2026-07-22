@@ -1,9 +1,9 @@
 {
-  "versionCode": 1001,
-  "versionName": "0.10.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.1/app-release.apk",
-  "sha256": "1b831a614b5cdec9bab3d6a805efc790781e7f57160086943a5dac09346f0a5c",
+  "versionCode": 1002,
+  "versionName": "0.10.2",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.2/app-release.apk",
+  "sha256": "8b48edc23e84a45f6d38e1846e4597fd1421d1363ec8be7e18f78af1c6053fb9",
   "minVersionCode": 1,
-  "releaseNotes": "- 다크 테마에서 부팅 화면과 시작 화면이 밝은 색으로 표시될 수 있던 문제 수정",
-  "releasedAt": "2026-07-20T09:10:45Z"
+  "releaseNotes": "키오스크 화면 색상을 매장에 맞게 고를 수 있습니다.\n- 컬러 팔레트 5종(베리, 프레시, 오션, 망고, 라벤더)을 새로 추가했습니다.\n- 점주 설정에서 밝은/어두운 화면을 나란히 미리 보며 색상을 고를 수 있습니다.\n- 부팅 화면에도 선택한 색상이 적용됩니다.\n- 제조 안정성과 신규 설치 기본값을 개선했습니다.",
+  "releasedAt": "2026-07-22T00:13:06Z"
 }
