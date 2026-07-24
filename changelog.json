@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.4",
+      "versionCode": 1004,
+      "releasedAt": "2026-07-24T05:05:46Z",
+      "notes": {
+        "ko": "- 점주 설정에 '기기 정보' 섹션 추가 (앱 버전, 최대 Y축 하강, 오늘 제조 수, 세척 현황, 연결 상태)",
+        "en": "- Added a \"Device Info\" section to owner settings (app version, Y-axis descent limit, today's brews, cleaning status, connection state)"
+      }
+    },
+    {
       "versionName": "0.10.3",
       "versionCode": 1003,
       "releasedAt": "2026-07-24T04:02:40Z",

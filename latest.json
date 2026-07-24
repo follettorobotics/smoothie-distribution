@@ -1,9 +1,9 @@
 {
-  "versionCode": 1003,
-  "versionName": "0.10.3",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.3/app-release.apk",
-  "sha256": "6e2b117748ad1bd99e4a35a83e428236b069ea56f8cb358286cdc1c28ab4eb13",
+  "versionCode": 1004,
+  "versionName": "0.10.4",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.4/app-release.apk",
+  "sha256": "ed3d4b453ef72e67bbd0ded5c70a9fbbd4053eefd6debfbab52d8539e5b44004",
   "minVersionCode": 1,
-  "releaseNotes": "- 대기 화면 애니메이션 최적화로 CPU 사용량과 발열을 크게 줄였습니다\n- 광고 이미지가 1장일 때 불필요한 화면 전환을 제거했습니다",
-  "releasedAt": "2026-07-24T04:02:40Z"
+  "releaseNotes": "- 점주 설정에 '기기 정보' 섹션 추가 (앱 버전, 최대 Y축 하강, 오늘 제조 수, 세척 현황, 연결 상태)",
+  "releasedAt": "2026-07-24T05:05:46Z"
 }
