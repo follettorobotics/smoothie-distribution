@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.3",
+      "versionCode": 1003,
+      "releasedAt": "2026-07-24T04:02:40Z",
+      "notes": {
+        "ko": "- 대기 화면 애니메이션 최적화로 CPU 사용량과 발열을 크게 줄였습니다\n- 광고 이미지가 1장일 때 불필요한 화면 전환을 제거했습니다",
+        "en": "- Optimized idle-screen animations, greatly reducing CPU usage and heat\n- Removed the unnecessary crossfade when only one advert image is configured"
+      }
+    },
+    {
       "versionName": "0.10.2",
       "versionCode": 1002,
       "releasedAt": "2026-07-22T00:13:06Z",
