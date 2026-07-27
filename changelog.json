@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.5",
+      "versionCode": 1005,
+      "releasedAt": "2026-07-27T01:33:19Z",
+      "notes": {
+        "ko": "- 엔터 신호가 없는 바코드 스캐너(HW-1570S)에서 스캔이 인식되지 않던 오류 수정\n- 제어보드 통신 개선: 전송 데이터 손상(checksum 오류) 시 같은 명령을 자동 재전송하여 명령 실패 감소",
+        "en": "- Fixed scans not registering on barcode scanners that send no Enter key (HW-1570S)\n- Control-board comms improvement: automatic resend of checksum-rejected commands, reducing command failures"
+      }
+    },
+    {
       "versionName": "0.10.4",
       "versionCode": 1004,
       "releasedAt": "2026-07-24T05:05:46Z",
