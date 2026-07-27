@@ -1,9 +1,9 @@
 {
-  "versionCode": 1005,
-  "versionName": "0.10.5",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.5/app-release.apk",
-  "sha256": "2081ffd3b429b0c4fd70169e17d5a4a05b400fca81a64ace5d455d3175bd71ed",
+  "versionCode": 1006,
+  "versionName": "0.10.6",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.6/app-release.apk",
+  "sha256": "551841cdeafa6c08590c174a8264222437f314213a46dc936afdcbf138489baa",
   "minVersionCode": 1,
-  "releaseNotes": "- 엔터 신호가 없는 바코드 스캐너(HW-1570S)에서 스캔이 인식되지 않던 오류 수정\n- 제어보드 통신 개선: 전송 데이터 손상(checksum 오류) 시 같은 명령을 자동 재전송하여 명령 실패 감소",
-  "releasedAt": "2026-07-27T01:33:19Z"
+  "releaseNotes": "- 안정성 및 신뢰성 개선",
+  "releasedAt": "2026-07-27T04:25:04Z"
 }
