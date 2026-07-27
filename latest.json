@@ -1,9 +1,9 @@
 {
-  "versionCode": 1006,
-  "versionName": "0.10.6",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.6/app-release.apk",
-  "sha256": "551841cdeafa6c08590c174a8264222437f314213a46dc936afdcbf138489baa",
+  "versionCode": 1007,
+  "versionName": "0.10.7",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.7/app-release.apk",
+  "sha256": "f3296226996af7187d95f85488c4a6127f976b7c6f471cf233beac112fe3e783",
   "minVersionCode": 1,
-  "releaseNotes": "- 안정성 및 신뢰성 개선",
-  "releasedAt": "2026-07-27T04:25:04Z"
+  "releaseNotes": "- 믹싱 이동 대기 시간을 이동 거리·속도에 맞게 자동 계산하도록 개선",
+  "releasedAt": "2026-07-27T07:05:24Z"
 }

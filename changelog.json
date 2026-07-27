@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.7",
+      "versionCode": 1007,
+      "releasedAt": "2026-07-27T07:05:24Z",
+      "notes": {
+        "ko": "- 믹싱 이동 대기 시간을 이동 거리·속도에 맞게 자동 계산하도록 개선",
+        "en": "- Mixing move wait time is now calculated from the commanded distance and speed"
+      }
+    },
+    {
       "versionName": "0.10.6",
       "versionCode": 1006,
       "releasedAt": "2026-07-27T04:25:04Z",
