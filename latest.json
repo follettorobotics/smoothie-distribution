@@ -1,9 +1,9 @@
 {
-  "versionCode": 1007,
-  "versionName": "0.10.7",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.7/app-release.apk",
-  "sha256": "f3296226996af7187d95f85488c4a6127f976b7c6f471cf233beac112fe3e783",
+  "versionCode": 1008,
+  "versionName": "0.10.8",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.8/app-release.apk",
+  "sha256": "44a6511b9df92367bfcb7cdb5590970854b799356ea66bb1673b774810433f1f",
   "minVersionCode": 1,
-  "releaseNotes": "- 믹싱 이동 대기 시간을 이동 거리·속도에 맞게 자동 계산하도록 개선",
-  "releasedAt": "2026-07-27T07:05:24Z"
+  "releaseNotes": "- 매 제조마다 믹싱 종료가 4~6초씩 지연되던 오류 수정\n- 칼날 이동 프로그램이 믹싱 시간보다 길게 설정된 레시피는 초과 동작을 건너뛰고 오류 이력에 경고를 기록하는 기능 추가",
+  "releasedAt": "2026-07-28T02:21:30Z"
 }

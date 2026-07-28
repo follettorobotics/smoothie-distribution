@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.8",
+      "versionCode": 1008,
+      "releasedAt": "2026-07-28T02:21:30Z",
+      "notes": {
+        "ko": "- 매 제조마다 믹싱 종료가 4~6초씩 지연되던 오류 수정\n- 칼날 이동 프로그램이 믹싱 시간보다 길게 설정된 레시피는 초과 동작을 건너뛰고 오류 이력에 경고를 기록하는 기능 추가",
+        "en": "- Fixed mixing end being delayed by 4–6 seconds on every brew\n- Added: recipes whose blade-move program runs longer than the mixing time now skip the excess moves and record a warning in Error History"
+      }
+    },
+    {
       "versionName": "0.10.7",
       "versionCode": 1007,
       "releasedAt": "2026-07-27T07:05:24Z",
