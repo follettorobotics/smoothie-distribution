@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.9",
+      "versionCode": 1009,
+      "releasedAt": "2026-07-29T07:23:47Z",
+      "notes": {
+        "ko": "- 새 버전이 나오면 설정 화면 맨 위에 안내와 업데이트 버튼이 표시됩니다. 이전에는 정보 화면을 직접 열어 확인해야 했습니다.\n- 문제를 수정했습니다. 설치 확인 창에서 취소하면 \"설치 중…\"에서 멈춰 앱을 강제 종료해야 했습니다. 이제 취소해도 정상으로 돌아옵니다.\n- 앞으로 반드시 설치해야 하는 긴급 업데이트가 배포될 수 있습니다. 이때는 제조가 모두 끝난 뒤 대기 화면에서만 판매가 잠시 멈추며, 만들고 있던 음료는 끝까지 완료됩니다. 설정 화면 또는 대기 화면의 버튼으로 업데이트하면 판매가 다시 시작됩니다.\n- 내부 릴리스 절차의 안전장치를 보강했습니다. 사용에는 영향이 없습니다.",
+        "en": "- New: when a newer version is available, owner and manager settings show it at the top of the screen with a one-tap update button. Previously you had to open the info screen and check by hand.\n- Fixed: cancelling the system install prompt left the screen stuck on \"Installing…\" until the app was force-stopped. Cancelling now returns cleanly.\n- A future update may be marked as required. If that happens, the kiosk pauses sales only once it is back at the idle screen — a drink already being made always finishes — and resumes as soon as the update is installed from the settings screen or the idle-screen button.\n- Internal: hardened the safety checks in the release pipeline. No effect on daily use."
+      }
+    },
+    {
       "versionName": "0.10.8",
       "versionCode": 1008,
       "releasedAt": "2026-07-28T02:21:30Z",

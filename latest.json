@@ -1,9 +1,9 @@
 {
-  "versionCode": 1008,
-  "versionName": "0.10.8",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.8/app-release.apk",
-  "sha256": "44a6511b9df92367bfcb7cdb5590970854b799356ea66bb1673b774810433f1f",
+  "versionCode": 1009,
+  "versionName": "0.10.9",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.9/app-release.apk",
+  "sha256": "074fe568754ae30672e2e41e73aa6330293e967cfd4dec69b1ba33efc2ce15e3",
   "minVersionCode": 1,
-  "releaseNotes": "- 매 제조마다 믹싱 종료가 4~6초씩 지연되던 오류 수정\n- 칼날 이동 프로그램이 믹싱 시간보다 길게 설정된 레시피는 초과 동작을 건너뛰고 오류 이력에 경고를 기록하는 기능 추가",
-  "releasedAt": "2026-07-28T02:21:30Z"
+  "releaseNotes": "- 새 버전이 나오면 설정 화면 맨 위에 안내와 업데이트 버튼이 표시됩니다. 이전에는 정보 화면을 직접 열어 확인해야 했습니다.\n- 문제를 수정했습니다. 설치 확인 창에서 취소하면 \"설치 중…\"에서 멈춰 앱을 강제 종료해야 했습니다. 이제 취소해도 정상으로 돌아옵니다.\n- 앞으로 반드시 설치해야 하는 긴급 업데이트가 배포될 수 있습니다. 이때는 제조가 모두 끝난 뒤 대기 화면에서만 판매가 잠시 멈추며, 만들고 있던 음료는 끝까지 완료됩니다. 설정 화면 또는 대기 화면의 버튼으로 업데이트하면 판매가 다시 시작됩니다.\n- 내부 릴리스 절차의 안전장치를 보강했습니다. 사용에는 영향이 없습니다.",
+  "releasedAt": "2026-07-29T07:23:47Z"
 }
