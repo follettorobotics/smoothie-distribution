@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.12",
+      "versionCode": 1012,
+      "releasedAt": "2026-07-30T03:15:30Z",
+      "notes": {
+        "ko": "- 하드웨어 기능 테스트, 초기 설정 마법사, 기술자 콘솔의 모터 동작 대기 시간을 최대 60초에서 실제 이동 시간에 맞춘 약 30초로 줄였습니다.\n- 내부 진단 기록을 보강했습니다. 동작별 실제 소요 시간을 남기고, \"정상 동작이지만 허용 대기 시간이 이동 시간보다 짧아 확인되지 않은 경우\"를 실제 고장과 구분해 기록합니다.",
+        "en": "- Motor actions in the hardware test screen, setup wizard and technician console now wait about 30 seconds — sized from actual travel time — instead of a flat 60.\n- Internal diagnostics: each action's real duration is recorded, and \"healthy, but the allowed wait was shorter than the movement needs\" is now distinguished from a genuine fault."
+      }
+    },
+    {
       "versionName": "0.10.11",
       "versionCode": 1011,
       "releasedAt": "2026-07-30T00:17:53Z",

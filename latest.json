@@ -1,9 +1,9 @@
 {
-  "versionCode": 1011,
-  "versionName": "0.10.11",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.11/app-release.apk",
-  "sha256": "2c2af97db72cc88f3f97fc9ff9f826e95d5f10876c7ea4853eaeefd4bceee2fa",
+  "versionCode": 1012,
+  "versionName": "0.10.12",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.12/app-release.apk",
+  "sha256": "7e4a48b43fa013113486a41c3f0d9b394e86c097a645baf505adb6a405b6b450",
   "minVersionCode": 1,
-  "releaseNotes": "- 수정: Y축 원점 확인 절차가 문제 발생 시 3분 이상 이어질 수 있었습니다. 이제 전체 대기 시간에 상한을 두되, 정상적으로 느리게 움직이는 축은 끝까지 기다립니다.\n- 내부 진단 항목을 보강했습니다. 하드웨어 동작별 소요 시간과 성공 여부를 기록해, 현장 로그에서 어느 동작이 지연됐는지 특정할 수 있습니다.",
-  "releasedAt": "2026-07-30T00:17:53Z"
+  "releaseNotes": "- 하드웨어 기능 테스트, 초기 설정 마법사, 기술자 콘솔의 모터 동작 대기 시간을 최대 60초에서 실제 이동 시간에 맞춘 약 30초로 줄였습니다.\n- 내부 진단 기록을 보강했습니다. 동작별 실제 소요 시간을 남기고, \"정상 동작이지만 허용 대기 시간이 이동 시간보다 짧아 확인되지 않은 경우\"를 실제 고장과 구분해 기록합니다.",
+  "releasedAt": "2026-07-30T03:15:30Z"
 }
