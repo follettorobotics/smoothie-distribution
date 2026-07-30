@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.13",
+      "versionCode": 1013,
+      "releasedAt": "2026-07-30T06:44:01Z",
+      "notes": {
+        "ko": "- 제조를 마친 주문은 세척을 완료해야 다음 주문을 받습니다. 초기화로 화면만 정리한 경우에도 \"세척 필요\" 상태가 남고 전원을 껐다 켜도 유지됩니다. 초기화 후 세척 없이 다음 음료가 만들어지던 문제를 수정했습니다.\n- 기기가 사용 중일 때 바코드를 찍으면 알림음과 함께 \"기기가 사용 중입니다\" 안내를 표시합니다. 아무 반응이 없어 기기가 고장 난 것으로 오해할 수 있던 문제를 수정했습니다.\n- 점주 설정에 \"제조 완료 후 문 열림 확인\" 항목이 추가되었습니다. 잠금 해제 재시도 간격(기본 30초)과 고장으로 알리기까지의 대기 시간(기본 120초)을 매장 상황에 맞게 조절할 수 있습니다.\n- 문 센서 상태가 바뀔 때마다 내부 진단 기록을 남겨, 문 관련 문제를 나중에 추적할 수 있습니다.",
+        "en": "- An order that finished brewing must have its rinse completed before the next order is accepted. The \"cleaning required\" state now survives 초기화 and a power cycle. Fixes the next drink being brewed in an unrinsed pot after a reset.\n- Scanning a barcode while the machine is busy now plays a tone and shows \"The machine is busy\". Fixes a stalled kiosk looking broken because nothing happened at all.\n- New owner setting, \"post-brew door open check\": the latch re-try interval (default 30 s) and how long to wait before reporting a fault (default 120 s).\n- Door sensor state changes are now recorded in the internal diagnostics so door problems can be traced afterwards."
+      }
+    },
+    {
       "versionName": "0.10.12",
       "versionCode": 1012,
       "releasedAt": "2026-07-30T03:15:30Z",
