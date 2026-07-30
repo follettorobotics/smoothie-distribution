@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.11",
+      "versionCode": 1011,
+      "releasedAt": "2026-07-30T00:17:53Z",
+      "notes": {
+        "ko": "- 수정: Y축 원점 확인 절차가 문제 발생 시 3분 이상 이어질 수 있었습니다. 이제 전체 대기 시간에 상한을 두되, 정상적으로 느리게 움직이는 축은 끝까지 기다립니다.\n- 내부 진단 항목을 보강했습니다. 하드웨어 동작별 소요 시간과 성공 여부를 기록해, 현장 로그에서 어느 동작이 지연됐는지 특정할 수 있습니다.",
+        "en": "- Fixed: the Y-axis home check could run for over three minutes before reporting a problem. The total wait is now capped, while an axis that is merely slow is still allowed to finish.\n- Internal diagnostics: each hardware command's duration and result is now recorded, so a field log shows exactly which movement stalled."
+      }
+    },
+    {
       "versionName": "0.10.10",
       "versionCode": 1010,
       "releasedAt": "2026-07-29T07:46:25Z",
