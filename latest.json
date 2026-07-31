@@ -1,9 +1,9 @@
 {
-  "versionCode": 1014,
-  "versionName": "0.10.14",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.14/app-release.apk",
-  "sha256": "817efc1e47788b215f9e5abf0beab834ad88e8f41324adc361fe4f0b58362a9d",
+  "versionCode": 1015,
+  "versionName": "0.10.15",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.10.15/app-release.apk",
+  "sha256": "bd7e8e572e7a8b2904629ee49bd40246ba7d72de86742939722f3d85c83299e5",
   "minVersionCode": 1,
-  "releaseNotes": "- 언어 선택 메뉴가 배지 아래에 따로 뜨면서 현재 언어가 두 번 겹쳐 보이던 문제 수정\n- 메뉴가 배지 자리에서 그대로 펼쳐지고, 현재 언어가 맨 위에 강조 표시됨 (탭하면 닫힘)",
-  "releasedAt": "2026-07-31T05:05:54Z"
+  "releaseNotes": "- 초기화(리셋)나 헹굼 도중 오류로 세척이 중단된 경우에도 \"세척 필요\" 상태가 남도록 수정했습니다. 이전에는 헹굼이 실제로 끝나지 않았는데도 세척 완료로 처리되어, 헹구지 않은 상태로 다음 음료가 만들어질 수 있었습니다.\n- 지원팀의 원인 분석을 돕기 위해 내부 진단 기록 보관 기간을 30일로 늘렸습니다.",
+  "releasedAt": "2026-07-31T10:11:43Z"
 }

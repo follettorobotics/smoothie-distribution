@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.15",
+      "versionCode": 1015,
+      "releasedAt": "2026-07-31T10:11:43Z",
+      "notes": {
+        "ko": "- 초기화(리셋)나 헹굼 도중 오류로 세척이 중단된 경우에도 \"세척 필요\" 상태가 남도록 수정했습니다. 이전에는 헹굼이 실제로 끝나지 않았는데도 세척 완료로 처리되어, 헹구지 않은 상태로 다음 음료가 만들어질 수 있었습니다.\n- 지원팀의 원인 분석을 돕기 위해 내부 진단 기록 보관 기간을 30일로 늘렸습니다.",
+        "en": "- Fixed: if a reset (초기화) or an error interrupts the rinse, the \"cleaning needed\" state now stays in place instead of being cleared. Previously an interrupted rinse could be marked complete, letting the next drink be made without an actual rinse.\n- Extended internal diagnostic log retention to 30 days to help support investigate issues."
+      }
+    },
+    {
       "versionName": "0.10.14",
       "versionCode": 1014,
       "releasedAt": "2026-07-31T05:05:54Z",
