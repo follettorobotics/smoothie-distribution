@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.10.14",
+      "versionCode": 1014,
+      "releasedAt": "2026-07-31T05:05:54Z",
+      "notes": {
+        "ko": "- 언어 선택 메뉴가 배지 아래에 따로 뜨면서 현재 언어가 두 번 겹쳐 보이던 문제 수정\n- 메뉴가 배지 자리에서 그대로 펼쳐지고, 현재 언어가 맨 위에 강조 표시됨 (탭하면 닫힘)",
+        "en": "- Fixed the language menu opening below the badge, which showed the current language twice in a stack\n- The menu now expands in place of the badge with the current language highlighted on top (tap it to close)"
+      }
+    },
+    {
       "versionName": "0.10.13",
       "versionCode": 1013,
       "releasedAt": "2026-07-30T06:44:01Z",
