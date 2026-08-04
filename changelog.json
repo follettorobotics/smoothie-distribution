@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.11.0",
+      "versionCode": 1100,
+      "releasedAt": "2026-08-04T00:47:07Z",
+      "notes": {
+        "ko": "- 오너/매니저 설정에 \"문제 신고\"를 추가했습니다. 문제 내용을 입력하면 진단 기록과 함께 본사로 전송됩니다. 전송 실패 시 입력한 내용이 유지되어 다시 보낼 수 있습니다.\n- 기술자 진단 메뉴에 \"로그 업로드\"를 추가했습니다. USB 없이 한 번의 터치로 진단 기록을 본사에 보낼 수 있습니다.",
+        "en": "- Added a \"problem report\" option to owner and manager settings — describe an issue and it's sent to headquarters along with diagnostic logs. If sending fails, your text is kept so you can retry.\n- Added one-tap \"log upload\" to the technician diagnostics menu — send diagnostic logs to headquarters without a USB drive."
+      }
+    },
+    {
       "versionName": "0.10.15",
       "versionCode": 1015,
       "releasedAt": "2026-07-31T10:11:43Z",
