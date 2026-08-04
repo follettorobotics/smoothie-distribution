@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.11.1",
+      "versionCode": 1101,
+      "releasedAt": "2026-08-04T03:44:16Z",
+      "notes": {
+        "ko": "- 세척 도중 초기화(리셋)를 누르면 잘못된 오류 화면이 표시되던 문제를 수정했습니다.\n- 오류 발생 시 본사로 전송되는 진단 기록에 오류 코드가 함께 포함되도록 했습니다.",
+        "en": "- Fixed a false error screen appearing when 초기화 (reset) is pressed during cleaning.\n- Diagnostic records sent to headquarters when a fault occurs now include the error code."
+      }
+    },
+    {
       "versionName": "0.11.0",
       "versionCode": 1100,
       "releasedAt": "2026-08-04T00:47:07Z",
