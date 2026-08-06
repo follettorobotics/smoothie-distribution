@@ -1,9 +1,9 @@
 {
-  "versionCode": 1101,
-  "versionName": "0.11.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.11.1/app-release.apk",
-  "sha256": "6246e11ed6ce0072599416af9f6236e1e254a8579e4c46fb49eb83391b1cda0e",
+  "versionCode": 1200,
+  "versionName": "0.12.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.12.0/app-release.apk",
+  "sha256": "a82443d60c1db89021d92a687757e61cb309a44d0241c72fa0a28161370209ba",
   "minVersionCode": 1,
-  "releaseNotes": "- 세척 도중 초기화(리셋)를 누르면 잘못된 오류 화면이 표시되던 문제를 수정했습니다.\n- 오류 발생 시 본사로 전송되는 진단 기록에 오류 코드가 함께 포함되도록 했습니다.",
-  "releasedAt": "2026-08-04T03:44:16Z"
+  "releaseNotes": "설정한 주기에 따라 간단 세척을 자동으로 실행하는 기능이 추가되었습니다.\n\n- 자동 세척 주기 설정 추가: 간단 세척 페이지에서 사용 안 함 / 1 / 2 / 4 / 6 / 12시간 중 선택할 수 있습니다 (기본값: 사용 안 함).\n- 다음 자동 세척까지 남은 시간이 설정 화면에 표시됩니다.\n- 자동 세척은 제조·세척 등 다른 동작 중이거나 설정 화면이 열려 있는 동안에는 실행되지 않으며, 기기가 5분간 완전히 대기 상태일 때만 실행됩니다.\n- 수동 간단 세척 또는 전체 세척을 완료하면 자동 세척 주기가 그 시점부터 다시 계산됩니다.\n- 자동 세척이 완료되면 세척 필요 알림(간단 세척 잠금)이 함께 해제됩니다.\n- 세척 동작의 안정성이 개선되었습니다.",
+  "releasedAt": "2026-08-06T01:22:05Z"
 }
