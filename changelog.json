@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.12.1",
+      "versionCode": 1201,
+      "releasedAt": "2026-08-06T03:16:41Z",
+      "notes": {
+        "ko": "업데이트 후 일부 기기에서 설정과 레시피가 임의로 바뀌어 보이던 문제를 수정했습니다.\n\n- 온수 모듈 설정이 저장된 적 없는 기기가 업데이트 후 'M1 온수모듈'로 표시되던 문제를 수정했습니다. 이제 기기 상태에 맞는 값이 자동으로 저장됩니다.\n- 정전 후 설정 백업이 손상될 수 있던 문제를 수정하여 설정 보존이 더 안정적으로 동작합니다.\n- 데이터베이스 복구 과정에서 기존 설정이 초기값으로 바뀌지 않도록 보호가 추가되었습니다.\n- 신규 설치 기본값이 변경되었습니다: X축 대기 위치 160, 바코드 건너뛰기 사용(기본 메뉴: Eiden Tall). 이미 설치된 기기에는 영향이 없습니다.",
+        "en": "Fixed settings and recipes appearing to change by themselves on some machines after an update.\n\n- Machines that never had the hot-water module setting saved showed \"M1 온수모듈\" after an update; the correct value is now saved automatically based on the machine's hardware.\n- Settings backup is now more robust against corruption after a power cut.\n- Database recovery no longer resets existing settings to factory values.\n- New-install defaults changed: X-axis idle position 160, skip-barcode mode ON (default menu: Eiden Tall). Already-installed machines are not affected."
+      }
+    },
+    {
       "versionName": "0.12.0",
       "versionCode": 1200,
       "releasedAt": "2026-08-06T01:22:05Z",

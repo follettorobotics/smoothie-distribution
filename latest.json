@@ -1,9 +1,9 @@
 {
-  "versionCode": 1200,
-  "versionName": "0.12.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.12.0/app-release.apk",
-  "sha256": "a82443d60c1db89021d92a687757e61cb309a44d0241c72fa0a28161370209ba",
+  "versionCode": 1201,
+  "versionName": "0.12.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.12.1/app-release.apk",
+  "sha256": "a8cb315f2a2d353eb0434cc8782dbc56b4fad3bc58b007dd4bd2ae6a9cd53029",
   "minVersionCode": 1,
-  "releaseNotes": "설정한 주기에 따라 간단 세척을 자동으로 실행하는 기능이 추가되었습니다.\n\n- 자동 세척 주기 설정 추가: 간단 세척 페이지에서 사용 안 함 / 1 / 2 / 4 / 6 / 12시간 중 선택할 수 있습니다 (기본값: 사용 안 함).\n- 다음 자동 세척까지 남은 시간이 설정 화면에 표시됩니다.\n- 자동 세척은 제조·세척 등 다른 동작 중이거나 설정 화면이 열려 있는 동안에는 실행되지 않으며, 기기가 5분간 완전히 대기 상태일 때만 실행됩니다.\n- 수동 간단 세척 또는 전체 세척을 완료하면 자동 세척 주기가 그 시점부터 다시 계산됩니다.\n- 자동 세척이 완료되면 세척 필요 알림(간단 세척 잠금)이 함께 해제됩니다.\n- 세척 동작의 안정성이 개선되었습니다.",
-  "releasedAt": "2026-08-06T01:22:05Z"
+  "releaseNotes": "업데이트 후 일부 기기에서 설정과 레시피가 임의로 바뀌어 보이던 문제를 수정했습니다.\n\n- 온수 모듈 설정이 저장된 적 없는 기기가 업데이트 후 'M1 온수모듈'로 표시되던 문제를 수정했습니다. 이제 기기 상태에 맞는 값이 자동으로 저장됩니다.\n- 정전 후 설정 백업이 손상될 수 있던 문제를 수정하여 설정 보존이 더 안정적으로 동작합니다.\n- 데이터베이스 복구 과정에서 기존 설정이 초기값으로 바뀌지 않도록 보호가 추가되었습니다.\n- 신규 설치 기본값이 변경되었습니다: X축 대기 위치 160, 바코드 건너뛰기 사용(기본 메뉴: Eiden Tall). 이미 설치된 기기에는 영향이 없습니다.",
+  "releasedAt": "2026-08-06T03:16:41Z"
 }
