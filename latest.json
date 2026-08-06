@@ -1,9 +1,9 @@
 {
-  "versionCode": 1300,
-  "versionName": "0.13.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.13.0/app-release.apk",
-  "sha256": "ae54767e3528142052e0380e408b46b13ac09abc1176201e407ed3ac7ea94174",
+  "versionCode": 1400,
+  "versionName": "0.14.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.14.0/app-release.apk",
+  "sha256": "7b088d7b86f5afc8d59bbf6210974b83c2d2117e3c044a89669914c1a3a86227",
   "minVersionCode": 1,
-  "releaseNotes": "세척 성능과 자동 간단 세척 주기 옵션이 개선되었습니다.\n\n- 세척 시 분사 마지막 구간(최대 10초, 세척 시간이 짧으면 절반)에 칼날 회전을 멈추고 물만 분사합니다. 회전하는 칼날에 가려 물이 닿지 않던 윗부분(돔 커버, 이송부 등)까지 세척됩니다. 모든 세척(음료 후 세척, 수동 세척, 자동 간단 세척, 전체 청소 마무리 헹굼)에 적용됩니다.\n- 자동 간단 세척 주기에 30분 옵션이 추가되었습니다. 이미 주기를 설정해 둔 기기는 기존 주기가 그대로 유지됩니다.",
-  "releasedAt": "2026-08-06T06:12:48Z"
+  "releaseNotes": "세척 마무리 칼날 정지 시간을 설정할 수 있습니다.\n\n- 세척 설정 페이지에 '세척 마무리 칼날 정지' 옵션이 추가되었습니다: 사용 안 함 / 10% / 20% / 30% / 40% / 50%. 분사 마지막 구간에서 칼날을 멈추는 비율을 선택합니다 (기본값 50%는 기존 동작과 동일).\n- '사용 안 함'을 선택하면 이전처럼 분사 내내 칼날이 회전합니다.\n- 설정 변경은 다음 세척부터 바로 적용됩니다 (재시작 불필요).",
+  "releasedAt": "2026-08-06T07:48:29Z"
 }
