@@ -1,9 +1,9 @@
 {
-  "versionCode": 1201,
-  "versionName": "0.12.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.12.1/app-release.apk",
-  "sha256": "a8cb315f2a2d353eb0434cc8782dbc56b4fad3bc58b007dd4bd2ae6a9cd53029",
+  "versionCode": 1300,
+  "versionName": "0.13.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.13.0/app-release.apk",
+  "sha256": "ae54767e3528142052e0380e408b46b13ac09abc1176201e407ed3ac7ea94174",
   "minVersionCode": 1,
-  "releaseNotes": "업데이트 후 일부 기기에서 설정과 레시피가 임의로 바뀌어 보이던 문제를 수정했습니다.\n\n- 온수 모듈 설정이 저장된 적 없는 기기가 업데이트 후 'M1 온수모듈'로 표시되던 문제를 수정했습니다. 이제 기기 상태에 맞는 값이 자동으로 저장됩니다.\n- 정전 후 설정 백업이 손상될 수 있던 문제를 수정하여 설정 보존이 더 안정적으로 동작합니다.\n- 데이터베이스 복구 과정에서 기존 설정이 초기값으로 바뀌지 않도록 보호가 추가되었습니다.\n- 신규 설치 기본값이 변경되었습니다: X축 대기 위치 160, 바코드 건너뛰기 사용(기본 메뉴: Eiden Tall). 이미 설치된 기기에는 영향이 없습니다.",
-  "releasedAt": "2026-08-06T03:16:41Z"
+  "releaseNotes": "세척 성능과 자동 간단 세척 주기 옵션이 개선되었습니다.\n\n- 세척 시 분사 마지막 구간(최대 10초, 세척 시간이 짧으면 절반)에 칼날 회전을 멈추고 물만 분사합니다. 회전하는 칼날에 가려 물이 닿지 않던 윗부분(돔 커버, 이송부 등)까지 세척됩니다. 모든 세척(음료 후 세척, 수동 세척, 자동 간단 세척, 전체 청소 마무리 헹굼)에 적용됩니다.\n- 자동 간단 세척 주기에 30분 옵션이 추가되었습니다. 이미 주기를 설정해 둔 기기는 기존 주기가 그대로 유지됩니다.",
+  "releasedAt": "2026-08-06T06:12:48Z"
 }
