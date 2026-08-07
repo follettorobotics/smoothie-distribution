@@ -1,9 +1,9 @@
 {
-  "versionCode": 1400,
-  "versionName": "0.14.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.14.0/app-release.apk",
-  "sha256": "7b088d7b86f5afc8d59bbf6210974b83c2d2117e3c044a89669914c1a3a86227",
+  "versionCode": 1500,
+  "versionName": "0.15.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.15.0/app-release.apk",
+  "sha256": "aa7df6f4aa5353f68a8ce92298190209465b21efb11e55745fd026399e2de93c",
   "minVersionCode": 1,
-  "releaseNotes": "세척 마무리 칼날 정지 시간을 설정할 수 있습니다.\n\n- 세척 설정 페이지에 '세척 마무리 칼날 정지' 옵션이 추가되었습니다: 사용 안 함 / 10% / 20% / 30% / 40% / 50%. 분사 마지막 구간에서 칼날을 멈추는 비율을 선택합니다 (기본값 50%는 기존 동작과 동일).\n- '사용 안 함'을 선택하면 이전처럼 분사 내내 칼날이 회전합니다.\n- 설정 변경은 다음 세척부터 바로 적용됩니다 (재시작 불필요).",
-  "releasedAt": "2026-08-06T07:48:29Z"
+  "releaseNotes": "- 시작하기를 누르면 \"필름이 제거되었나요?\" 팝업으로 필름 제거를 한 번 더 확인합니다. 실제 필름이 벗겨지는 애니메이션이 표시됩니다.\n- 예를 선택하면 제조가 시작되고, 아니오를 선택하면 도어가 다시 열려 필름을 제거할 수 있습니다.\n- 하드웨어 설정의 \"필름 재확인 팝업\"에서 끌 수 있습니다(기본 켜짐). 필름이 없는 컵을 쓰는 매장에서만 꺼 주세요.",
+  "releasedAt": "2026-08-07T03:11:53Z"
 }

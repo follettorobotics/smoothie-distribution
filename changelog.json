@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.15.0",
+      "versionCode": 1500,
+      "releasedAt": "2026-08-07T03:11:53Z",
+      "notes": {
+        "ko": "- 시작하기를 누르면 \"필름이 제거되었나요?\" 팝업으로 필름 제거를 한 번 더 확인합니다. 실제 필름이 벗겨지는 애니메이션이 표시됩니다.\n- 예를 선택하면 제조가 시작되고, 아니오를 선택하면 도어가 다시 열려 필름을 제거할 수 있습니다.\n- 하드웨어 설정의 \"필름 재확인 팝업\"에서 끌 수 있습니다(기본 켜짐). 필름이 없는 컵을 쓰는 매장에서만 꺼 주세요.",
+        "en": "- Pressing Start now shows a \"Has the film been removed?\" popup with a film-peel animation before the drink starts.\n- Yes starts the sequence; No re-opens the door so the film can be removed.\n- New \"Film re-confirm popup\" toggle in hardware settings (default ON). Turn off only on sites using lidless cups."
+      }
+    },
+    {
       "versionName": "0.14.0",
       "versionCode": 1400,
       "releasedAt": "2026-08-06T07:48:29Z",
