@@ -1,9 +1,9 @@
 {
-  "versionCode": 1600,
-  "versionName": "0.16.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.16.0/app-release.apk",
-  "sha256": "39e3226956133ea362fa919928c8827f068a3d3dbd0b2ab921c676551a0e4ed3",
+  "versionCode": 1700,
+  "versionName": "0.17.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.17.0/app-release.apk",
+  "sha256": "1b43a548db33295bb361a66d2e2eeb5d8bf9c359b10f626793ed5753b5f86683",
   "minVersionCode": 1,
-  "releaseNotes": "- 점주 설정 수동 제어에 \"돔(커버) 세척 모드\"가 추가되었습니다.\n- \"돔(커버) 세척 모드 실행\"을 누르면 돔이 설정된 Y축 세척 위치로 내려와 닦을 수 있습니다. 동작 전 Y축 원점 → X축 원점 확인 → X축 대기 위치 순서로 안전 자세를 먼저 잡습니다.\n- \"돔(커버) 세척 모드 정위치\"를 누르면 돔이 원위치(홈)로 올라갑니다.",
-  "releasedAt": "2026-08-10T00:25:48Z"
+  "releaseNotes": "문제 신고에 매장명 입력이 추가되었습니다.\n- 문제 신고 창에 매장명 입력란이 생겼습니다. 한 번 입력하면 저장되어 다음 신고 때 자동으로 채워집니다.\n- 입력한 매장명은 신고와 함께 전송되어, 어느 매장에서 보낸 신고인지 빠르게 확인하고 조치할 수 있습니다.",
+  "releasedAt": "2026-08-10T01:25:23Z"
 }
