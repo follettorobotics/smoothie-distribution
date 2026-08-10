@@ -1,9 +1,9 @@
 {
-  "versionCode": 1500,
-  "versionName": "0.15.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.15.0/app-release.apk",
-  "sha256": "aa7df6f4aa5353f68a8ce92298190209465b21efb11e55745fd026399e2de93c",
+  "versionCode": 1600,
+  "versionName": "0.16.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.16.0/app-release.apk",
+  "sha256": "39e3226956133ea362fa919928c8827f068a3d3dbd0b2ab921c676551a0e4ed3",
   "minVersionCode": 1,
-  "releaseNotes": "- 시작하기를 누르면 \"필름이 제거되었나요?\" 팝업으로 필름 제거를 한 번 더 확인합니다. 실제 필름이 벗겨지는 애니메이션이 표시됩니다.\n- 예를 선택하면 제조가 시작되고, 아니오를 선택하면 도어가 다시 열려 필름을 제거할 수 있습니다.\n- 하드웨어 설정의 \"필름 재확인 팝업\"에서 끌 수 있습니다(기본 켜짐). 필름이 없는 컵을 쓰는 매장에서만 꺼 주세요.",
-  "releasedAt": "2026-08-07T03:11:53Z"
+  "releaseNotes": "- 점주 설정 수동 제어에 \"돔(커버) 세척 모드\"가 추가되었습니다.\n- \"돔(커버) 세척 모드 실행\"을 누르면 돔이 설정된 Y축 세척 위치로 내려와 닦을 수 있습니다. 동작 전 Y축 원점 → X축 원점 확인 → X축 대기 위치 순서로 안전 자세를 먼저 잡습니다.\n- \"돔(커버) 세척 모드 정위치\"를 누르면 돔이 원위치(홈)로 올라갑니다.",
+  "releasedAt": "2026-08-10T00:25:48Z"
 }
