@@ -1,9 +1,9 @@
 {
-  "versionCode": 1700,
-  "versionName": "0.17.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.17.0/app-release.apk",
-  "sha256": "1b43a548db33295bb361a66d2e2eeb5d8bf9c359b10f626793ed5753b5f86683",
+  "versionCode": 1800,
+  "versionName": "0.18.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.18.0/app-release.apk",
+  "sha256": "6ee998931ac3b213c442a3c4fb0df98c72bd3da4f1a425189c2e90c5ee9b5f87",
   "minVersionCode": 1,
-  "releaseNotes": "문제 신고에 매장명 입력이 추가되었습니다.\n- 문제 신고 창에 매장명 입력란이 생겼습니다. 한 번 입력하면 저장되어 다음 신고 때 자동으로 채워집니다.\n- 입력한 매장명은 신고와 함께 전송되어, 어느 매장에서 보낸 신고인지 빠르게 확인하고 조치할 수 있습니다.",
-  "releasedAt": "2026-08-10T01:25:23Z"
+  "releaseNotes": "믹싱 미세조정 화면에 동작 그래프가 추가되었습니다.\n- 각 미세조정 카드를 열면 블레이드(Y축) 이동과 믹서 속도를 한 시간축 위의 그래프로 보여줍니다.\n- 실제 기계의 동작 방식 그대로 표시합니다: 믹서는 마지막 속도로 단계가 끝날 때까지 유지된 뒤 정지하고, 회전 시간을 초과해 실행되지 않는 이동은 점선으로 구분됩니다.\n- 그래프의 시간은 예측치입니다. 실제 제조·세척에서 측정된 이동 시간으로 기기마다 자동 보정되며, 기술자 설정에서 보정 상태 확인과 초기화가 가능합니다.",
+  "releasedAt": "2026-08-12T01:17:13Z"
 }

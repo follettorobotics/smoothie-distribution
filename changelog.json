@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.18.0",
+      "versionCode": 1800,
+      "releasedAt": "2026-08-12T01:17:13Z",
+      "notes": {
+        "ko": "믹싱 미세조정 화면에 동작 그래프가 추가되었습니다.\n- 각 미세조정 카드를 열면 블레이드(Y축) 이동과 믹서 속도를 한 시간축 위의 그래프로 보여줍니다.\n- 실제 기계의 동작 방식 그대로 표시합니다: 믹서는 마지막 속도로 단계가 끝날 때까지 유지된 뒤 정지하고, 회전 시간을 초과해 실행되지 않는 이동은 점선으로 구분됩니다.\n- 그래프의 시간은 예측치입니다. 실제 제조·세척에서 측정된 이동 시간으로 기기마다 자동 보정되며, 기술자 설정에서 보정 상태 확인과 초기화가 가능합니다.",
+        "en": "Motion graphs added to the mix-tuning screen.\n- Each tuning card now shows blade (Y-axis) travel and mixer speed on one shared timeline.\n- The graphs reflect what the machine really does: the mixer holds its last speed until the step ends before stopping, and moves that fall past the spin schedule are drawn as dashed (they will not run).\n- Graph times are estimates. They auto-calibrate per machine from measured moves during real runs, and technicians can view or reset the calibration in settings."
+      }
+    },
+    {
       "versionName": "0.17.0",
       "versionCode": 1700,
       "releasedAt": "2026-08-10T01:25:23Z",
