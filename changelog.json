@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.18.1",
+      "versionCode": 1801,
+      "releasedAt": "2026-08-12T03:04:57Z",
+      "notes": {
+        "ko": "믹싱 그래프의 기본 예상 시간이 개선되었습니다.\n- 실제 매장 기기에서 측정한 이동 시간을 반영해, 보정 전에도 그래프 예상 시간이 실제와 가깝게 표시됩니다.\n- 실제 제조에서의 자동 보정 동작은 기존과 동일합니다.",
+        "en": "Improved default time estimates on the mixing graphs.\n- Estimates now start from travel times measured on real store machines, so graphs are close to reality even before calibration.\n- Automatic per-machine calibration during real runs works the same as before."
+      }
+    },
+    {
       "versionName": "0.18.0",
       "versionCode": 1800,
       "releasedAt": "2026-08-12T01:17:13Z",

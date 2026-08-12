@@ -1,9 +1,9 @@
 {
-  "versionCode": 1800,
-  "versionName": "0.18.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.18.0/app-release.apk",
-  "sha256": "6ee998931ac3b213c442a3c4fb0df98c72bd3da4f1a425189c2e90c5ee9b5f87",
+  "versionCode": 1801,
+  "versionName": "0.18.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.18.1/app-release.apk",
+  "sha256": "f09c015957a9a58481dd585988405ac3d45343429b93f3d7671f57f5675ec7ed",
   "minVersionCode": 1,
-  "releaseNotes": "믹싱 미세조정 화면에 동작 그래프가 추가되었습니다.\n- 각 미세조정 카드를 열면 블레이드(Y축) 이동과 믹서 속도를 한 시간축 위의 그래프로 보여줍니다.\n- 실제 기계의 동작 방식 그대로 표시합니다: 믹서는 마지막 속도로 단계가 끝날 때까지 유지된 뒤 정지하고, 회전 시간을 초과해 실행되지 않는 이동은 점선으로 구분됩니다.\n- 그래프의 시간은 예측치입니다. 실제 제조·세척에서 측정된 이동 시간으로 기기마다 자동 보정되며, 기술자 설정에서 보정 상태 확인과 초기화가 가능합니다.",
-  "releasedAt": "2026-08-12T01:17:13Z"
+  "releaseNotes": "믹싱 그래프의 기본 예상 시간이 개선되었습니다.\n- 실제 매장 기기에서 측정한 이동 시간을 반영해, 보정 전에도 그래프 예상 시간이 실제와 가깝게 표시됩니다.\n- 실제 제조에서의 자동 보정 동작은 기존과 동일합니다.",
+  "releasedAt": "2026-08-12T03:04:57Z"
 }
