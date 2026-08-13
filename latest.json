@@ -1,9 +1,9 @@
 {
-  "versionCode": 1900,
-  "versionName": "0.19.0",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.0/app-release.apk",
-  "sha256": "b55f02494761f99508a0e52e5ebbc1ff04d8b9fbc7f37b2127d97a1187e410a8",
+  "versionCode": 1901,
+  "versionName": "0.19.1",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.1/app-release.apk",
+  "sha256": "0bc80e59e2ad0e67a3bd9689980d4995f09b556d5fc273b9dbbaf6970a706f61",
   "minVersionCode": 1,
-  "releaseNotes": "기기 시리얼 번호 설정이 추가되었습니다.\n- 기술자 설정에 기기 시리얼 번호 입력란이 생겼습니다. 한 번 입력하면 문제 신고와 진단 로그 전송에 자동으로 포함되어, 어느 기기에서 온 신고인지 바로 확인할 수 있습니다.\n\n메뉴 QR 내보내기가 개선되었습니다.\n- QR 코드가 더 큼직하게 여러 장으로 나뉘어 표시되어, 스캐너와 카메라로 훨씬 잘 인식됩니다.\n\n설정 저장 안정성이 개선되었습니다.\n- 전원이 갑자기 꺼진 뒤에도 믹싱 보정값을 포함한 모든 설정이 안전하게 복원됩니다.",
-  "releasedAt": "2026-08-13T00:52:49Z"
+  "releaseNotes": "시리얼 번호 입력이 개선되었습니다.\n- 일부 기기 키보드에서 첫 글자를 대문자로 입력할 수 없던 문제를 해결했습니다. 입력란에서 키보드가 자동으로 대문자 모드로 열리며, 소문자로 입력해도 저장 시 자동으로 대문자로 변환됩니다.",
+  "releasedAt": "2026-08-13T03:56:02Z"
 }

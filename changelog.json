@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.1",
+      "versionCode": 1901,
+      "releasedAt": "2026-08-13T03:56:02Z",
+      "notes": {
+        "ko": "시리얼 번호 입력이 개선되었습니다.\n- 일부 기기 키보드에서 첫 글자를 대문자로 입력할 수 없던 문제를 해결했습니다. 입력란에서 키보드가 자동으로 대문자 모드로 열리며, 소문자로 입력해도 저장 시 자동으로 대문자로 변환됩니다.",
+        "en": "Serial number entry improved.\n- Fixed an issue where the first letter could not be entered as a capital on some device keyboards. The keyboard now opens in caps mode for the serial field, and lowercase input is automatically stored in capitals."
+      }
+    },
+    {
       "versionName": "0.19.0",
       "versionCode": 1900,
       "releasedAt": "2026-08-13T00:52:49Z",
