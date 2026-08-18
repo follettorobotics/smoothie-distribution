@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.3",
+      "versionCode": 1903,
+      "releasedAt": "2026-08-18T08:23:23Z",
+      "notes": {
+        "ko": "메뉴 QR 읽는 중 표시가 스캔이 끝날 때까지 유지되도록 개선.",
+        "en": "Menu-QR reading indicator now stays visible for the whole scan."
+      }
+    },
+    {
       "versionName": "0.19.2",
       "versionCode": 1902,
       "releasedAt": "2026-08-18T06:45:13Z",
