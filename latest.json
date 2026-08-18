@@ -1,9 +1,9 @@
 {
-  "versionCode": 1903,
-  "versionName": "0.19.3",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.3/app-release.apk",
-  "sha256": "432298388da55a40a6cc449f4d5c2063b3c3b4e1e93b9c824ccaf9829c397705",
+  "versionCode": 1904,
+  "versionName": "0.19.4",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.4/app-release.apk",
+  "sha256": "482e121a14a49e92b79da5df12b4dfcba7560bdbe0f95a2412b85c319e5919fa",
   "minVersionCode": 1,
-  "releaseNotes": "메뉴 QR 읽는 중 표시가 스캔이 끝날 때까지 유지되도록 개선.",
-  "releasedAt": "2026-08-18T08:23:23Z"
+  "releaseNotes": "기기 시리얼 번호가 저장되지 않던 문제 수정.",
+  "releasedAt": "2026-08-18T09:13:43Z"
 }

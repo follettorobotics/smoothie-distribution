@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.4",
+      "versionCode": 1904,
+      "releasedAt": "2026-08-18T09:13:43Z",
+      "notes": {
+        "ko": "기기 시리얼 번호가 저장되지 않던 문제 수정.",
+        "en": "Fixed machine serial number sometimes not saving."
+      }
+    },
+    {
       "versionName": "0.19.3",
       "versionCode": 1903,
       "releasedAt": "2026-08-18T08:23:23Z",
