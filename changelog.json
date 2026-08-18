@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.2",
+      "versionCode": 1902,
+      "releasedAt": "2026-08-18T06:45:13Z",
+      "notes": {
+        "ko": "편집기 검사 로직 수정.",
+        "en": "Editor validation logic fix."
+      }
+    },
+    {
       "versionName": "0.19.1",
       "versionCode": 1901,
       "releasedAt": "2026-08-13T03:56:02Z",

@@ -1,9 +1,9 @@
 {
-  "versionCode": 1901,
-  "versionName": "0.19.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.1/app-release.apk",
-  "sha256": "0bc80e59e2ad0e67a3bd9689980d4995f09b556d5fc273b9dbbaf6970a706f61",
+  "versionCode": 1902,
+  "versionName": "0.19.2",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.2/app-release.apk",
+  "sha256": "5567e4c52486c4ef0ecd2c3e6545cc9ee69169e84aceef01f60510ab50c89437",
   "minVersionCode": 1,
-  "releaseNotes": "시리얼 번호 입력이 개선되었습니다.\n- 일부 기기 키보드에서 첫 글자를 대문자로 입력할 수 없던 문제를 해결했습니다. 입력란에서 키보드가 자동으로 대문자 모드로 열리며, 소문자로 입력해도 저장 시 자동으로 대문자로 변환됩니다.",
-  "releasedAt": "2026-08-13T03:56:02Z"
+  "releaseNotes": "편집기 검사 로직 수정.",
+  "releasedAt": "2026-08-18T06:45:13Z"
 }
