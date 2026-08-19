@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.5",
+      "versionCode": 1905,
+      "releasedAt": "2026-08-19T02:46:02Z",
+      "notes": {
+        "ko": "메뉴 QR 읽는 중 수신 글자 수를 실시간으로 표시합니다.",
+        "en": "Menu-QR reading now shows a live received-character count."
+      }
+    },
+    {
       "versionName": "0.19.4",
       "versionCode": 1904,
       "releasedAt": "2026-08-18T09:13:43Z",
