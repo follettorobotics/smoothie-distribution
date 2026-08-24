@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.6",
+      "versionCode": 1906,
+      "releasedAt": "2026-08-24T01:56:09Z",
+      "notes": {
+        "ko": "안정성 및 신뢰성 개선.",
+        "en": "Stability and reliability improvements."
+      }
+    },
+    {
       "versionName": "0.19.5",
       "versionCode": 1905,
       "releasedAt": "2026-08-19T02:46:02Z",

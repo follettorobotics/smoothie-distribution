@@ -1,9 +1,9 @@
 {
-  "versionCode": 1905,
-  "versionName": "0.19.5",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.5/app-release.apk",
-  "sha256": "e65e923f36371253aa4036870a2724353f1132b0b1d145c6161e0af6fa2213ce",
+  "versionCode": 1906,
+  "versionName": "0.19.6",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.6/app-release.apk",
+  "sha256": "ed0b10ad14cf99eb79abeb5dc0456713408152f5cd5c72a30bdad38f5dd41605",
   "minVersionCode": 1,
-  "releaseNotes": "메뉴 QR 읽는 중 수신 글자 수를 실시간으로 표시합니다.",
-  "releasedAt": "2026-08-19T02:46:02Z"
+  "releaseNotes": "안정성 및 신뢰성 개선.",
+  "releasedAt": "2026-08-24T01:56:09Z"
 }
