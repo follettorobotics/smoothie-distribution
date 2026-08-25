@@ -1,9 +1,9 @@
 {
-  "versionCode": 1906,
-  "versionName": "0.19.6",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.6/app-release.apk",
-  "sha256": "ed0b10ad14cf99eb79abeb5dc0456713408152f5cd5c72a30bdad38f5dd41605",
+  "versionCode": 1907,
+  "versionName": "0.19.7",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.7/app-release.apk",
+  "sha256": "4a0f1447a2ea5d4d570fd6f7c5d9a2a69997c3b113f20a692acb1b7d6bef120a",
   "minVersionCode": 1,
-  "releaseNotes": "안정성 및 신뢰성 개선.",
-  "releasedAt": "2026-08-24T01:56:09Z"
+  "releaseNotes": "진단 및 안정성 개선.\n- 기기 진단 로그 자동 수집 기능 추가",
+  "releasedAt": "2026-08-25T14:37:39Z"
 }

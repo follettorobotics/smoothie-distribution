@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.7",
+      "versionCode": 1907,
+      "releasedAt": "2026-08-25T14:37:39Z",
+      "notes": {
+        "ko": "진단 및 안정성 개선.\n- 기기 진단 로그 자동 수집 기능 추가",
+        "en": "Diagnostics and stability improvements.\n- Added automatic collection of device diagnostic logs"
+      }
+    },
+    {
       "versionName": "0.19.6",
       "versionCode": 1906,
       "releasedAt": "2026-08-24T01:56:09Z",
