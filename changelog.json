@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.8",
+      "versionCode": 1908,
+      "releasedAt": "2026-08-27T02:34:56Z",
+      "notes": {
+        "ko": "설정 보호가 강화되었습니다.\n- 전원 차단으로 입력범위 설정이 삭제되거나 손상되어도 다음 부팅 때 자동으로 복구됩니다.\n- Y축 하강 한도는 이제 기기별 고정값으로 관리되며, 업데이트로 자동 변경되지 않습니다. 변경은 기술자가 해당 기기에서 직접 조정할 때만 이루어집니다.\n- 이미 저장된 설정값은 어떤 경우에도 자동으로 변경되지 않습니다. 이번 업데이트로 동작이 달라지는 기기는 없습니다.",
+        "en": "Settings protection hardened.\n- Input-range settings now self-heal on the next boot if a power cut deletes or corrupts them.\n- The Y-axis descent limit is now a per-machine fixed value and never changes automatically on update; only an on-device technician adjustment changes it.\n- Already-stored settings are never modified automatically under any circumstances. No machine's behavior changes with this update."
+      }
+    },
+    {
       "versionName": "0.19.7",
       "versionCode": 1907,
       "releasedAt": "2026-08-25T14:37:39Z",

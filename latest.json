@@ -1,9 +1,9 @@
 {
-  "versionCode": 1907,
-  "versionName": "0.19.7",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.7/app-release.apk",
-  "sha256": "4a0f1447a2ea5d4d570fd6f7c5d9a2a69997c3b113f20a692acb1b7d6bef120a",
+  "versionCode": 1908,
+  "versionName": "0.19.8",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.8/app-release.apk",
+  "sha256": "4ea749ecbf652c5c6bed14dc3150b9ac28048ef5ad9c7e4606b4514c653ea5bc",
   "minVersionCode": 1,
-  "releaseNotes": "진단 및 안정성 개선.\n- 기기 진단 로그 자동 수집 기능 추가",
-  "releasedAt": "2026-08-25T14:37:39Z"
+  "releaseNotes": "설정 보호가 강화되었습니다.\n- 전원 차단으로 입력범위 설정이 삭제되거나 손상되어도 다음 부팅 때 자동으로 복구됩니다.\n- Y축 하강 한도는 이제 기기별 고정값으로 관리되며, 업데이트로 자동 변경되지 않습니다. 변경은 기술자가 해당 기기에서 직접 조정할 때만 이루어집니다.\n- 이미 저장된 설정값은 어떤 경우에도 자동으로 변경되지 않습니다. 이번 업데이트로 동작이 달라지는 기기는 없습니다.",
+  "releasedAt": "2026-08-27T02:34:56Z"
 }
