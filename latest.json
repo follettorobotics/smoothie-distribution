@@ -1,9 +1,9 @@
 {
-  "versionCode": 1908,
-  "versionName": "0.19.8",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.8/app-release.apk",
-  "sha256": "4ea749ecbf652c5c6bed14dc3150b9ac28048ef5ad9c7e4606b4514c653ea5bc",
+  "versionCode": 1909,
+  "versionName": "0.19.9",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.19.9/app-release.apk",
+  "sha256": "d7ac0bb0c0e94deed4e0a815832eabe36808911779745282fb660133cd53bf2d",
   "minVersionCode": 1,
-  "releaseNotes": "설정 보호가 강화되었습니다.\n- 전원 차단으로 입력범위 설정이 삭제되거나 손상되어도 다음 부팅 때 자동으로 복구됩니다.\n- Y축 하강 한도는 이제 기기별 고정값으로 관리되며, 업데이트로 자동 변경되지 않습니다. 변경은 기술자가 해당 기기에서 직접 조정할 때만 이루어집니다.\n- 이미 저장된 설정값은 어떤 경우에도 자동으로 변경되지 않습니다. 이번 업데이트로 동작이 달라지는 기기는 없습니다.",
-  "releasedAt": "2026-08-27T02:34:56Z"
+  "releaseNotes": "세척 설정 위치가 정리되었습니다.\n- '자동 세척 주기'와 '세척 마무리 칼날 정지' 설정이 간단 세척 화면에서 '하드웨어 포트 매핑' 화면의 전용 '세척 설정' 카드로 이동했습니다.\n- 간단 세척 화면은 수동 실행 전용으로 단순해졌습니다.\n- 저장된 설정값과 세척 동작은 그대로 유지됩니다. 설정 위치만 바뀝니다.",
+  "releasedAt": "2026-08-31T01:06:36Z"
 }

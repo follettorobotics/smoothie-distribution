@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.19.9",
+      "versionCode": 1909,
+      "releasedAt": "2026-08-31T01:06:36Z",
+      "notes": {
+        "ko": "세척 설정 위치가 정리되었습니다.\n- '자동 세척 주기'와 '세척 마무리 칼날 정지' 설정이 간단 세척 화면에서 '하드웨어 포트 매핑' 화면의 전용 '세척 설정' 카드로 이동했습니다.\n- 간단 세척 화면은 수동 실행 전용으로 단순해졌습니다.\n- 저장된 설정값과 세척 동작은 그대로 유지됩니다. 설정 위치만 바뀝니다.",
+        "en": "Rinse settings relocated.\n- \"Automatic rinse schedule\" and \"Blade stop at end of rinse\" moved from the Short Rinse page to a dedicated \"Rinse settings\" card on the hardware-port screen.\n- The Short Rinse page is now manual-run only.\n- Stored values and rinse behavior are unchanged — only where the settings live."
+      }
+    },
+    {
       "versionName": "0.19.8",
       "versionCode": 1908,
       "releasedAt": "2026-08-27T02:34:56Z",
