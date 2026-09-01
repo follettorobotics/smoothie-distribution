@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.0",
+      "versionCode": 2000,
+      "releasedAt": "2026-09-01T04:42:53Z",
+      "notes": {
+        "ko": "설정을 QR 코드로 다른 기기에 복사하는 설정 QR 전송 기능이 추가되었습니다.\n\n- 설정 QR 내보내기 추가: 기술자 설정에서 간단 세척 설정(자동 세척 주기, 세척 마무리 칼날 정지, 세척 분사 시간)을 선택해 QR 코드로 만들 수 있습니다\n- 설정 QR 가져오기 추가: 대기 화면에서 설정 QR을 스캔하면 비밀번호 확인 후 변경 내용을 확인하고 적용할 수 있습니다\n- 이 기기에 맞지 않는 범위의 설정 값은 적용 전에 표시되며 자동으로 제외됩니다",
+        "en": "Adds settings QR transfer — copy settings to another machine with a QR code.\n\n- Added settings QR export: in technician settings, select quick-rinse settings (auto-rinse interval, blade-off spray tail, rinse spray duration) and turn them into a QR code\n- Added settings QR import: scan a settings QR on the idle screen, confirm with a password, review the changes, and apply\n- Values out of range for this machine are shown and excluded before applying"
+      }
+    },
+    {
       "versionName": "0.19.9",
       "versionCode": 1909,
       "releasedAt": "2026-08-31T01:06:36Z",
