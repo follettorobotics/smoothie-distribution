@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.1",
+      "versionCode": 2001,
+      "releasedAt": "2026-09-11T02:57:52Z",
+      "notes": {
+        "ko": "앱 시작 안정성이 개선되었습니다.\n\n- 드물게 앱 시작 직후 앱이 종료되던 문제를 수정했습니다",
+        "en": "App start-up stability improved.\n\n- Fixed a rare issue where the app could close right after starting"
+      }
+    },
+    {
       "versionName": "0.20.0",
       "versionCode": 2000,
       "releasedAt": "2026-09-01T04:42:53Z",
