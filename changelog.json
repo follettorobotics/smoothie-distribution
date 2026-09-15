@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.2",
+      "versionCode": 2002,
+      "releasedAt": "2026-09-15T01:23:19Z",
+      "notes": {
+        "ko": "문제 신고 로그에 바코드 스캔 기록이 추가되었습니다.\n\n- 바코드 스캔이 접수되거나 거부된 시각과 사유가 로그에 남아, 문제 신고 시 원인 확인이 빨라집니다\n- 오류 화면이 표시된 시각과 오류 코드가 로그에 남습니다",
+        "en": "Barcode scan events are now included in the problem-report logs.\n\n- Each scan's time and outcome (accepted or refused, with the reason) is logged so reports can be diagnosed faster\n- Error screens are logged with their time and code"
+      }
+    },
+    {
       "versionName": "0.20.1",
       "versionCode": 2001,
       "releasedAt": "2026-09-11T02:57:52Z",

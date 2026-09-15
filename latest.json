@@ -1,9 +1,9 @@
 {
-  "versionCode": 2001,
-  "versionName": "0.20.1",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.1/app-release.apk",
-  "sha256": "ee502c67434af3b21aa2116ddea563bcffdb57cc244bfbb97caa27e1932798e5",
+  "versionCode": 2002,
+  "versionName": "0.20.2",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.2/app-release.apk",
+  "sha256": "00a9a7725ab9b1b6d8aa5405eaa00385c2d7bb1f6700cf7a6acb1ba95964a942",
   "minVersionCode": 1,
-  "releaseNotes": "앱 시작 안정성이 개선되었습니다.\n\n- 드물게 앱 시작 직후 앱이 종료되던 문제를 수정했습니다",
-  "releasedAt": "2026-09-11T02:57:52Z"
+  "releaseNotes": "문제 신고 로그에 바코드 스캔 기록이 추가되었습니다.\n\n- 바코드 스캔이 접수되거나 거부된 시각과 사유가 로그에 남아, 문제 신고 시 원인 확인이 빨라집니다\n- 오류 화면이 표시된 시각과 오류 코드가 로그에 남습니다",
+  "releasedAt": "2026-09-15T01:23:19Z"
 }
