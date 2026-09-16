@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.3",
+      "versionCode": 2003,
+      "releasedAt": "2026-09-16T04:32:59Z",
+      "notes": {
+        "ko": "바코드 스캔 안내와 업데이트 후 자동 실행이 개선되었습니다.\n\n- 설정 화면이 열린 상태에서 바코드를 스캔하면 \"관리자 화면이 열려 있습니다\" 안내가 화면 위에 표시됩니다\n- 앱 업데이트가 끝나면 앱이 자동으로 다시 실행됩니다\n- 초기화 또는 오류 확인 후 컵 거치대 조명이 꺼지지 않던 문제를 수정했습니다",
+        "en": "Barcode scan guidance and post-update auto-start improved.\n\n- Scanning while a settings screen is open now shows \"Admin screen is open\" on top of the screen\n- The app restarts itself automatically after an update finishes\n- Fixed the cup-holder light staying on after a reset or error dismissal"
+      }
+    },
+    {
       "versionName": "0.20.2",
       "versionCode": 2002,
       "releasedAt": "2026-09-15T01:23:19Z",
