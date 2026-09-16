@@ -1,9 +1,9 @@
 {
-  "versionCode": 2004,
-  "versionName": "0.20.4",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.4/app-release.apk",
-  "sha256": "afaac5c39607698377a08d53e70635b5ab438f7395e423fc4769c40a0fb447a9",
+  "versionCode": 2005,
+  "versionName": "0.20.5",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.5/app-release.apk",
+  "sha256": "b19868dbe5dbcc0a19de4f46232ce3da3a40fe1932cb547b3a6c6b6df445309b",
   "minVersionCode": 1,
-  "releaseNotes": "진단 정보 자동 수집이 강화되었습니다.\n\n- 믹싱이나 세척이 평소와 다르게 진행된 경우 진단 로그가 자동으로 전송되어 원인 확인이 빨라집니다\n- 매장 이용 흐름에는 변화가 없습니다",
-  "releasedAt": "2026-09-16T05:07:52Z"
+  "releaseNotes": "진단 정보 자동 수집이 다듬어졌습니다.\n\n- 믹싱 진단 로그는 레시피별로 한 번만 전송되어 불필요한 전송이 줄어듭니다\n- 매장 이용 흐름에는 변화가 없습니다",
+  "releasedAt": "2026-09-16T08:52:40Z"
 }

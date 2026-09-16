@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.5",
+      "versionCode": 2005,
+      "releasedAt": "2026-09-16T08:52:40Z",
+      "notes": {
+        "ko": "진단 정보 자동 수집이 다듬어졌습니다.\n\n- 믹싱 진단 로그는 레시피별로 한 번만 전송되어 불필요한 전송이 줄어듭니다\n- 매장 이용 흐름에는 변화가 없습니다",
+        "en": "Automatic diagnostics collection refined.\n\n- Mixing diagnostic logs are now sent once per recipe, cutting unnecessary uploads\n- No change to day-to-day operation"
+      }
+    },
+    {
       "versionName": "0.20.4",
       "versionCode": 2004,
       "releasedAt": "2026-09-16T05:07:52Z",
