@@ -1,9 +1,9 @@
 {
-  "versionCode": 2003,
-  "versionName": "0.20.3",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.3/app-release.apk",
-  "sha256": "54d836998ead244d24b10052634cff3e4d07ac8425c0ca2d7494e5eef60fb13c",
+  "versionCode": 2004,
+  "versionName": "0.20.4",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.4/app-release.apk",
+  "sha256": "afaac5c39607698377a08d53e70635b5ab438f7395e423fc4769c40a0fb447a9",
   "minVersionCode": 1,
-  "releaseNotes": "바코드 스캔 안내와 업데이트 후 자동 실행이 개선되었습니다.\n\n- 설정 화면이 열린 상태에서 바코드를 스캔하면 \"관리자 화면이 열려 있습니다\" 안내가 화면 위에 표시됩니다\n- 앱 업데이트가 끝나면 앱이 자동으로 다시 실행됩니다\n- 초기화 또는 오류 확인 후 컵 거치대 조명이 꺼지지 않던 문제를 수정했습니다",
-  "releasedAt": "2026-09-16T04:32:59Z"
+  "releaseNotes": "진단 정보 자동 수집이 강화되었습니다.\n\n- 믹싱이나 세척이 평소와 다르게 진행된 경우 진단 로그가 자동으로 전송되어 원인 확인이 빨라집니다\n- 매장 이용 흐름에는 변화가 없습니다",
+  "releasedAt": "2026-09-16T05:07:52Z"
 }

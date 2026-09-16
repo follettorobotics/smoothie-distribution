@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.4",
+      "versionCode": 2004,
+      "releasedAt": "2026-09-16T05:07:52Z",
+      "notes": {
+        "ko": "진단 정보 자동 수집이 강화되었습니다.\n\n- 믹싱이나 세척이 평소와 다르게 진행된 경우 진단 로그가 자동으로 전송되어 원인 확인이 빨라집니다\n- 매장 이용 흐름에는 변화가 없습니다",
+        "en": "Automatic diagnostics collection expanded.\n\n- When a mixing or cleaning run deviates from normal, a diagnostic log is sent automatically so causes can be found faster\n- No change to day-to-day operation"
+      }
+    },
+    {
       "versionName": "0.20.3",
       "versionCode": 2003,
       "releasedAt": "2026-09-16T04:32:59Z",
