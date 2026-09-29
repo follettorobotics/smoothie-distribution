@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.6",
+      "versionCode": 2006,
+      "releasedAt": "2026-09-29T04:16:35Z",
+      "notes": {
+        "ko": "세척과 축 이동 동작이 개선되었습니다.\n\n- 레시피 파일로 메뉴를 교체한 뒤에도 전체 세척 설정이 그대로 유지됩니다\n- 제조 후 헹굼 전에 전원이 갑자기 꺼졌다 켜진 경우, 다음 주문 전에 헹굼 세척을 먼저 진행합니다\n- 제조가 중간에 멈춘 경우에도 다음 주문 전에 헹굼 세척을 먼저 진행합니다\n- 세척 중에 청소 모드 화면을 열고 닫아도 진행 중인 세척이 끝까지 이어집니다\n- 초기화 후 대기 위치로 이동하는 동안에는 주문과 수동 동작을 잠시 받지 않습니다\n- 축 위치를 확인한 뒤에만 이동하며, 세척 시작 시 X축 위치 확인이 더 여유 있게 진행됩니다\n- 컵 필름 안내가 계속 반복되면 관리자 오류 기록에 표시되어 센서 점검이 쉬워집니다\n- 업데이트 확인을 취소해도 오류로 기록되지 않습니다",
+        "en": "Cleaning and axis movement improved.\n\n- The full-cleaning settings are kept when the menu is replaced from a recipe file\n- If the power is cut after a drink and before its rinse, a rinse runs before the next order\n- If a drink stops partway, a rinse runs before the next order\n- Opening and closing the cleaning-mode screen during a rinse no longer interrupts it\n- While the machine returns to its standby position after a reset, orders and manual actions wait\n- Axes move only after their position is confirmed, and the X-axis check at the start of cleaning allows more time\n- Repeated cup-film prompts are now recorded in the admin error log, making the sensor easier to check\n- Cancelling an update check is no longer recorded as an error"
+      }
+    },
+    {
       "versionName": "0.20.5",
       "versionCode": 2005,
       "releasedAt": "2026-09-16T08:52:40Z",

@@ -1,9 +1,9 @@
 {
-  "versionCode": 2005,
-  "versionName": "0.20.5",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.5/app-release.apk",
-  "sha256": "b19868dbe5dbcc0a19de4f46232ce3da3a40fe1932cb547b3a6c6b6df445309b",
+  "versionCode": 2006,
+  "versionName": "0.20.6",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.6/app-release.apk",
+  "sha256": "640de494b30350bacd0b66e5079af7ee8434cb94620859c3f9b48dcf6edb58f4",
   "minVersionCode": 1,
-  "releaseNotes": "진단 정보 자동 수집이 다듬어졌습니다.\n\n- 믹싱 진단 로그는 레시피별로 한 번만 전송되어 불필요한 전송이 줄어듭니다\n- 매장 이용 흐름에는 변화가 없습니다",
-  "releasedAt": "2026-09-16T08:52:40Z"
+  "releaseNotes": "세척과 축 이동 동작이 개선되었습니다.\n\n- 레시피 파일로 메뉴를 교체한 뒤에도 전체 세척 설정이 그대로 유지됩니다\n- 제조 후 헹굼 전에 전원이 갑자기 꺼졌다 켜진 경우, 다음 주문 전에 헹굼 세척을 먼저 진행합니다\n- 제조가 중간에 멈춘 경우에도 다음 주문 전에 헹굼 세척을 먼저 진행합니다\n- 세척 중에 청소 모드 화면을 열고 닫아도 진행 중인 세척이 끝까지 이어집니다\n- 초기화 후 대기 위치로 이동하는 동안에는 주문과 수동 동작을 잠시 받지 않습니다\n- 축 위치를 확인한 뒤에만 이동하며, 세척 시작 시 X축 위치 확인이 더 여유 있게 진행됩니다\n- 컵 필름 안내가 계속 반복되면 관리자 오류 기록에 표시되어 센서 점검이 쉬워집니다\n- 업데이트 확인을 취소해도 오류로 기록되지 않습니다",
+  "releasedAt": "2026-09-29T04:16:35Z"
 }
