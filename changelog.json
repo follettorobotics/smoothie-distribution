@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.20.7",
+      "versionCode": 2007,
+      "releasedAt": "2026-10-12T02:53:43Z",
+      "notes": {
+        "ko": "업데이트 설치와 세척 후 동작이 개선되었습니다.\n\n- 업데이트는 진행 중인 제조나 세척이 끝난 뒤에 설치되며, 설치하는 동안에는 주문을 잠시 받지 않습니다\n- 앱이 시작될 때 칼날을 먼저 멈춘 뒤 축을 움직입니다\n- 돔(커버) 세척 모드 후 돔을 올리지 않고 설정 화면을 닫아도, 문이 닫히면 돔이 자동으로 올라간 뒤 주문을 받습니다\n- 업데이트 파일은 내려받은 내용을 한 번 더 확인한 뒤에 설치됩니다\n- 전원이 갑자기 꺼졌다 켜져도 진단 기록이 더 잘 보존됩니다\n- 자동 수집된 진단 정보는 인터넷이 연결되면 자동으로 전송됩니다\n- 업데이트 진행 과정과 컵 필름 확인 설정 변경이 진단 기록에 남습니다",
+        "en": "Update installation and post-cleaning behavior improved.\n\n- Updates install after any drink or cleaning in progress has finished, and orders are not taken while the update installs\n- When the app starts, the blade is stopped first, then the axes move\n- If the settings screen is closed after the dome (cover) clean mode without raising the dome, it rises automatically once the door is closed, and orders are accepted after that\n- A downloaded update file is checked once more before it is installed\n- Diagnostic records are better preserved when the power is cut and restored\n- Automatically collected diagnostic information is sent as soon as an internet connection is available\n- Update progress and changes to the cup-film check setting are now written to the diagnostic records"
+      }
+    },
+    {
       "versionName": "0.20.6",
       "versionCode": 2006,
       "releasedAt": "2026-09-29T04:16:35Z",
