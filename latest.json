@@ -1,9 +1,9 @@
 {
-  "versionCode": 2007,
-  "versionName": "0.20.7",
-  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.20.7/app-release.apk",
-  "sha256": "a1d60a7445803100a53f2554307cb126e3e52471a8aacc3ac47f77972884961f",
+  "versionCode": 2100,
+  "versionName": "0.21.0",
+  "apkUrl": "https://github.com/follettorobotics/smoothie-distribution/releases/download/v0.21.0/app-release.apk",
+  "sha256": "01d4d03c468b78a0860faca705d8e906de66476d5ab76adab4323f2da499ff6c",
   "minVersionCode": 1,
-  "releaseNotes": "업데이트 설치와 세척 후 동작이 개선되었습니다.\n\n- 업데이트는 진행 중인 제조나 세척이 끝난 뒤에 설치되며, 설치하는 동안에는 주문을 잠시 받지 않습니다\n- 앱이 시작될 때 칼날을 먼저 멈춘 뒤 축을 움직입니다\n- 돔(커버) 세척 모드 후 돔을 올리지 않고 설정 화면을 닫아도, 문이 닫히면 돔이 자동으로 올라간 뒤 주문을 받습니다\n- 업데이트 파일은 내려받은 내용을 한 번 더 확인한 뒤에 설치됩니다\n- 전원이 갑자기 꺼졌다 켜져도 진단 기록이 더 잘 보존됩니다\n- 자동 수집된 진단 정보는 인터넷이 연결되면 자동으로 전송됩니다\n- 업데이트 진행 과정과 컵 필름 확인 설정 변경이 진단 기록에 남습니다",
-  "releasedAt": "2026-10-12T02:53:43Z"
+  "releaseNotes": "문 열기 QR과 주문 기록 삭제 기능이 추가되었습니다.\n\n- 문 열기 QR 추가: 문 열기 QR을 스캔하고 점주, 관리자 또는 기술자 비밀번호를 입력하면 문이 열립니다\n- 기기가 동작 중일 때는 문이 열리지 않으며, 화면에 그 이유를 안내합니다\n- 문 열기 QR 기능은 기술자 설정에서 켜고 끌 수 있습니다 (기본: 켜짐)\n- 주문 기록 삭제 추가: 기술자 설정에서 모든 주문 기록을 지울 수 있습니다\n- 전원을 켠 직후 화면 반응이 개선되었습니다\n- 바코드 스캐너를 다시 연결해도 화면이 다시 시작되지 않습니다\n- 앱 화면이 멈추는 경우 진단 기록이 자동으로 남고 전송됩니다",
+  "releasedAt": "2026-10-14T07:59:48Z"
 }

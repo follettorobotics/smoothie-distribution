@@ -1,6 +1,15 @@
 {
   "releases": [
     {
+      "versionName": "0.21.0",
+      "versionCode": 2100,
+      "releasedAt": "2026-10-14T07:59:48Z",
+      "notes": {
+        "ko": "문 열기 QR과 주문 기록 삭제 기능이 추가되었습니다.\n\n- 문 열기 QR 추가: 문 열기 QR을 스캔하고 점주, 관리자 또는 기술자 비밀번호를 입력하면 문이 열립니다\n- 기기가 동작 중일 때는 문이 열리지 않으며, 화면에 그 이유를 안내합니다\n- 문 열기 QR 기능은 기술자 설정에서 켜고 끌 수 있습니다 (기본: 켜짐)\n- 주문 기록 삭제 추가: 기술자 설정에서 모든 주문 기록을 지울 수 있습니다\n- 전원을 켠 직후 화면 반응이 개선되었습니다\n- 바코드 스캐너를 다시 연결해도 화면이 다시 시작되지 않습니다\n- 앱 화면이 멈추는 경우 진단 기록이 자동으로 남고 전송됩니다",
+        "en": "Adds a door-open QR and order-history erase.\n\n- Added a door-open QR: scan it and enter the manager, owner or technician password to open the door\n- The door never opens while the machine is running, and the screen explains why\n- The door-open QR can be turned on or off in technician settings (on by default)\n- Added order-history erase in technician settings\n- Screen response right after power-on improved\n- Reconnecting the barcode scanner no longer restarts the screen\n- If the app screen freezes, diagnostic records are kept and sent automatically"
+      }
+    },
+    {
       "versionName": "0.20.7",
       "versionCode": 2007,
       "releasedAt": "2026-10-12T02:53:43Z",
